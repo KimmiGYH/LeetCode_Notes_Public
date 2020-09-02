@@ -1,6 +1,4 @@
-# 1. Two Sum
-
-Easy
+# [1. Two Sum (Easy)](https://leetcode.com/problems/two-sum/)
 
 Given an array of integers `nums` and and integer `target`, return *the indices of the two numbers such that they add up to `target`*.
 
@@ -36,8 +34,31 @@ Output: [0,1]
 
 **Constraints:**
 
-- `1 <= nums.length <= 105`
-- `-109 <= nums[i] <= 109`
-- `-109 <= target <= 109`
+- `1 <= nums.length <= 10^5`
+- `-109 <= nums[i] <= 10^9`
+- `-109 <= target <= 10^9`
 - **Only one valid answer exists.**
+
+
+
+
+
+# [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
+
+难度简单
+
+给定一个整数数组 `nums` 和一个目标值 `target`，请你在该数组中找出和为目标值的那 **两个** 整数，并返回他们的数组下标。
+
+你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。
+
+ 
+
+**示例:**
+
+```
+给定 nums = [2, 7, 11, 15], target = 9
+
+因为 nums[0] + nums[1] = 2 + 7 = 9
+所以返回 [0, 1]
+```
 
