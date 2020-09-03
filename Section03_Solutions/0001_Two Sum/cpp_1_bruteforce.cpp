@@ -1,4 +1,4 @@
-// 1. Two Sum Solution 1
+// 1. Two Sum / Solution 1
 // Brute force / C++
 // Time Complexity: O(n^2)
 // Space Complexity: O(1)

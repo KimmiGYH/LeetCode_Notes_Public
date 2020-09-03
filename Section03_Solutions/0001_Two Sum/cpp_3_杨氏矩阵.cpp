@@ -1,6 +1,6 @@
-// 1. Two Sum Solution 3
-// _______ / C++
-// Time complexity: _______
+// 1. Two Sum / Solution 3
+// 头尾指针法（利用杨氏矩阵） / C++
+// Time complexity: O(n)
 // Space complexity: _______
 
 #include <vector>
@@ -9,7 +9,7 @@ using namespace std;
 
 class Solution {
 public:
-typedef pair<int, int> PII;
+    typedef pair<int, int> PII;
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<PII> vec;
         for (int i = 0; i != nums.size(); ++i) {
