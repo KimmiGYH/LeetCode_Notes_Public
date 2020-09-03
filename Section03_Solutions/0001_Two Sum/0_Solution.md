@@ -19,7 +19,11 @@ python 可以用字典，并用 `enumerate` 遍历列表同时查字典。
 
 做法2：
 
-
+开个循环，`i`作为原数组`nums` 的下标进行移动，
+新建哈希表 `indices`；
+让 `val = target - nums[i];`，查找 `val` 是否在`indices`中，
+如果不在，那么把原来 `nums` 里的值`nums[i]`作为key，及其下标`i`作为 value，存入新建的哈希表`indices`里；
+如果找得到，那么返回`val`所映射的下标以及原下标`i`。
 
 ## 方法三：头尾指针法（利用杨氏矩阵）
 
@@ -38,4 +42,7 @@ python 可以用字典，并用 `enumerate` 遍历列表同时查字典。
 
 ## 方法四：二分查找
 
-用二分法查找所求的下标
+用二分法查找所求的下标，定好 `index1`，`index2`，分别对应原数组值`nums[i]` / `vec[i].first`(用 pair 保存的前提下) 的下标 和 `val` 的下标。
+
+用`my_binary_search()`来求出 `index2` 的值。
+定义 `head`, `tail`, `mid`，最后求出 `vec[mid].second` 即我们所要求的下标`index2`。
