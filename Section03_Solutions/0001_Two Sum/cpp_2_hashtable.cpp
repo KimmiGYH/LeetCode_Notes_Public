@@ -3,6 +3,9 @@
 // Time complexity: O(n)
 // Space complexity: O(n)
 
+
+// 写法1：
+
 #include <vector>
 #include <unordered_map>
 using namespace std;
@@ -35,7 +38,7 @@ indices.count() 的 .count() 返回布尔值，测试整数 val 是否在 indice
 由于题干中要求数据只能用一次，所以我们要排除两个下标相同的情况。
 */
 
-// 另一个版本
+// 写法2：
 
 class Solution {
 public:
