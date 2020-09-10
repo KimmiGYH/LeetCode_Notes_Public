@@ -1,8 +1,8 @@
 | 中文                                 | Title                  | Difficulty | Language | Time | Space | Save |
 | --------------------------------------- | -------------------------- | -------- | ---------- | ----- | ---- | ---- |
-| 26. 删除排序数组中的重复项 | 26. Remove Duplicates from Sorted Array | Easy | C++      | O(n) | O(1) |      |
-| 1. 两数之和 | 1. Two Sum       | Easy  | C++      | O(n) | O(n)  |      |
-| 11. 盛最多水的容器 | 11. Container With Most Water | Medium | C++      |      |       |      |
+| 136. 只出现一次的数字| 136. Single Number | Easy | C++      | O(n) | O(1) | :heart: |
+|                                                              |                    |            |          |      |       |      |
+|                                                              |                    |            |          |      |       |      |
 |                                         |                            |          |          |      |       |      |
 |                                         |                            |          |          |      |       |      |
 |                                         |                            |          |          |      |       |      |
