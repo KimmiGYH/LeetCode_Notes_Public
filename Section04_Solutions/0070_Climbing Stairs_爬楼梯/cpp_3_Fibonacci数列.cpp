@@ -24,7 +24,7 @@ public:
 
 int main() {
     Solution solution = Solution();
-    cout << solution.climbStairs(42) << endl;
+    cout << solution.climbStairs(7) << endl;
     return 0;
 }
 // Output: 433494437
