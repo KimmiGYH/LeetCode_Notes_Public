@@ -4,25 +4,19 @@
 using namespace std;
 
 class Solution {
-private:
-    int calc(int n, int m) {
+public:
+    int climbStairs(int n, int m) {
         vector<int> result(n+1, 0);
         result[0] = 1;
         for (int i = 1; i <=n; ++i) {
-            int current = 0;
+            int curr = 0;
             for (int j = 1; j <= m; ++j) {
                 if (j > i) break;
-                current += result[i-j];
+                curr += result[i-j];
             }
-            result[i] = current;
+            result[i] = curr;
         }
-        return result[n];        
-    }
-
-public:
-    int climbStairs(int n, int m) {
-
-        return calc(n, m);
+        return result[n];    
     }
 };
 
@@ -32,4 +26,4 @@ int main() {
     cout << solution.climbStairs(5, 3) << endl;
     return 0;
 }
-// Output: 433494437
+// Output: 13
