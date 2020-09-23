@@ -5,23 +5,23 @@ using namespace std;
 
 class Solution {
 private:
-    int calc(int n, int maxJump) {
-        int jumpCount = 0;
-        if (n == 0)
-            return 1;
-        
-        if (n >= maxJump) {
-            for (int i = 1; i < maxJump; ++i) {
-                jumpCount += calc(n-i, maxJump);
+    int calc(int n, int m) {
+        vector<int> result(n+1, 0);
+        result[0] = 1;
+        for (int i = 1; i <=n; ++i) {
+            int current = 0;
+            for (int j = 1; j <= m; ++j) {
+                if (j > i) break;
+                current += result[i-j];
             }
-        } else {
-            jumpCount = calc(n, n);
+            result[i] = current;
         }
-        return jumpCount;
+        return result[n];        
     }
 
 public:
     int climbStairs(int n, int m) {
+
         return calc(n, m);
     }
 };
@@ -29,7 +29,7 @@ public:
 
 int main() {
     Solution solution = Solution();
-    cout << solution.climbStairs(3, 5) << endl;
+    cout << solution.climbStairs(5, 3) << endl;
     return 0;
 }
 // Output: 433494437
