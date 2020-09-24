@@ -7,7 +7,7 @@ class Solution {
 private:
     vector<int> memo;
     int calcWays(int n) {
-        if (n == 0 || n == 1)
+        if (n == 0)
             return 1;
         
         if (memo[n] == -1)
@@ -30,4 +30,4 @@ int main() {
     cout << solution.climbStairs(42) << endl;
     return 0;
 }
-// Output: 433494437
+// Output: 
