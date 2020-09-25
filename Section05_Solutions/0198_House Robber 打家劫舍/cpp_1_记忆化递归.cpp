@@ -42,7 +42,7 @@ public:
 int main() {
 
     int nums[] = {2, 1};
-    vector<int> vec(nums, nums + sizeof(nums)/sizeof(int));
+    vector<int> vec(nums, nums + sizeof(nums)/sizeof(int)); // //以数组为迭代器区间构造
 
     cout << Solution().rob(vec) << endl;
 
