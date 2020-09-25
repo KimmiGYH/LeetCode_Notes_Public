@@ -26,6 +26,7 @@ int main() {
     cout << solution.climbStairs(5, 3) << endl;
     return 0;
 }
+
 // Output: 13
 /*
 1 1 1 1 1
