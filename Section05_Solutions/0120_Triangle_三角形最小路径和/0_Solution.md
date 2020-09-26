@@ -30,3 +30,21 @@
 因此 `dp` 数组不需要定义 `N` 行，只要定义 `1` 行就阔以啦。
 
 所以我们稍微修改一下上述代码，将 `i` 所在的维度去掉（如下），就可以将 `O(N^2)` 的空间复杂度优化成 `O(N)` 啦～
+
+
+## 方法三：自上而下
+
+确定边界条件：
+
+```cpp
+        for (int i = 1; i < n; ++i) {
+            for (int j = triangle[i].size() - 1; j >= 0; --j) {
+                if (j == 0)
+                    dp[j] = dp[j] + triangle[i][j];
+                else if (j = triangle[i].size() - 1)
+                    dp[j] = dp[j - 1] + triangle[i][j];
+                else
+                    dp[j] = min(dp[j - 1], dp[j]) + triangle[i][j];
+            }
+        }
+```

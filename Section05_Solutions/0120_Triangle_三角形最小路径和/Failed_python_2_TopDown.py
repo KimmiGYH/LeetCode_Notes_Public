@@ -8,7 +8,7 @@ triangle = [
 ]
 
 class Solution:
-    def minimumTotal(self, triangle: List[List[int]]) -> int:
+    def minimum_total(self, triangle: List[List[int]]) -> int:
         n = len(triangle)
         d = {i: {} for i in range(-1, n)}
         for i, row in enumerate(triangle):
@@ -19,4 +19,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.minimumTotal(triangle)) # 11
+    print(solution.minimum_total(triangle)) # 11

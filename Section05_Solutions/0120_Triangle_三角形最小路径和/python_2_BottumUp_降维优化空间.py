@@ -8,7 +8,7 @@ data = [
 ]
 
 class Solution:
-    def minimumTotal(self, triangle: List[List[int]]) -> int:
+    def minimum_total(self, triangle: List[List[int]]) -> int:
         if not triangle:
             return None
         res = triangle[-1]
@@ -20,4 +20,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.minimumTotal(data)) # 11
+    print(solution.minimum_total(data)) # 11
