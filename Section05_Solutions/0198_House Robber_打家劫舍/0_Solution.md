@@ -19,6 +19,8 @@ f(0) = max{ v(0) + f(2), v(1) + f(3), v(2) + f(4), ...,
 
 看 **思路.png**
 
+![思路](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0198_House%20Robber_%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D/0_%E6%80%9D%E8%B7%AF.png)
+
 f(i) 表示 从 `1~i`中选，必选`i`
 g(i) 表示 从 `1~i`中选，必不选`i`
 
