@@ -89,4 +89,4 @@
 
 当 `i≥3` 时，状态转移方程如下：
 
-优化的状态转移方程
+![优化的状态转移方程](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0343_Integer%20Break_%E6%95%B4%E6%95%B0%E6%8B%86%E5%88%86/%E4%BC%98%E5%8C%96%E7%9A%84%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%96%B9%E7%A8%8B.png)
