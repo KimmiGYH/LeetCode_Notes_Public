@@ -23,7 +23,7 @@ int binarySearch(T arr[], int n, T target){
 }
 
 
-// 另种写法
+// 另种写法 在 [l...r) 的范围里寻找 target
 
 using namespace std;
 
