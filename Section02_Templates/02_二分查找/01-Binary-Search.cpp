@@ -43,3 +43,8 @@ int binarySearch(T arr[], int n, T target){
 
     return -1;
 }
+
+/* 注意Bug：
+        int mid = (l + r) / 2;
+        可能会产生整型溢出的问题
+*/
