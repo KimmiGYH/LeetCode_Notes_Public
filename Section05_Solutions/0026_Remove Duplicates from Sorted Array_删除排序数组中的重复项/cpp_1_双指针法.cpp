@@ -12,11 +12,11 @@ public:
     int removeDuplicates(vector<int>& nums) {
         if (nums.empty()) return 0; // 别忘记空数组的判断
 
-        int index;
+        int k;
         for (int i = 0; i != nums.size(); ++i) {
-            if (nums[index] != nums[i])
-                nums[++index] = nums[i];
+            if (nums[k] != nums[i])
+                nums[++k] = nums[i];
         }
-        return index + 1; // 别忘了index 是从0开始的，所以返回 index + 1
+        return k + 1; // 别忘了k 是从0开始的，所以返回 k + 1
     }
 };
