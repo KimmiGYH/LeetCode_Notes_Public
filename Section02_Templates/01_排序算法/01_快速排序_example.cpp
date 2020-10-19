@@ -28,7 +28,6 @@ void quick_sort(int q[], int l, int r)
 
 int main()
 {
-    // int l, r;
     scanf("%d", &n);
     for (int i = 0; i < n; i++) scanf("%d", &q[i]);
     
@@ -40,12 +39,16 @@ int main()
 }
 /* Output:
 Ex1:
+Input:
 6
 3 2 1 5 6 4
-1 2 3 4 5 6 
+
+Output: 1 2 3 4 5 6 
 
 Ex2:
+Input:
 10
 49 59 88 37 98 97 68 54 31 3
-3 31 37 49 54 59 68 88 97 98 
+
+Output: 3 31 37 49 54 59 68 88 97 98 
 */
