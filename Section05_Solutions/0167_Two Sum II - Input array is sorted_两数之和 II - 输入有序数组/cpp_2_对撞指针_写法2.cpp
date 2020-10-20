@@ -1,10 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <cassert>
 using namespace std;
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
+
+        assert(numbers.size() >= 2);
         int l = 0, r = numbers.size() - 1;
 
         while (l < r) {
