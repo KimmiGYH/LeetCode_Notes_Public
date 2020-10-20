@@ -1,5 +1,11 @@
+#include <iostream>
 #include <algorithm>
 using namespace std;
+
+const int N = 1e6 + 10;
+
+int n;
+int q[N];
 
 void quick_sort(int q[], int l, int r)
 {
@@ -19,3 +25,30 @@ void quick_sort(int q[], int l, int r)
     quick_sort(q, l, j);
     quick_sort(q, j + 1, r);
 }
+
+int main()
+{
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) scanf("%d", &q[i]);
+    
+    quick_sort(q, 0, n-1);
+
+    for (int i = 0; i < n; i++) printf("%d ", q[i]);
+
+    return 0;
+}
+/* Output:
+Ex1:
+Input:
+6
+3 2 1 5 6 4
+
+Output: 1 2 3 4 5 6 
+
+Ex2:
+Input:
+10
+49 59 88 37 98 97 68 54 31 3
+
+Output: 3 31 37 49 54 59 68 88 97 98 
+*/
