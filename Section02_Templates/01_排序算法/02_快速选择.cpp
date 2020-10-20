@@ -1,3 +1,4 @@
+// 时间复杂度: 2n
 #include <iostream>
 
 using namespace std;

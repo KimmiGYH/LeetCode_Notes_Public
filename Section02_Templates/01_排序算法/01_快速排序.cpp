@@ -1,3 +1,4 @@
+// 时间复杂度: nlogn
 #include <iostream>
 #include <algorithm>
 using namespace std;
