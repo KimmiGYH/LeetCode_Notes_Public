@@ -26,6 +26,7 @@ int quick_sort(int l, int r, int k)
 
 }
 
+
 int main()
 {
     cin >> n >> k;

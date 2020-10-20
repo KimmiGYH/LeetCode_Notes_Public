@@ -5,7 +5,6 @@ using namespace std;
 
 class Solution {
 public:
-
     int quick_sort(vector<int>& nums, int l, int r, int p) {
 
         if (l == r) return nums[p];
