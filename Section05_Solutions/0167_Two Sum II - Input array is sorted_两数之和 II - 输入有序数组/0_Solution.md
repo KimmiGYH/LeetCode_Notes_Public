@@ -12,3 +12,7 @@ if (i < j && nummbers[i] + numbers[j] == target) return (i+1, j+1);
 
 // i < j 是为了使元素不被重复使用
 ```
+
+
+## 解法二：对撞指针
+感觉第二种写法没有第一种来得好。
