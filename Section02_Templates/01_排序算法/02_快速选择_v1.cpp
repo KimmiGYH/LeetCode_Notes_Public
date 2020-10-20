@@ -21,10 +21,8 @@ int quick_sort(int l, int r, int k)
     }
 
     int sl = j - l + 1;
-    if (k <= sl)
-        return quick_sort(l, j, k);
+    if (k <= sl) return quick_sort(l, j, k);
     return quick_sort(j + 1, r, k - sl);
-
 }
 
 int main()
@@ -41,8 +39,12 @@ int main()
 
 /*Output:
 Input:
-5 3
-2 4 1 5 35 3
+n=5 k=3
+2 4 1 5 3
 
-Output: 4
+Output: 3
+*/
+
+/* 相关例题：
+0215_Kth Largest Element in an Array_数组中的第K个最大元素
 */
