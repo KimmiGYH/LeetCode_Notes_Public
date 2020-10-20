@@ -39,14 +39,14 @@ int main()
     return 0;
 }
 /* Output:
-Ex1:
+Eg1:
 Input:
 6
 3 2 1 5 6 4
 
 Output: 1 2 3 4 5 6 
 
-Ex2:
+Eg2:
 Input:
 10
 49 59 88 37 98 97 68 54 31 3
