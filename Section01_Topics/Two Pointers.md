@@ -6,6 +6,7 @@
 | 80. 删除排序数组中的重复项 II   | 80. Remove Duplicates from Sorted Array II | Medium     | O(n) | O(1)  |
 | 167. 两数之和 II - 输入有序数组 | 167. Two Sum II - Input array is sorted    | Easy       | O(n) | O(1)  |
 | 1. 两数之和                     | 1. Two Sum                                 | Easy       | O(n) | O(n)  |
+| 125. 验证回文串                 | 125. Valid Palindrome                      | Easy       |      |       |
 | 344. 反转字符串                 | 344. Reverse String                        | Easy       |      | O(1)  |
 |                                 |                                            |            |      |       |
 |                                 |                                            |            |      |       |
