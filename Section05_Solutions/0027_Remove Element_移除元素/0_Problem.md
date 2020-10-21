@@ -50,8 +50,6 @@ for (int i = 0; i < len; i++) {
 
 
 
-
-
 # [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
 
 难度简单
