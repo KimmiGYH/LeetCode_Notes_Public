@@ -4,7 +4,7 @@
 `j`，不断加⼊右边的值，直到 `sum > s`，之后再缩⼩ `i` 的左边界，不断缩⼩直到 `sum < s`，这时候右边界
 ⼜可以往右移动。以此类推。
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0209_Minimum%20Size%20Subarray%20Sum_%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/solve.png)
 
 Huifeng Guang: https://youtu.be/Ucepzsd2A4w
 
