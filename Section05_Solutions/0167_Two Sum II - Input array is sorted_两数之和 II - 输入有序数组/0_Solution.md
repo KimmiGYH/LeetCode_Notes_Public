@@ -3,7 +3,7 @@
 ## 解法一：双指针 Two Pointers
 双指针算法
 
-```
+```cpp
 numbers[i] + numbers[j] = target; // numbers[j]一定是最大的那个数
 
 numbers[i] + numbers[j] > target  j--;    // j 指针从后往前走
