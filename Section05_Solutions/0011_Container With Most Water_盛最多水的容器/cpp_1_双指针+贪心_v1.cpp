@@ -9,9 +9,11 @@ public:
     int maxArea(vector<int>& height) {
         int res = 0;
         for (int i = 0, j = height.size() - 1; i < j;) {
-            res = max(res, min(height[i], height[j]) * (j - i));
-            if (height[i] > height[j]) j--; // 这步用反证法可以证明
-            else i++;
+            int h = min(height[i], height[j]);
+            res = max(res, h * (j - i));
+            // 舍弃短板
+            if (height[i] < height[j]) ++i;
+            else --j;
         }
         return res;
     }
