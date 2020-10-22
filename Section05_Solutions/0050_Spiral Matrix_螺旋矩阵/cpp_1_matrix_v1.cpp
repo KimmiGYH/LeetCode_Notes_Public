@@ -15,9 +15,9 @@ public:
         int m = matrix.size(), n = matrix[0].size(), d = 0, x = 0, y = 0;
         for (int k = 0; k < m * n; ++k) {
             res.push_back(matrix[x][y]);
-            matrix[x][y] = 0;
+            matrix[x][y] = false;
             int i = x + dx[d], j = y + dy[d];
-            if (i < 0 || i >= m || j < 0 || j >= n || matrix[i][j] == 0) {
+            if (i < 0 || i >= m || j < 0 || j >= n || matrix[i][j] == false) {
                 d = (d + 1) % 4;
                 i = x + dx[d], j = y + dy[d];
             }
