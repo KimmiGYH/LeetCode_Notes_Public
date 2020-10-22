@@ -4,7 +4,7 @@
 | 26. 删除排序数组中的重复项 | 26. Remove Duplicates from Sorted Array | Easy | O(n) | O(1) |      |
 | 1. 两数之和 | 1. Two Sum       | Easy  | O(n) | O(n)  |      |
 | 11. 盛最多水的容器 | 11. Container With Most Water | Medium | O(n) | O(1) |  |
-|                            |                                         |            |      |       |      |
+| 54. 螺旋矩阵 | 54. Spiral Matrix | Medium | O(m*n) | O(1) | 方向数组 |
 |                            |                                         |            |      |       |      |
 |                            |                                         |            |      |       |      |
 |                            |                                         |            |      |       |      |
