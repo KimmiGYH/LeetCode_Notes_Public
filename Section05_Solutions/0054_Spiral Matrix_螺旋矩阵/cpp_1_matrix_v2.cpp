@@ -18,12 +18,12 @@ public:
         for (int k = 0; k < m * n; ++k) {
             res.push_back(matrix[x][y]);
             check[x][y] = true;
-            int i = x + dx[d], j = y + dy[d];
-            if (i < 0 || i >= m || j < 0 || j >= n || check[i][j] == true) {
+            int a = x + dx[d], b = y + dy[d];
+            if (a < 0 || a >= m || b < 0 || b >= n || check[a][b] == true) {
                 d = (d + 1) % 4;
-                i = x + dx[d], j = y + dy[d];
+                a = x + dx[d], b = y + dy[d];
             }
-            x = i, y = j;
+            x = a, y = b;
         }
         return res;
     }
