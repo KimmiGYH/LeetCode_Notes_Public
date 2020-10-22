@@ -1,6 +1,8 @@
 # 0050_Spiral Matrix_螺旋矩阵
 
-改变方向direction的情况：
+**方向数组**那个写法能用的题还挺多的。
+**
+## 改变方向direction的情况：
 
 ```cpp
 if (i < 0 || i >= m || j < 0 || j >= n || matrix[i][j] == 0)
