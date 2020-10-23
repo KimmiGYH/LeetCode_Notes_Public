@@ -45,6 +45,7 @@
         "ctime": "cpp",
         "deque": "cpp",
         "queue": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "set": "cpp"
     }
 }
