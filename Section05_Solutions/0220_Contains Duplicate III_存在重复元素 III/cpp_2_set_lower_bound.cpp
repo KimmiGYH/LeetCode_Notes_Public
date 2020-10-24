@@ -13,6 +13,7 @@ public:
         for (int i = 0; i < nums.size(); i++) {
             // if (record.find(nums[i]) != record.end())
             //     return true;
+            
             if (record.lower_bound((LL)nums[i] - (LL)t) != record.end() && 
                 *record.lower_bound((LL)nums[i] - (LL)t) <= (LL)nums[i] + (LL)t)
                 return true;
