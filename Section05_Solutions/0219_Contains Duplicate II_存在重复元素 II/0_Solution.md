@@ -2,6 +2,10 @@
 
 
 
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0219_Contains%20Duplicate%20II_%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0%20II/solve.png)
+
+
+
 ## 解法一：维护`map`中只有`k`个元素
 
 这道题可以维护⼀个只有 `K` 个元素的 `map`，每次只需要判断这个 `map` ⾥⾯是否存在这个元素即可。
