@@ -5,7 +5,6 @@
 | 120. 三角形最小路径和 | 120. Triangle        | Medium     | O(n^2) | O(n)  |      |
 | 64. 最小路径和        | 64. Minimum Path Sum | Medium     | O(mn)  |       |      |
 | 343. 整数拆分         | 343. Integer Break   | Medium     | O(n)   | O(n)  |      |
-| ...                   |                      |            |        |       |      |
 |                       |                      |            |        |       |      |
 |                       |                      |            |        |       |      |
 |                       |                      |            |        |       |      |
