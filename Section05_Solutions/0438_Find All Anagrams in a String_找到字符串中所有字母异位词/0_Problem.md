@@ -5,7 +5,7 @@ Strings consists of lowercase English letters only and the length of both string
 
 The order of output does not matter.
 
-**Example 1:**
+Example 1:
 
 ```
 Input:
