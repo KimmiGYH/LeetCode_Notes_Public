@@ -46,6 +46,8 @@
         "deque": "cpp",
         "queue": "cpp",
         "string": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "map": "cpp",
+        "unordered_set": "cpp"
     }
 }
