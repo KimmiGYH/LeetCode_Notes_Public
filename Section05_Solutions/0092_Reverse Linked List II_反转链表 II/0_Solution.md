@@ -1,6 +1,6 @@
 # 92. Reverse Linked List II_反转链表 II (Medium)
 
-
+​	
 
 (模拟) O(n)
 
@@ -16,5 +16,5 @@
 
 时间复杂度分析：整个链表只遍历了一遍，所以时间复杂度是 `O(n)`。
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0092_Reverse%20Linked%20List%20II_%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%20II/solve.png)
 
