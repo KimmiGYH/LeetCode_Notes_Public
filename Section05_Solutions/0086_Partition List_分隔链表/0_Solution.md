@@ -11,3 +11,5 @@
 
 
 时间复杂度分析：原链表只遍历一次，所以时间复杂度是 $O(n)$。
+
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0086_Partition%20List_%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/solve.png)
