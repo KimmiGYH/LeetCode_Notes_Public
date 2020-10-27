@@ -75,4 +75,5 @@
 0206_Reverse Linked List_反转链表
 0092_Reverse Linked List II_反转链表 II
 0083_Remove Duplicates from Sorted List_删除排序链表中的重复元素
-0086_M_Partition List_分隔链表
+0086_Partition List_分隔链表
+0328_Odd Even Linked List_奇偶链表
