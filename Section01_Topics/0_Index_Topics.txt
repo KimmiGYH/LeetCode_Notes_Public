@@ -1,0 +1,78 @@
+【数组、链表双指针】：
+283. Move Zeroes_移动零
+27. Remove Element_移除元素
+26. Remove Duplicates from Sorted Array_删除排序数组中的重复项
+80. Remove Duplicates from Sorted Array II_删除排序数组中的重复项 II
+11. Container With Most Water_盛最多水的容器
+86. Partition List_分隔链表
+
+【字符串】：
+167. Two Sum II - Input array is sorted_两数之和 II - 输入有序数组
+125. Valid Palindrome_验证回文串
+344. Reverse String_反转字符串
+345. Reverse Vowels of a String_反转字符串中的元音字母
+
+【双指针+滑动窗口】
+209. Minimum Size Subarray Sum_长度最小的子数组
+3. Longest Substring Without Repeating Characters_无重复字符的最长子串
+438. Find All Anagrams in a String_找到字符串中所有字母异位词
+76. Minimum Window Substring_最小覆盖子串
+219. Contains Duplicate II_存在重复元素 II
+220. Contains Duplicate III_存在重复元素 III
+
+【哈希表 Hash Table】
+3. Longest Substring Without Repeating Characters_无重复字符的最长子串
+438. Find All Anagrams in a String_找到字符串中所有字母异位词
+217. Contains Duplicate_存在重复元素
+219. Contains Duplicate II_存在重复元素 II
+220. Contains Duplicate III_存在重复元素 III
+
+【方向数组】
+50. Spiral Matrix_螺旋矩阵
+59. Spiral Matrix II_螺旋矩阵 II
+
+【排序】：
+75. 三路快排
+88. Merge Sorted Array（归并排序算法）
+215. Kth Largest Element in an Array（快速选择算法）
+
+【Set、Map】
+349. Intersection of Two Arrays_两个数组的交集
+350. Intersection of Two Arrays II_两个数组的交集 II
+
+【贪心】
+11. Container With Most Water_盛最多水的容器
+
+【链表】
+206. Reverse Linked List_反转链表
+92. Reverse Linked List II_反转链表 II
+83. Remove Duplicates from Sorted List_删除排序链表中的重复元素
+86. Partition List_分隔链表 (Medium)
+
+============================================
+待录制的视频：
+26. Remove Duplicates from Sorted Array 删除排序数组中的重复项
+80. Remove Duplicates from Sorted Array II_删除排序数组中的重复项 II
+75. Sort Colors_颜色分类
+88. Merge Sorted Array_合并两个有序数组
+215. Kth Largest Element in an Array_数组中的第K个最大元素
+0167_Two Sum II - Input array is sorted_两数之和 II - 输入有序数组
+0125_Valid Palindrome_验证回文串
+0344_Reverse String_反转字符串
+0345_Reverse Vowels of a String_反转字符串中的元音字母
+0011_Container With Most Water_盛最多水的容器
+0209_Minimum Size Subarray Sum_长度最小的子数组
+0003_Longest Substring Without Repeating Characters_无重复字符的最长子串
+0438_Find All Anagrams in a String_找到字符串中所有字母异位词
+0076_Minimum Window Substring_最小覆盖子串(hard)
+0050_Spiral Matrix_螺旋矩阵
+0059_Spiral Matrix II_螺旋矩阵 II
+0349_Intersection of Two Arrays_两个数组的交集
+0350_Intersection of Two Arrays II_两个数组的交集 II
+0217_Contains Duplicate_存在重复元素
+0219_Contains Duplicate II_存在重复元素 II
+0220_Contains Duplicate III_存在重复元素 III
+0206_Reverse Linked List_反转链表
+0092_Reverse Linked List II_反转链表 II
+0083_Remove Duplicates from Sorted List_删除排序链表中的重复元素
+0086_M_Partition List_分隔链表
