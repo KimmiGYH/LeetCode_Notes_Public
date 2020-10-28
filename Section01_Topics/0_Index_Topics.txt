@@ -49,7 +49,7 @@
 83. Remove Duplicates from Sorted List_删除排序链表中的重复元素
 86. Partition List_分隔链表 (Medium)
 328. Odd Even Linked List_奇偶链表 (Medium)
-
+2. Add Two Numbers_两数相加
 ============================================
 待录制的视频：
 26. Remove Duplicates from Sorted Array 删除排序数组中的重复项
@@ -78,3 +78,5 @@
 0083_Remove Duplicates from Sorted List_删除排序链表中的重复元素
 0086_Partition List_分隔链表
 0328_Odd Even Linked List_奇偶链表
+0002_Add Two Numbers_两数相加
+445
