@@ -50,6 +50,8 @@
 86. Partition List_分隔链表 (Medium)
 328. Odd Even Linked List_奇偶链表 (Medium)
 2. Add Two Numbers_两数相加
+445. Add Two Numbers II_两数相加 II
+
 ============================================
 待录制的视频：
 26. Remove Duplicates from Sorted Array 删除排序数组中的重复项
@@ -79,4 +81,4 @@
 0086_Partition List_分隔链表
 0328_Odd Even Linked List_奇偶链表
 0002_Add Two Numbers_两数相加
-445
+0445_Add Two Numbers II_两数相加 II
