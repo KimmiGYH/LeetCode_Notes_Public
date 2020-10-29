@@ -19,7 +19,6 @@ public:
             auto q = p->next;
             while (q && q->val == val)  q = q->next;
             p->next = q;
-            delete q;
         }
         auto retNode = dummy->next;
         delete dummy;
