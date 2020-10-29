@@ -52,6 +52,7 @@
 2. Add Two Numbers_两数相加
 445. Add Two Numbers II_两数相加 II
 203. Remove Linked List Elements_移除链表元素
+82. Remove Duplicates from Sorted List II_删除排序链表中的重复元素 II
 
 ============================================
 待录制的视频：
@@ -84,3 +85,4 @@
 0002_Add Two Numbers_两数相加
 0445_Add Two Numbers II_两数相加 II
 0203_Remove Linked List Elements_移除链表元素
+0082_Remove Duplicates from Sorted List II_删除排序链表中的重复元素 II
