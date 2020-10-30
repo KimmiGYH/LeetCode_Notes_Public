@@ -1,10 +1,8 @@
 /*
-
 思路：将原链表的所有节点遍历一次，将每一个节点插入到新的链表的对应位置中。
-
 新链表的头结点为dummy
-
 */
+
 // Definition for singly-linked list.
 struct ListNode {
     int val;
@@ -19,10 +17,10 @@ public:
     ListNode* insertionSortList(ListNode* head) {
 
         ListNode *dummy = new ListNode(0); 
-        ListNode *cur=  head; //当前遍历的点从head开始
+        ListNode *cur = head; //当前遍历的点从head开始
         ListNode *pre = dummy;//pre指的是已经遍历过的部分，也就是已经从原链表截取下来拼接到新的虚拟头结点的部分。大概是这个意思，继续往下看。
         ListNode *next = nullptr; //预存cur的next指针,防止被覆盖了以后找不到了。
-
+        
         while(cur != nullptr)
         {
             while(pre->next && pre->next->val <= cur->val) pre = pre->next;

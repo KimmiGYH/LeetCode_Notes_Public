@@ -21,7 +21,7 @@ public:
             ListNode *p = dummy;
             while (p->next && p->next->val <= head->val) p = p->next;
 
-            // 将head插到 p 和 p->next 之间
+            // 将 head 插到 p 和 p->next 之间
             head->next = p->next;
             p->next = head;
 
