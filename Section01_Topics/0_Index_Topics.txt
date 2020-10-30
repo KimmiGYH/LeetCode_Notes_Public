@@ -55,6 +55,8 @@
 82. Remove Duplicates from Sorted List II_删除排序链表中的重复元素 II
 24. Swap Nodes in Pairs_两两交换链表中的节点
 25. Reverse Nodes in k-Group_K 个一组翻转链表(Hard)
+147. Insertion Sort List_对链表进行插入排序
+
 
 ============================================
 待录制的视频：
@@ -90,6 +92,6 @@
 0082_Remove Duplicates from Sorted List II_删除排序链表中的重复元素 II
 0024_Swap Nodes in Pairs_两两交换链表中的节点
 0025_Reverse Nodes in k-Group_K 个一组翻转链表
-147
+0147_Insertion Sort List_对链表进行插入排序
 148
 237
