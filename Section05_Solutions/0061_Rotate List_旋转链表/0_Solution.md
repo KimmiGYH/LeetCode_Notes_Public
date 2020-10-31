@@ -16,7 +16,7 @@
 
 
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0061_Rotate%20List_%E6%97%8B%E8%BD%AC%E9%93%BE%E8%A1%A8/solve.png)
 
 
 
