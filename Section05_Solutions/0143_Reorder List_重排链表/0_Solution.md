@@ -4,7 +4,7 @@
 
 找到原链表的中点，记得最后还要分奇偶来给尾节点的`next`节点赋为`nullptr`。
 
-
+![solve1](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0143_Reorder%20List_%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/solve1.png)
 
 ## 解法二：使用快慢指针来找链表中点 + 反转链表 + 合并链表
 

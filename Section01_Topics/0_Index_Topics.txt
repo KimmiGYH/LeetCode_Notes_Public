@@ -62,7 +62,7 @@
 148. Sort List_排序链表（归并排序 + 链表）（不会）
 19. Remove Nth Node From End of List 删除链表的倒数第N个节点
 61. Rotate List_旋转链表
-143. Reorder List_重排链表
+143. Reorder List_重排链表（找中点+反转+合并）
 ============================================
 待录制的视频：
 26. Remove Duplicates from Sorted Array 删除排序数组中的重复项
