@@ -1,3 +1,6 @@
+#include <iostream>
+#include <cassert>
+using namespace std;
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -21,22 +24,29 @@ struct ListNode {
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        // q 快指针， p 慢指针
-        auto dummy = new ListNode(-1);
-        dummy->next = head;
-        ListNode *p = dummy, *q = dummy;
+        assert(n >= 0);
 
-        for (int i = 0; i < n; i++) // q 先走 n 步
+        ListNode *dummy = new ListNode(0);
+        dummy->next = head;
+
+        ListNode *p = dummy, *q = dummy;
+        for (int i = 0; i < n + 1; i++) {
+            assert(q); // q 不为空
             q = q->next;
-        
-        while (q->next) { // 一起走
+        }
+
+        while (q) {
             p = p->next;
             q = q->next;
         }
 
-        ListNode *tmp = p->next;
+        ListNode *delNode = p->next;
         p->next = p->next->next;
-        delete tmp;
-        return dummy->next;
+        delete delNode;
+
+        ListNode *retNode = dummy->next;
+        delete dummy;
+
+        return retNode;
     }
 };
