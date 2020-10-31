@@ -18,6 +18,7 @@ public:
 
         auto p = dummy;
         // 找到倒数第(n+1)个点，是正数第(size-n)个点
+        // 算个数时不包括虚拟头节点。
         for (int i = 0; i < size - n - 1; i++)  p = p->next;
         p->next = p->next->next;
 

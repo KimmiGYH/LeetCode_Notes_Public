@@ -60,8 +60,8 @@
 25. Reverse Nodes in k-Group_K 个一组翻转链表(Hard)
 147. Insertion Sort List_对链表进行插入排序
 148. Sort List_排序链表（归并排序 + 链表）（不会）
-0019_Remove Nth Node From End of List 删除链表的倒数第N个节点
-
+19. Remove Nth Node From End of List 删除链表的倒数第N个节点
+61. Rotate List_旋转链表
 ============================================
 待录制的视频：
 26. Remove Duplicates from Sorted Array 删除排序数组中的重复项
@@ -100,6 +100,6 @@
 0148_Sort List_排序链表
 0237_Delete Node in a Linked List_删除链表中的节点
 0019_Remove Nth Node From End of List 删除链表的倒数第N个节点
-0061
+0061_Rotate List_旋转链表
 0143
 0234
