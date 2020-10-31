@@ -5,6 +5,7 @@
 80. Remove Duplicates from Sorted Array II_删除排序数组中的重复项 II
 11. Container With Most Water_盛最多水的容器
 86. Partition List_分隔链表
+0019_Remove Nth Node From End of List 删除链表的倒数第N个节点（快慢指针）
 
 【字符串】：
 167. Two Sum II - Input array is sorted_两数之和 II - 输入有序数组
@@ -59,6 +60,7 @@
 25. Reverse Nodes in k-Group_K 个一组翻转链表(Hard)
 147. Insertion Sort List_对链表进行插入排序
 148. Sort List_排序链表（归并排序 + 链表）（不会）
+0019_Remove Nth Node From End of List 删除链表的倒数第N个节点
 
 ============================================
 待录制的视频：
@@ -97,3 +99,4 @@
 0147_Insertion Sort List_对链表进行插入排序
 0148_Sort List_排序链表
 0237_Delete Node in a Linked List_删除链表中的节点
+0019_Remove Nth Node From End of List 删除链表的倒数第N个节点
