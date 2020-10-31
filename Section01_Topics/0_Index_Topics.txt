@@ -63,6 +63,9 @@
 19. Remove Nth Node From End of List 删除链表的倒数第N个节点
 61. Rotate List_旋转链表
 143. Reorder List_重排链表（找中点+反转+合并）
+234. Palindrome Linked List_回文链表
+876. 找中点（未做）
+
 ============================================
 待录制的视频：
 26. Remove Duplicates from Sorted Array 删除排序数组中的重复项
@@ -103,4 +106,4 @@
 0019_Remove Nth Node From End of List 删除链表的倒数第N个节点
 0061_Rotate List_旋转链表
 0143_Reorder List_重排链表
-0234
+0234_Palindrome Linked List_回文链表
