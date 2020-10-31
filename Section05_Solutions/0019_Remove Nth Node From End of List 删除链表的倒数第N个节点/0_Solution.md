@@ -28,6 +28,8 @@
 
 ## 解法二：双指针（快慢指针）
 
+[力扣视频题解](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/)
+
 ![solve2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0019_Remove%20Nth%20Node%20From%20End%20of%20List%20%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9/solve_2.png)
 
 - 关键字：倒数第 `n` 个
