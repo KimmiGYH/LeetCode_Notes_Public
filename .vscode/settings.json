@@ -49,6 +49,7 @@
         "set": "cpp",
         "map": "cpp",
         "unordered_set": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "stack": "cpp"
     }
 }
