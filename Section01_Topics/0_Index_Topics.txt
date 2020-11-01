@@ -5,7 +5,7 @@
 80. Remove Duplicates from Sorted Array II_删除排序数组中的重复项 II
 11. Container With Most Water_盛最多水的容器
 86. Partition List_分隔链表
-0019_Remove Nth Node From End of List 删除链表的倒数第N个节点（快慢指针）
+19. Remove Nth Node From End of List 删除链表的倒数第N个节点（快慢指针）
 
 【字符串】：
 167. Two Sum II - Input array is sorted_两数之和 II - 输入有序数组
@@ -69,10 +69,10 @@
 【栈 Stack】
 20. Valid Parentheses_有效的括号
 150. Evaluate Reverse Polish Notation_逆波兰表达式求值
-71. Simplify Path_简化路径（不会，等学了string再回来做）
+71. Simplify Path_简化路径
 
 【字符串 String】
-71. Simplify Path_简化路径（不会，等学了string再回来做）
+71. Simplify Path_简化路径
 
 ============================================
 待录制的视频：
