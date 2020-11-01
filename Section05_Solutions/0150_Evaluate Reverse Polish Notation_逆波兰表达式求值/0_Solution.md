@@ -1,4 +1,4 @@
-# 150. Evaluate Reverse Polish Notation_逆波兰表达式求值
+# 150. Evaluate Reverse Polish Notation_逆波兰表达式求值 (Medium)
 
 (栈操作) $O(n)$
 
