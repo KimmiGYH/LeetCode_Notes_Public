@@ -66,10 +66,13 @@
 234. Palindrome Linked List_回文链表（找中点+反转）
 876. 找中点（未做）
 
-【栈】
+【栈 Stack】
 20. Valid Parentheses_有效的括号
 150. Evaluate Reverse Polish Notation_逆波兰表达式求值
-71. Simplify Path_简化路径
+71. Simplify Path_简化路径（不会，等学了string再回来做）
+
+【字符串 String】
+71. Simplify Path_简化路径（不会，等学了string再回来做）
 
 ============================================
 待录制的视频：
