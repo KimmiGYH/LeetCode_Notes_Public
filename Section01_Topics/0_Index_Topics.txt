@@ -68,6 +68,8 @@
 
 【栈】
 20. Valid Parentheses_有效的括号
+150. Evaluate Reverse Polish Notation_逆波兰表达式求值
+71. Simplify Path_简化路径
 
 ============================================
 待录制的视频：
@@ -111,3 +113,4 @@
 0143_Reorder List_重排链表
 0234_Palindrome Linked List_回文链表
 0020_Valid Parentheses_有效的括号
+0150_Evaluate Reverse Polish Notation_逆波兰表达式求值
