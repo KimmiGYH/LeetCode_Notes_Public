@@ -11,7 +11,7 @@ public:
             if (s[i] == '(' || s[i] == '{' || s[i] == '[')
                 stack.push(s[i]);
             else {
-                if (stack.size() == 0) return false;
+                if (stack.empty()) return false;
 
                 char c = stack.top();
                 stack.pop();
@@ -20,7 +20,7 @@ public:
                 if (s[i] == ')')  match = '(';
                 else if (s[i] == ']')  match = '[';
                 else { // s[i] == '}'
-                    assert(s[i] == '}');
+                    assert(s[i] == '}'); // 排除其他字符
                     match = '{';
                 }
                 
