@@ -66,13 +66,19 @@
 234. Palindrome Linked List_回文链表（找中点+反转）
 876. 找中点（未做）
 
+【字符串 String】
+71. Simplify Path_简化路径
+
 【栈 Stack】
 20. Valid Parentheses_有效的括号
 150. Evaluate Reverse Polish Notation_逆波兰表达式求值
 71. Simplify Path_简化路径
 
-【字符串 String】
-71. Simplify Path_简化路径
+【二叉树 Tree】
+144. Binary Tree Preorder Traversal_二叉树的前序遍历
+94. Binary Tree Inorder Traversal_二叉树的中序遍历
+145. Binary Tree Postorder Traversal_二叉树的后序遍历
+
 
 ============================================
 待录制的视频：
@@ -117,3 +123,5 @@
 0234_Palindrome Linked List_回文链表
 0020_Valid Parentheses_有效的括号
 0150_Evaluate Reverse Polish Notation_逆波兰表达式求值
+0071_Simplify Path_简化路径
+0144_Binary Tree Preorder Traversal_二叉树的前序遍历
