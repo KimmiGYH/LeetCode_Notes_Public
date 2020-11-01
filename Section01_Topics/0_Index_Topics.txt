@@ -106,7 +106,7 @@
 0147_Insertion Sort List_对链表进行插入排序
 0148_Sort List_排序链表
 0237_Delete Node in a Linked List_删除链表中的节点
-0019_Remove Nth Node From End of List 删除链表的倒数第N个节点
+0019_Remove Nth Node From End of List_删除链表的倒数第N个节点
 0061_Rotate List_旋转链表
 0143_Reorder List_重排链表
 0234_Palindrome Linked List_回文链表
