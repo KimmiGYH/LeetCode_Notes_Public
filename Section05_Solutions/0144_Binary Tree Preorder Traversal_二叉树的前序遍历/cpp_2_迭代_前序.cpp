@@ -17,6 +17,7 @@ public:
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> res;
         stack<TreeNode*> stk;
+        
         while(root || stk.size()) {
             while (root) {
                 res.push_back(root->val); // 先根遍历，将根加到栈里
