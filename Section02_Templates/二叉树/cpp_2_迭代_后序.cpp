@@ -1,4 +1,4 @@
-// LeetCode 94
+// LeetCode 145
 #include <vector>
 #include <stack>
 using namespace std;
@@ -15,21 +15,21 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> postorderTraversal(TreeNode* root) {
         vector<int> res;
         stack<TreeNode*> stk;
 
         while (root || stk.size()) {
             while (root) {
+                res.push_back(root->val);
                 stk.push(root);
-                root = root->left;
+                root = root->right;
             }
-            
-            root = stk.top();
+
+            root = stk.top()->left;
             stk.pop();
-            res.push_back(root->val);
-            root = root->right;
         }
+        reverse(res.begin(), res.end());
         return res;
     }
 };
