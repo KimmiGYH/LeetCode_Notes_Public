@@ -70,12 +70,6 @@
 
 
 
-【二叉树 Tree】
-144. Binary Tree Preorder Traversal_二叉树的前序遍历
-94. Binary Tree Inorder Traversal_二叉树的中序遍历
-145. Binary Tree Postorder Traversal_二叉树的后序遍历
-173. Binary Search Tree Iterator_二叉搜索树迭代器(中序)
-102. Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
 
 【栈 Stack】
 20. Valid Parentheses_有效的括号
@@ -89,6 +83,16 @@
 
 【队列 queue】
 102. Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
+
+
+
+【二叉树 Tree】
+144. Binary Tree Preorder Traversal_二叉树的前序遍历
+94. Binary Tree Inorder Traversal_二叉树的中序遍历
+145. Binary Tree Postorder Traversal_二叉树的后序遍历
+173. Binary Search Tree Iterator_二叉搜索树迭代器(中序)
+102. Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
+
 
 ============================================
 待录制的视频：
@@ -139,4 +143,7 @@
 0145_Binary Tree Postorder Traversal_二叉树的后序遍历
 0173_Binary Search Tree Iterator_二叉搜索树迭代器(中序)
 0341_Flatten Nested List Iterator_扁平化嵌套列表迭代器
-102. Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
+0102_Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
+107
+103
+199
