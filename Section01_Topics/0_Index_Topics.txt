@@ -96,6 +96,19 @@
 103. Binary Tree Zigzag Level Order Traversal_二叉树的锯齿形层次遍历
 199. Binary Tree Right Side View_二叉树的右视图
 
+【广度优先搜索 BFS】
+279. Perfect Squares_完全平方数
+
+
+
+【动态规划】
+279. Perfect Squares_完全平方数
+
+
+【数学 Math】
+343. Integer Break_整数拆分
+279. Perfect Squares_完全平方数
+
 ============================================
 待录制的视频：
 26. Remove Duplicates from Sorted Array 删除排序数组中的重复项
@@ -149,3 +162,4 @@
 0107_Binary Tree Level Order Traversal II_二叉树的层次遍历 II
 0103_Binary Tree Zigzag Level Order Traversal_二叉树的锯齿形层次遍历
 0199_Binary Tree Right Side View_二叉树的右视图
+0279_Perfect Squares_完全平方数
