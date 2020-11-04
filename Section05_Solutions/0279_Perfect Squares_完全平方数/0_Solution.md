@@ -35,7 +35,7 @@ $$
 
 
 
-![solve]()
+![solve_1](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0279_Perfect%20Squares_%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/solve_1.png)
 
 
 
@@ -62,8 +62,13 @@ $$
 
 
 
+![solve_2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0279_Perfect%20Squares_%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/solve_2.png)
+
+
+
 ## 解法三：数学 Math
 
+[参考文档](https://www.acwing.com/solution/content/300/)
 $$
 (数学): O(\sqrt n +log n)
 $$
@@ -75,7 +80,6 @@ $$
    当且仅当 \ n  \ != 4^a (8b + 7) 时，n = x^2 + y ^2 + z^2
    $$
    
-
 3. 然后可以根据以上定理和枚举，判断出答案是否为 `1, 2, 3`，若都不是则答案为 `4`。
 
 
