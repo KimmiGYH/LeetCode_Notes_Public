@@ -36,5 +36,5 @@
 
 用哈希表统计每个数出现次数的计算量是 `O(n)`，计数排序的计算量是 `O(n)`，最终用下界过滤结果的计算量也是 `O(n)`，所以总时间复杂度是 `O(n)`。
 
-
+![solve_3](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0347_Top%20K%20Frequent%20Elements_%E5%89%8D%20K%20%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0/solve_3.png)
 
