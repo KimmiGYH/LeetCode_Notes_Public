@@ -107,6 +107,7 @@
 ## 【优先队列 priority_queue】
 
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
+347. Top K Frequent Elements_前 K 个高频元素
 
 ## 【动态规划】
 
@@ -209,3 +210,4 @@
 
 0301_Remove Invalid Parentheses_删除无效的括号 (Hard)
 0297_Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
+0347_Top K Frequent Elements_前 K 个高频元素
