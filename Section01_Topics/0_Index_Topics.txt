@@ -101,6 +101,7 @@
 127. Word Ladder_单词接龙
 126. Word Ladder II_单词接龙 II (Hard)
 301. Remove Invalid Parentheses_删除无效的括号 (Hard)
+297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 
 【动态规划】
 279. Perfect Squares_完全平方数
@@ -109,6 +110,11 @@
 【数学 Math】
 343. Integer Break_整数拆分
 279. Perfect Squares_完全平方数
+
+
+【设计 Design】
+173. Binary Search Tree Iterator_二叉搜索树迭代器(中序)
+297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 
 ============================================
 待录制的视频：
@@ -164,4 +170,6 @@
 0103_Binary Tree Zigzag Level Order Traversal_二叉树的锯齿形层次遍历
 0199_Binary Tree Right Side View_二叉树的右视图
 0279_Perfect Squares_完全平方数
+
 0301_Remove Invalid Parentheses_删除无效的括号 (Hard)
+0297_Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
