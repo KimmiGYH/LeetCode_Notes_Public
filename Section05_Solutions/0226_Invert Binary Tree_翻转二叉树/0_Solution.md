@@ -11,3 +11,5 @@
 ##### 时间复杂度分析
 
 每个节点仅被遍历一次，所以时间复杂度是 O(n)O(n)。
+
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0226_Invert%20Binary%20Tree_%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/solve.png)
