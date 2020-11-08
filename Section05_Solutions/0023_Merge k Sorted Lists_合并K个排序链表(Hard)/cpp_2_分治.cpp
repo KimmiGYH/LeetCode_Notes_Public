@@ -18,9 +18,9 @@ public:
 
 private:
     ListNode* merge(vector<ListNode*>& lists, int l, int r) {
-        if (l > r)  return nullptr;
-        if (l == r)  return lists[l];
-        if (l + 1 == r)  return mergeTwoLists(lists[l], lists[r]);
+        if (l > r)  return nullptr; // 空
+        if (l == r)  return lists[l]; // 1个
+        if (l + 1 == r)  return mergeTwoLists(lists[l], lists[r]); // 2个
         int m = l + (r - l) / 2;
         auto l1 = merge(lists, l, m);
         auto l2 = merge(lists, m + 1, r);
