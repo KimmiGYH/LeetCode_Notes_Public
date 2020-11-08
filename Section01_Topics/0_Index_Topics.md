@@ -143,7 +143,7 @@
 ## 【递归与二叉树 Recursion+Tree】
 
 104. Maximum Depth of Binary Tree_二叉树的最大深度
-
+111. Minimum Depth of Binary Tree_二叉树的最小深度
 
 ## 【数学 Math】
 
@@ -218,3 +218,4 @@
 0297_Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 0347_Top K Frequent Elements_前 K 个高频元素
 0104_Maximum Depth of Binary Tree_二叉树的最大深度
+0111_Minimum Depth of Binary Tree_二叉树的最小深度
