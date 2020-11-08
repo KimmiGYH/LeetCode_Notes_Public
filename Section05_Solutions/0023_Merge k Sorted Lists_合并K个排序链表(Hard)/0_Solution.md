@@ -24,5 +24,5 @@
 
 分治，先将 `K` 个链表分成两个部分，先合并两个部分，再合并这两个部分返回的链表。
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0023_Merge%20k%20Sorted%20Lists_%E5%90%88%E5%B9%B6K%E4%B8%AA%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8(Hard)/solve.png)
 
