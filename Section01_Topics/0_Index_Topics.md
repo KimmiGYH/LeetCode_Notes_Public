@@ -76,7 +76,6 @@
 24. Swap Nodes in Pairs_两两交换链表中的节点
 25. Reverse Nodes in k-Group_K 个一组翻转链表(Hard)
 147. Insertion Sort List_对链表进行插入排序
-
 21. Merge Two Sorted Lists_合并两个有序链表（归并排序 + 链表）
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
 148. Sort List_排序链表（归并排序 + 链表）（不会）
@@ -115,7 +114,7 @@
 279. Perfect Squares_完全平方数
 
 
-## 【二叉树 Tree】
+## 【二叉树的遍历 Tree】
 
 144. Binary Tree Preorder Traversal_二叉树的前序遍历
 94. Binary Tree Inorder Traversal_二叉树的中序遍历
@@ -126,6 +125,7 @@
 103. Binary Tree Zigzag Level Order Traversal_二叉树的锯齿形层次遍历
 199. Binary Tree Right Side View_二叉树的右视图
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
+
 
 ## 【广度优先搜索 BFS】
 
@@ -138,6 +138,11 @@
 
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 301. Remove Invalid Parentheses_删除无效的括号 (Hard)
+
+
+## 【递归与二叉树 Recursion+Tree】
+
+104. Maximum Depth of Binary Tree_二叉树的最大深度
 
 
 ## 【数学 Math】
@@ -212,3 +217,4 @@
 0301_Remove Invalid Parentheses_删除无效的括号 (Hard)
 0297_Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 0347_Top K Frequent Elements_前 K 个高频元素
+0104_Maximum Depth of Binary Tree_二叉树的最大深度
