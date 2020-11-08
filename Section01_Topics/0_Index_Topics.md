@@ -145,6 +145,11 @@
 104. Maximum Depth of Binary Tree_二叉树的最大深度
 111. Minimum Depth of Binary Tree_二叉树的最小深度
 226. Invert Binary Tree_翻转二叉树
+100. Same Tree_相同的树
+101
+222
+110
+
 
 ## 【数学 Math】
 
@@ -221,3 +226,4 @@
 0104_Maximum Depth of Binary Tree_二叉树的最大深度
 0111_Minimum Depth of Binary Tree_二叉树的最小深度
 0226_Invert Binary Tree_翻转二叉树
+0100_Same Tree_相同的树
