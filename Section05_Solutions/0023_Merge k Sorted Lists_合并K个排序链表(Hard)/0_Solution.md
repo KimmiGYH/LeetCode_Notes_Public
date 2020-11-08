@@ -18,11 +18,15 @@
 
 
 
+[山景城一姐：[LeetCode]23. Merge k Sorted Lists 中文](https://youtu.be/nGKv8oSs2Jc)
+
+
+
 ## 解法二：分治
 
 [花花酱 LeetCode 23. Merge k Sorted Lists - 刷题找工作 EP252](https://youtu.be/XqA8bBoEdIY)
 
 分治，先将 `K` 个链表分成两个部分，先合并两个部分，再合并这两个部分返回的链表。
 
-![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0023_Merge%20k%20Sorted%20Lists_%E5%90%88%E5%B9%B6K%E4%B8%AA%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8(Hard)/solve.png)
+![solve_2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0023_Merge%20k%20Sorted%20Lists_%E5%90%88%E5%B9%B6K%E4%B8%AA%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8(Hard)/solve_2.png)
 
