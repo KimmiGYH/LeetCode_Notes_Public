@@ -144,6 +144,7 @@
 
 104. Maximum Depth of Binary Tree_二叉树的最大深度
 111. Minimum Depth of Binary Tree_二叉树的最小深度
+226. Invert Binary Tree_翻转二叉树
 
 ## 【数学 Math】
 
@@ -219,3 +220,4 @@
 0347_Top K Frequent Elements_前 K 个高频元素
 0104_Maximum Depth of Binary Tree_二叉树的最大深度
 0111_Minimum Depth of Binary Tree_二叉树的最小深度
+0226_Invert Binary Tree_翻转二叉树
