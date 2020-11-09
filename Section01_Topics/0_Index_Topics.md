@@ -150,9 +150,10 @@
 222. Count Complete Tree Nodes_完全二叉树的节点个数
 110. Balanced Binary Tree_平衡二叉树
 
-## 【递归 Recursion】
+## 【递归 Recursion 终止条件】
 
 112. Path Sum_路径总和
+111. Minimum Depth of Binary Tree_二叉树的最小深度
 
 ## 【数学 Math】
 
