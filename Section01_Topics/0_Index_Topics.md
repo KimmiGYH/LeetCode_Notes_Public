@@ -156,6 +156,8 @@
 112. Path Sum_路径总和 
 111. Minimum Depth of Binary Tree_二叉树的最小深度
 404. Sum of Left Leaves_左叶子之和
+257. Binary Tree Paths_二叉树的所有路径
+
 
 ## 【数学 Math】
 
@@ -239,3 +241,4 @@
 
 0112_Path Sum_路径总和
 0404_Sum of Left Leaves_左叶子之和
+0257_Binary Tree Paths_二叉树的所有路径
