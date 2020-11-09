@@ -150,6 +150,9 @@
 222. Count Complete Tree Nodes_完全二叉树的节点个数
 110. Balanced Binary Tree_平衡二叉树
 
+## 【递归 Recursion】
+
+112. Path Sum_路径总和
 
 ## 【数学 Math】
 
@@ -230,3 +233,5 @@
 0101_Symmetric Tree_对称二叉树
 0222_Count Complete Tree Nodes_完全二叉树的节点个数
 0110_Balanced Binary Tree_平衡二叉树
+
+0112_Path Sum_路径总和
