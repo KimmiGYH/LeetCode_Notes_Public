@@ -9,3 +9,5 @@
 ##### 时间复杂度分析
 
 每个节点仅被遍历一次，且递归过程中维护 `sum` 的时间复杂度是 `O(1)`，所以总时间复杂度是 `O(n)`。
+
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0112_Path%20Sum_%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C/solve.png)
