@@ -10,3 +10,4 @@
 
 每个节点仅被遍历一遍，所以时间复杂度是 $O(n)$。
 
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0129_Sum%20Root%20to%20Leaf%20Numbers_%E6%B1%82%E6%A0%B9%E5%88%B0%E5%8F%B6%E5%AD%90%E8%8A%82%E7%82%B9%E6%95%B0%E5%AD%97%E4%B9%8B%E5%92%8C/solve.png)
