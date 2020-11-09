@@ -4,7 +4,7 @@
 
 这是一棵**完全二叉树**：除最后一层外，其余层全部铺满；且最后一层向左停靠。
 
-
+![examples](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0222_Count%20Complete%20Tree%20Nodes_%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0/%E4%BA%8C%E5%8F%89%E6%A0%91.png)
 
 - 如果根节点的左子树深度等于右子树深度，则说明**左子树为满二叉树**
 
