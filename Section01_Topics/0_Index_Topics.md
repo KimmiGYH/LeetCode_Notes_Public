@@ -152,8 +152,10 @@
 
 ## 【递归 Recursion 终止条件】
 
-112. Path Sum_路径总和
+（叶子节点）
+112. Path Sum_路径总和 
 111. Minimum Depth of Binary Tree_二叉树的最小深度
+404. Sum of Left Leaves_左叶子之和
 
 ## 【数学 Math】
 
@@ -236,3 +238,4 @@
 0110_Balanced Binary Tree_平衡二叉树
 
 0112_Path Sum_路径总和
+0404_Sum of Left Leaves_左叶子之和
