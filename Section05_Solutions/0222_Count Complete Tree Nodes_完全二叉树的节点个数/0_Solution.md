@@ -35,6 +35,16 @@
 
 这道题相当于二分查找最后一层最后一个节点的位置，每次查找的复杂度是`O(logn)`，一共需要查找`O(logn)`次，所以复杂度为 `O(logn∗logn)`。
 
+**示例一：**
+
+![solve_eg1](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0222_Count%20Complete%20Tree%20Nodes_%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0/solve_eg1.png)
+
+------
+
+**示例二：**
+
+![solve_eg2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0222_Count%20Complete%20Tree%20Nodes_%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0/solve_eg2.png)
+
 
 
 ## 解法二：二分查找
@@ -47,3 +57,4 @@
 
 然后进行二分查找
 
+![solve_二分查找](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0222_Count%20Complete%20Tree%20Nodes_%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0/solve_%E4%BA%8C%E5%88%86.png)
