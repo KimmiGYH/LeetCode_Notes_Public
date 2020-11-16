@@ -165,6 +165,8 @@
 ## 【递归 Recursion 二分搜索树】
 
 235. Lowest Common Ancestor of a Binary Search Tree_二叉搜索树的最近公共祖先
+98. Validate Binary Search Tree_验证二叉搜索树
+
 
 ## 【数学 Math】
 
@@ -252,3 +254,4 @@
 0129_Sum Root to Leaf Numbers_求根到叶子节点数字之和
 0437_Path Sum III_路径总和 III
 0235_Lowest Common Ancestor of a Binary Search Tree_二叉搜索树的最近公共祖先
+0098_Validate Binary Search Tree_验证二叉搜索树
