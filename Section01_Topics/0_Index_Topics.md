@@ -168,6 +168,7 @@
 98. Validate Binary Search Tree_验证二叉搜索树
 450. Delete Node in a BST_删除二叉搜索树中的节点
 108. Convert Sorted Array to Binary Search Tree_将有序数组转换为二叉搜索树
+230. Kth Smallest Element in a BST_二叉搜索树中第K小的元素
 
 ## 【数学 Math】
 
@@ -258,3 +259,4 @@
 0098_Validate Binary Search Tree_验证二叉搜索树
 0450_Delete Node in a BST_删除二叉搜索树中的节点
 0108_Convert Sorted Array to Binary Search Tree_将有序数组转换为二叉搜索树
+0230_Kth Smallest Element in a BST_二叉搜索树中第K小的元素
