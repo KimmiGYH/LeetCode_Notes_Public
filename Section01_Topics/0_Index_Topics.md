@@ -166,7 +166,7 @@
 
 235. Lowest Common Ancestor of a Binary Search Tree_二叉搜索树的最近公共祖先
 98. Validate Binary Search Tree_验证二叉搜索树
-
+450. Delete Node in a BST_删除二叉搜索树中的节点
 
 ## 【数学 Math】
 
@@ -255,3 +255,4 @@
 0437_Path Sum III_路径总和 III
 0235_Lowest Common Ancestor of a Binary Search Tree_二叉搜索树的最近公共祖先
 0098_Validate Binary Search Tree_验证二叉搜索树
+0450_Delete Node in a BST_删除二叉搜索树中的节点
