@@ -73,7 +73,7 @@
 - **空间复杂度** $O(N)$：最差情况下，递归深度达到 `N`，系统使用 `O(N)` 大小的额外空间。
 
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0236_Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/solve.png)
 
 
 
