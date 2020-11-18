@@ -1,5 +1,7 @@
 # [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 
+
+
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 
 According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/Lowest_common_ancestor): “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow **a node to be a descendant of itself**).”
@@ -83,4 +85,8 @@ Output: 1
 
 - 所有节点的值都是唯一的。
 - p、q 为不同节点且均存在于给定的二叉树中。
+
+
+
+
 
