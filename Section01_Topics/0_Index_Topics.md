@@ -178,6 +178,10 @@
 17. Letter Combinations of a Phone Number_电话号码的字母组合
 
 
+## 【贪心】
+
+1653. Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
+
 ## 【数学 Math】
 
 343. Integer Break_整数拆分
@@ -188,6 +192,9 @@
 
 173. Binary Search Tree Iterator_二叉搜索树迭代器(中序)
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
+
+
+
 
 ============================================
 待录制的视频：
@@ -271,3 +278,5 @@
 0230_Kth Smallest Element in a BST_二叉搜索树中第K小的元素
 0236_Lowest Common Ancestor of a Binary Tree_二叉树的最近公共祖先
 0017_Letter Combinations of a Phone Number_电话号码的字母组合
+
+1653_Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
