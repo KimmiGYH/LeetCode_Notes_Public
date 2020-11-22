@@ -186,6 +186,7 @@
 ## 【贪心】
 
 1653. Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
+1663. Smallest String With A Given Numeric Value_5606. 具有给定数值的最小字符串
 
 ## 【数学 Math】
 
@@ -285,5 +286,7 @@
 0017_Letter Combinations of a Phone Number_电话号码的字母组合
 
 1653_Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
+1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 0224_Basic Calculator_基本计算器(Hard)
 0227_Basic Calculator II_基本计算器 II
+
