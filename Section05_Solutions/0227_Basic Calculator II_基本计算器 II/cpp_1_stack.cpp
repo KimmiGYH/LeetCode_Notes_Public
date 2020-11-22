@@ -9,7 +9,7 @@ public:
     stack<int> num;
     stack<char> op;
 
-    void eval()
+    void cal()
     {
         int b = num.top(); num.pop();
         int a = num.top(); num.pop();
@@ -42,11 +42,11 @@ public:
             }
             else
             {
-                while (op.size() && priority[op.top()] >= priority[c]) eval();
+                while (op.size() && priority[op.top()] >= priority[c]) cal();
                 op.push(c);
             }
         }
-        while (op.size())  eval();
+        while (op.size())  cal();
         return num.top();
     }
 };
