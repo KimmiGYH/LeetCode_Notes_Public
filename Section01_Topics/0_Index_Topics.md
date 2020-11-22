@@ -186,12 +186,13 @@
 ## 【贪心】
 
 1653. Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
-1663. Smallest String With A Given Numeric Value_5606. 具有给定数值的最小字符串
+1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 
 ## 【数学 Math】
 
 343. Integer Break_整数拆分
 279. Perfect Squares_完全平方数
+1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 
 
 ## 【设计 Design】
