@@ -100,6 +100,11 @@
 173. Binary Search Tree Iterator_二叉搜索树迭代器(中序)
 341. Flatten Nested List Iterator_扁平化嵌套列表迭代器
 
+224. Basic Calculator_基本计算器(Hard)
+227. Basic Calculator II_基本计算器 II
+
+
+
 ## 【队列 queue】
 
 102. Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
@@ -280,3 +285,5 @@
 0017_Letter Combinations of a Phone Number_电话号码的字母组合
 
 1653_Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
+0224_Basic Calculator_基本计算器(Hard)
+0227_Basic Calculator II_基本计算器 II
