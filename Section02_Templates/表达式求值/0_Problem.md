@@ -29,3 +29,5 @@
 ```
 
 视频：[https://www.acwing.com/video/74/](https://www.acwing.com/video/74/)
+
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section02_Templates/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC/solve.png)
