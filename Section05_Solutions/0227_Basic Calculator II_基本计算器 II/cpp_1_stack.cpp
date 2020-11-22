@@ -6,20 +6,20 @@ using namespace std;
 
 class Solution {
 public:
-    stack<int> num;
-    stack<char> op;
+    stack<int> nums;
+    stack<char> ops;
 
     void cal()
     {
-        int b = num.top(); num.pop();
-        int a = num.top(); num.pop();
-        char c = op.top(); op.pop();
+        int b = nums.top(); nums.pop();
+        int a = nums.top(); nums.pop();
+        char c = ops.top(); ops.pop();
         int r;
         if (c == '+')  r = a + b;
         else if (c == '-')  r = a - b;
         else if (c == '*')  r = a * b;
         else r = a / b;
-        num.push(r);
+        nums.push(r);
     }
 
     
@@ -38,15 +38,15 @@ public:
                 while (j < s.size() && isdigit(s[j]))
                     x = x * 10 + (s[j++] - '0');
                 i = j - 1;
-                num.push(x);
+                nums.push(x);
             }
             else
             {
-                while (op.size() && priority[op.top()] >= priority[c]) cal();
-                op.push(c);
+                while (ops.size() && priority[ops.top()] >= priority[c]) cal();
+                ops.push(c);
             }
         }
-        while (op.size())  cal();
-        return num.top();
+        while (ops.size())  cal();
+        return nums.top();
     }
 };

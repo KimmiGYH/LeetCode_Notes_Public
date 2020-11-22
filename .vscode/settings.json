@@ -50,6 +50,7 @@
         "map": "cpp",
         "unordered_set": "cpp",
         "xtree": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "functional": "cpp"
     }
 }
