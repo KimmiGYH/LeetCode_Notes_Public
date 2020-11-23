@@ -2,7 +2,20 @@
 
 
 
-## 解法一：递归
+## 解法一：递归回溯
+
+
+
+```cpp
+digits 是数字字符串
+strs(digits) 是 digits 所能代码的字母字符串
+strs(digits[0...n-1])
+    = letter(digits[0]) + strs(digits[1...n-1])
+    = letter(digits[0]) + letter(digits[1]) + strs(digits[2...n-1])
+    = ……
+```
+
+
 
 **(递归) $O(4^n)$**
 
@@ -21,3 +34,4 @@
 
 
 ![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0017_Letter%20Combinations%20of%20a%20Phone%20Number_%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88/solve.png)
+
