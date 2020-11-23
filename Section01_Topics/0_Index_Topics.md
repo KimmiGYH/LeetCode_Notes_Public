@@ -108,6 +108,8 @@
 ## 【队列 queue】
 
 102. Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
+1609. Even Odd Tree_奇偶树 (BFS+层序)
+
 
 ## 【优先队列 priority_queue】
 
@@ -129,6 +131,7 @@
 102. Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
 107. Binary Tree Level Order Traversal II_二叉树的层次遍历 II
 103. Binary Tree Zigzag Level Order Traversal_二叉树的锯齿形层次遍历
+1609. Even Odd Tree_奇偶树 (BFS+层序)
 199. Binary Tree Right Side View_二叉树的右视图
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 
@@ -183,6 +186,8 @@
 17. Letter Combinations of a Phone Number_电话号码的字母组合
 93
 131
+46 （19:26)
+
 
 ## 【贪心】
 
@@ -261,6 +266,7 @@
 0102_Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
 0107_Binary Tree Level Order Traversal II_二叉树的层次遍历 II
 0103_Binary Tree Zigzag Level Order Traversal_二叉树的锯齿形层次遍历
+1609_Even Odd Tree_奇偶树 (BFS+层序)
 0199_Binary Tree Right Side View_二叉树的右视图
 0279_Perfect Squares_完全平方数
 
