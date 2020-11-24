@@ -147,6 +147,7 @@
 
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 301. Remove Invalid Parentheses_删除无效的括号 (Hard)
+93. Restore IP Addresses_复原IP地址（DFS暴搜）
 
 
 ## 【递归与二叉树 Recursion+Tree】
@@ -184,7 +185,7 @@
 ## 【回溯】
 
 17. Letter Combinations of a Phone Number_电话号码的字母组合
-93
+93. Restore IP Addresses_复原IP地址
 131
 46 （19:26)
 
@@ -298,4 +299,4 @@
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 0224_Basic Calculator_基本计算器(Hard)
 0227_Basic Calculator II_基本计算器 II
-
+0093_Restore IP Addresses_复原IP地址
