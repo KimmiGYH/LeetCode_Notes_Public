@@ -25,8 +25,8 @@ public:
             int value = (level == 0) ? INT_MIN : INT_MAX;
             while (len--) {
                 auto cur = q.front(); q.pop();
-                if ((level == 0) && (cur->val % 2 == 0 || cur->val <= value) ||
-                    (level == 1) && (cur->val % 2 == 1 || cur->val >= value))
+                if ((level == 0) && ((cur->val & 1) == 0 || cur->val <= value) ||
+                    (level == 1) && ((cur->val & 1) == 1 || cur->val >= value))
                     return false;
                 value = cur->val;
                 if (cur->left)  q.push(cur->left);
