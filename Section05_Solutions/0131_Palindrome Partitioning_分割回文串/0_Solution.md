@@ -12,7 +12,13 @@
 
 
 
+![img_isPalindrome_DP](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0131_Palindrome%20Partitioning_%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2/img_isPalindrome_DP.png)
+
+
+
 然后进行递归搜索，`u` 代表当前处理到哪个位置，我们从当前位置开始，枚举所有可能的回文子串，进行递归搜索直至处理完整个字符串。
+
+![img_Backtracking](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0131_Palindrome%20Partitioning_%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2/img_Backtracking.png)
 
 
 
