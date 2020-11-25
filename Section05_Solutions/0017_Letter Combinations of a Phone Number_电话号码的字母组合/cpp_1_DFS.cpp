@@ -20,7 +20,7 @@ public:
     }
 
     void dfs(string& digits, int u, string path) {
-        cout << u << " : " << path << endl;
+        // cout << u << " : " << path << endl;
         if (u == digits.size())  ans.push_back(path);
         else {
             for (auto c : strs[digits[u] - '0'])

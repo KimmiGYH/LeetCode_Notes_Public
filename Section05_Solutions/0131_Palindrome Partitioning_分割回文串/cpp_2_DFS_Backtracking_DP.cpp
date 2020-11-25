@@ -25,13 +25,12 @@ public:
 
     void dfs(string& s, int u) {
         if (u == s.size())  ans.push_back(path);
-        else {
-            for (int i = u; i < s.size(); i++)
-                if (f[u][i]) {
-                    path.push_back(s.substr(u, i - u + 1));
-                    dfs(s, i + 1);
-                    path.pop_back();
-                }
-        }
+        for (int i = u; i < s.size(); i++)
+            if (f[u][i]) {
+                path.push_back(s.substr(u, i - u + 1));
+                dfs(s, i + 1);
+                path.pop_back();
+            }
     }
 };
+// Output:[["a","a","b"],["aa","b"]]
