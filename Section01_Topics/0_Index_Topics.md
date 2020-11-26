@@ -189,6 +189,7 @@
 93. Restore IP Addresses_复原IP地址
 131. Palindrome Partitioning_分割回文串
 46. Permutations_全排列
+47. Permutations II_全排列 II
 
 
 ## 【贪心】
@@ -305,3 +306,4 @@
 0131_Palindrome Partitioning_分割回文串
 
 0046_Permutations_全排列
+0047_Permutations II_全排列 II
