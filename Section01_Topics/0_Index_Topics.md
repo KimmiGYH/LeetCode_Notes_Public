@@ -188,7 +188,7 @@
 17. Letter Combinations of a Phone Number_电话号码的字母组合（树形问题）
 93. Restore IP Addresses_复原IP地址
 131. Palindrome Partitioning_分割回文串
-46 （19:26)
+46. Permutations_全排列
 
 
 ## 【贪心】
@@ -303,3 +303,5 @@
 0017_Letter Combinations of a Phone Number_电话号码的字母组合（树形问题）
 0093_Restore IP Addresses_复原IP地址
 0131_Palindrome Partitioning_分割回文串
+
+0046_Permutations_全排列
