@@ -11,3 +11,5 @@
 ##### 时间复杂度分析：
 
 一共有 $C_{n}^{k}$ 个方案，另外记录每个方案时还需要  $O(k)$ 的时间，所以时间复杂度是是 $O(C_{n}^{k} * k)$。
+
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0077_Combinations_%E7%BB%84%E5%90%88/solve.png)
