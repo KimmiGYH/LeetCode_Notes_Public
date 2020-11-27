@@ -316,3 +316,5 @@
 0047_Permutations II_全排列 II
 0077_Combinations_组合
 0039_Combination Sum_组合总和
+0040_Combination Sum II_组合总和 II
+0216_Combination Sum III_组合总和 III
