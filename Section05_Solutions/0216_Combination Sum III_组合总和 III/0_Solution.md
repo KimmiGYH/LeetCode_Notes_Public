@@ -64,3 +64,4 @@ Time complexity: $O(2^m) = O(2^9)$
 
 Space complexity: $O(k + k * # of ans)$
 
+![Bit](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0216_Combination%20Sum%20III_%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20III/Bit.png)
