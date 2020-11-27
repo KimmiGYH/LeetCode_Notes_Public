@@ -191,6 +191,13 @@
 46. Permutations_全排列
 47. Permutations II_全排列 II
 77. Combinations_组合
+39. Combination Sum_组合总和
+40. Combination Sum II_组合总和 II
+216. Combination Sum III_组合总和 III
+78. Subsets_子集
+90. Subsets II_子集 II
+401. Binary Watch_二进制手表
+
 
 ## 【贪心】
 
@@ -308,3 +315,4 @@
 0046_Permutations_全排列
 0047_Permutations II_全排列 II
 0077_Combinations_组合
+0039_Combination Sum_组合总和
