@@ -10,14 +10,19 @@
 
 用数组 `dp[i]` 记录以 `nums[i]` 结尾（即 `nums[i]` 为最后一个数字）的最长递增子序列的长度，则递推方程为`dp[i] = max(dp[j]+1)`，其中要求 `1 ≤ j < i` 且 `nums[j] < nums[i]`。
 
-##### 时间复杂度分析：
+##### 复杂度分析
 
-对每个`i` `(1 ≤ i ≤ n)`，都需要从 `1` 遍历到 `i`，则时间复杂度为 $O(n^2)$，
+时间复杂度：$O(n^2)$
 
-空间复杂度的话需要一个额外的 `dp` 数组，空间复杂度为 $O(n^2)$。
+ 其中 `n` 为数组 `nums` 的长度。动态规划的状态数为 `n`，计算状态 `dp[i]` 时，需要 `O(n)` 的时间遍历 `dp[0…i−1]` 的所有状态，所以总时间复杂度为 $O(n^2)$。
+
+空间复杂度：$O(n)$
+
+需要额外使用长度为 `n` 的 `dp` 数组。
 
 
 
+![solve_1](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0300_Longest%20Increasing%20Subsequence_%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/solve_1.png)
 
 
 
@@ -37,4 +42,4 @@
 需要额外使用长度为 `n` 的 `vec` 数组。
 
 
-
+![solve_2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0300_Longest%20Increasing%20Subsequence_%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/solve_2.png)
