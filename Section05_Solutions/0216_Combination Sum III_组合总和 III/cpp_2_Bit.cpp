@@ -14,6 +14,7 @@ public:
             vector<int> path;
             int sum = 0;
             for (int j = 1; j <= 9; ++j)
+                // & 一下，以确定第 j-1 位是不是 1
                 if (i & (1 << (j - 1))) {
                     sum += j;
                     path.push_back(j);
