@@ -1,6 +1,6 @@
 # 78. Subsets_子集 (Medium)
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0078_Subsets_%E5%AD%90%E9%9B%86/%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E6%A8%A1%E6%9D%BF_LC78.png)
 
 ## 解法一：DFS
 
