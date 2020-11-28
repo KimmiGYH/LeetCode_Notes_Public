@@ -52,6 +52,10 @@
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
 148. Sort List_排序链表（归并排序 + 链表）（不会）
 
+
+
+
+
 ## 【Set、Map】
 
 349. Intersection of Two Arrays_两个数组的交集
@@ -199,10 +203,20 @@
 401. Binary Watch_二进制手表
 
 
+## 【二分搜索】
+
+300. Longest Increasing Subsequence_最长上升子序列
+
+
+## 【动态规划】
+
+300. Longest Increasing Subsequence_最长上升子序列
+
 ## 【贪心】
 
 1653. Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
+
 
 ## 【数学 Math】
 
@@ -211,11 +225,15 @@
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 
 
+## 【位运算】
+216. Combination Sum III_组合总和 III
+78. Subsets_子集
+
+
 ## 【设计 Design】
 
 173. Binary Search Tree Iterator_二叉搜索树迭代器(中序)
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
-
 
 
 
@@ -318,3 +336,5 @@
 0039_Combination Sum_组合总和
 0040_Combination Sum II_组合总和 II
 0216_Combination Sum III_组合总和 III
+
+0300_Longest Increasing Subsequence_最长上升子序列
