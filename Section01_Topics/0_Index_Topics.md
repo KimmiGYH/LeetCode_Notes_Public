@@ -89,7 +89,7 @@
 143. Reorder List_重排链表（找中点+反转+合并）
 234. Palindrome Linked List_回文链表（找中点+反转）
 876. 找中点（未做）
-
+1669_5558_Merge In Between Linked Lists_合并两个链表
 
 
 
@@ -201,6 +201,7 @@
 78. Subsets_子集
 90. Subsets II_子集 II
 401. Binary Watch_二进制手表
+1415. The k-th Lexicographical String of All Happy Strings of Length n_长度为 n 的开心字符串中字典序第 k 小的字符串（需要再思考）
 
 
 ## 【二分搜索】
@@ -340,4 +341,6 @@
 0078_Subsets_子集
 0090_Subsets II_子集 II
 0401_Binary Watch_二进制手表
+1415_长度为 n 的开心字符串中字典序第 k 小的字符串
 0300_Longest Increasing Subsequence_最长上升子序列
+1669_5558_Merge In Between Linked Lists_合并两个链表
