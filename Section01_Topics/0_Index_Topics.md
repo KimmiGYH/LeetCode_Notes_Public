@@ -41,6 +41,7 @@
 
 50. Spiral Matrix_螺旋矩阵
 59. Spiral Matrix II_螺旋矩阵 II
+79. Word Search_单词搜索
 
 
 ## 【排序】：快速选择 + 归并
@@ -202,6 +203,7 @@
 90. Subsets II_子集 II
 401. Binary Watch_二进制手表
 1415. The k-th Lexicographical String of All Happy Strings of Length n_长度为 n 的开心字符串中字典序第 k 小的字符串（需要再思考）
+79. Word Search_单词搜索
 
 
 ## 【二分搜索】
@@ -259,6 +261,7 @@
 0076_Minimum Window Substring_最小覆盖子串(Hard)
 0050_Spiral Matrix_螺旋矩阵
 0059_Spiral Matrix II_螺旋矩阵 II
+0079_Word Search_单词搜索
 0349_Intersection of Two Arrays_两个数组的交集
 0350_Intersection of Two Arrays II_两个数组的交集 II
 0217_Contains Duplicate_存在重复元素
