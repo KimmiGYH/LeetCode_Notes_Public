@@ -6,6 +6,7 @@ using namespace std;
 
 class Solution {
 private:
+    // 方向数组 上右下左
     int d[4][2] = {{-1,0}, {0,1}, {1,0}, {0,-1}};
     int m, n;
     vector<vector<bool>> visited;
