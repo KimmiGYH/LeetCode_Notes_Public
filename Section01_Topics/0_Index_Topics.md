@@ -105,6 +105,11 @@
 173. Binary Search Tree Iterator_二叉搜索树迭代器(中序)
 341. Flatten Nested List Iterator_扁平化嵌套列表迭代器
 
+## 【单调栈 Monotonic Stack】
+
+1673. Find the Most Competitive Subsequence_找出最具竞争力的子序列
+
+
 ### 【表达式求值】
 224. Basic Calculator_基本计算器(Hard)
 227. Basic Calculator II_基本计算器 II
@@ -347,3 +352,5 @@
 1415_长度为 n 的开心字符串中字典序第 k 小的字符串
 0300_Longest Increasing Subsequence_最长上升子序列
 1669_5558_Merge In Between Linked Lists_合并两个链表
+
+1673_Find the Most Competitive Subsequence_找出最具竞争力的子序列
