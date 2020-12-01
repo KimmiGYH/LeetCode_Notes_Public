@@ -166,6 +166,14 @@
 695. Max Area of Island_岛屿的最大面积
 
 
+## 【Floodfill 算法】
+
+200. Number of Islands_岛屿数量
+695. Max Area of Island_岛屿的最大面积
+1254. Number of Closed Islands_统计封闭岛屿的数目
+
+
+
 ## 【递归与二叉树 Recursion+Tree】
 
 104. Maximum Depth of Binary Tree_二叉树的最大深度
@@ -216,11 +224,6 @@
 79. Word Search_单词搜索
 
 
-
-## 【Floodfill 算法】
-
-200. Number of Islands_岛屿数量
-695. Max Area of Island_岛屿的最大面积
 
 
 ## 【二分搜索】
@@ -279,7 +282,6 @@
 0050_Spiral Matrix_螺旋矩阵
 0059_Spiral Matrix II_螺旋矩阵 II
 0079_Word Search_单词搜索
-0200_Number of Islands_岛屿数量
 0349_Intersection of Two Arrays_两个数组的交集
 0350_Intersection of Two Arrays II_两个数组的交集 II
 0217_Contains Duplicate_存在重复元素
@@ -367,5 +369,7 @@
 1669_5558_Merge In Between Linked Lists_合并两个链表
 
 1673_Find the Most Competitive Subsequence_找出最具竞争力的子序列
+0200_Number of Islands_岛屿数量
 0463_Island Perimeter_岛屿的周长
 0695_Max Area of Island_岛屿的最大面积
+1254_Number of Closed Islands_统计封闭岛屿的数目
