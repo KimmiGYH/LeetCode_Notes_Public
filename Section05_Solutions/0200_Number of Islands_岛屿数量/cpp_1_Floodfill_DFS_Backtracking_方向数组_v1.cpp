@@ -13,7 +13,7 @@ public:
         int cnt = 0;
         for (int i = 0; i < g.size(); i++)
             for (int j = 0; j < g[i].size(); j++)
-                if (g[i][j] == '1') { // 如果未被标记过
+                if (g[i][j] == '1') {
                     dfs(i, j);
                     cnt++;
                 }
@@ -22,7 +22,7 @@ public:
 
     void dfs(int x, int y) {
         // 标记为已遍历，这样再继续循环时，对于同属于这块岛屿的其他陆地我们不会重复计算了
-        g[x][y] = '0';
+        g[x][y] = '-1';
         for (int i = 0; i < 4; i++) {
             int a = x + dx[i], b = y + dy[i];
             if (a >= 0 && a < g.size() && b >= 0 && b < g[a].size() && g[a][b] == '1')
