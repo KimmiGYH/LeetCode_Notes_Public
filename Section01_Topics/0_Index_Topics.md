@@ -246,6 +246,12 @@
 343. Integer Break_整数拆分
 279. Perfect Squares_完全平方数
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
+795. Number of Subarrays with Bounded Maximum_区间子数组个数
+
+
+## 【数组 Array】
+
+795. Number of Subarrays with Bounded Maximum_区间子数组个数
 
 
 ## 【位运算】
@@ -373,3 +379,4 @@
 0463_Island Perimeter_岛屿的周长
 0695_Max Area of Island_岛屿的最大面积
 1254_Number of Closed Islands_统计封闭岛屿的数目
+0795_Number of Subarrays with Bounded Maximum_区间子数组个数
