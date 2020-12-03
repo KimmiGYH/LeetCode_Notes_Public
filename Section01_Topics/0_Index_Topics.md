@@ -271,7 +271,7 @@
 ### 蓄水池抽样
 
 398. Random Pick Index_随机数索引
-
+382. Linked List Random Node_链表随机节点
 
 ============================================
 待录制的视频：
@@ -387,3 +387,4 @@
 0795_Number of Subarrays with Bounded Maximum_区间子数组个数
 
 0398_Random Pick Index_随机数索引
+0382_Linked List Random Node_链表随机节点
