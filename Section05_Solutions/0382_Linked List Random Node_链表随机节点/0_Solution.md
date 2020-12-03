@@ -2,7 +2,7 @@
 
 
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0382_Linked%20List%20Random%20Node_%E9%93%BE%E8%A1%A8%E9%9A%8F%E6%9C%BA%E8%8A%82%E7%82%B9/solve.png)
 
 
 
