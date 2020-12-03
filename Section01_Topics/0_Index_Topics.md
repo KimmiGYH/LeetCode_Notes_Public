@@ -266,6 +266,11 @@
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
 
 
+## 【其他】
+
+### 蓄水池抽样
+
+398. Random Pick Index_随机数索引
 
 
 ============================================
@@ -380,3 +385,5 @@
 0695_Max Area of Island_岛屿的最大面积
 1254_Number of Closed Islands_统计封闭岛屿的数目
 0795_Number of Subarrays with Bounded Maximum_区间子数组个数
+
+0398_Random Pick Index_随机数索引
