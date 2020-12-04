@@ -20,7 +20,7 @@ public:
                     while (!q.empty()) {
                         pair<int, int> t = q.front();
                         q.pop();
-                        for (int k = 0; i < 4; k++) {
+                        for (int k = 0; k < 4; k++) {
                             int a = t.first + dirs[k], b = t.second + dirs[k + 1];
                             if (a >= 0 && a < m && b >= 0 && b < n && grid[a][b] == '1') {
                                 grid[a][b] = '0';
