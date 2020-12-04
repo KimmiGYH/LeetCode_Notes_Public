@@ -10,14 +10,14 @@ public:
 
     int numIslands(vector<vector<char>>& grid) {
         g = grid;
-        int cnt = 0;
+        int islands = 0;
         for (int i = 0; i < g.size(); i++)
             for (int j = 0; j < g[i].size(); j++)
                 if (g[i][j] == '1') {
                     dfs(i, j);
-                    cnt++;
+                    islands++;
                 }
-        return cnt;
+        return islands;
     }
 
     void dfs(int x, int y) {

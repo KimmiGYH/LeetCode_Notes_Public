@@ -171,7 +171,7 @@
 200. Number of Islands_岛屿数量
 695. Max Area of Island_岛屿的最大面积
 1254. Number of Closed Islands_统计封闭岛屿的数目
-
+934. Shortest Bridge_最短的桥
 
 
 ## 【递归与二叉树 Recursion+Tree】
@@ -384,6 +384,7 @@
 0463_Island Perimeter_岛屿的周长
 0695_Max Area of Island_岛屿的最大面积
 1254_Number of Closed Islands_统计封闭岛屿的数目
+0934_Shortest Bridge_最短的桥
 0795_Number of Subarrays with Bounded Maximum_区间子数组个数
 
 0398_Random Pick Index_随机数索引
