@@ -49,7 +49,7 @@ public:
         return res;
     }
     
-    void bfs(queue<pair<int, int>>& q, int &status) {
+    void bfs(queue<pair<int, int>>& q, int status) {
         int dirs[] = {0, 1, 0, -1, 0};
         while (!q.empty()) {
             pair<int, int> t = q.front();
