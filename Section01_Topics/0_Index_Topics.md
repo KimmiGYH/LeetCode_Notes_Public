@@ -175,9 +175,6 @@
 934. Shortest Bridge_最短的桥
 417. Pacific Atlantic Water Flow_太平洋大西洋水流问题
 
-51
-
-
 ## 【递归与二叉树 Recursion+Tree】
 
 104. Maximum Depth of Binary Tree_二叉树的最大深度
@@ -227,7 +224,9 @@
 1415. The k-th Lexicographical String of All Happy Strings of Length n_长度为 n 的开心字符串中字典序第 k 小的字符串（需要再思考）
 79. Word Search_单词搜索
 
-
+51. N-Queens_N 皇后(Hard)
+52
+37
 
 
 ## 【二分搜索】
@@ -395,3 +394,4 @@
 0398_Random Pick Index_随机数索引
 0382_Linked List Random Node_链表随机节点
 0417_Pacific Atlantic Water Flow_太平洋大西洋水流问题
+0051_N-Queens_N 皇后(Hard)
