@@ -225,8 +225,8 @@
 79. Word Search_单词搜索
 
 51. N-Queens_N 皇后(Hard)
-52
-37
+52. N-Queens II_N皇后 II(Hard)
+37. Sudoku Solver_解数独(Hard)
 
 
 ## 【二分搜索】
@@ -395,3 +395,5 @@
 0382_Linked List Random Node_链表随机节点
 0417_Pacific Atlantic Water Flow_太平洋大西洋水流问题
 0051_N-Queens_N 皇后(Hard)
+0052_N-Queens II_N皇后 II(Hard)
+0037_Sudoku Solver_解数独(Hard)

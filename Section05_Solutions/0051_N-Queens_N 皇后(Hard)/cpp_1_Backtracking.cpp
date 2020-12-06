@@ -27,12 +27,12 @@ public:
         }
 
         for (int i = 0; i < n; i++) {
-            if (!col[i] && !dg[u - i + n - 1] && !udg[u + i]) {
-                col[i] = dg[u - i + n - 1] = udg[u + i] = true;
+            if (!col[i] && !dg[u - i + n] && !udg[u + i]) {
+                col[i] = dg[u - i + n] = udg[u + i] = true;
                 path[u][i] = 'Q';
                 dfs(u + 1);
                 path[u][i] = '.';
-                col[i] = dg[u - i + n - 1] = udg[u + i] = false;
+                col[i] = dg[u - i + n] = udg[u + i] = false;
             }
         }
     }
