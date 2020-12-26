@@ -7,13 +7,12 @@ class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         if (matrix.empty() || matrix[0].empty())  return false;
-        int n = matrix.size(), m = matrix[0].size();
-        int i = 0, j = m - 1;
-        while (i < n && j >= 0) {
-            int t = matrix[i][j];
+        int row = 0, col = matrix[0].size() - 1;
+        while (row < matrix.size() && col >= 0) {
+            int t = matrix[row][col];
             if (t == target) return true;
-            if (t > target) j--;
-            else i++;
+            if (t > target) col--;
+            else row++;
         }
         return false;
     }
