@@ -40,3 +40,13 @@ cout << (it  != v.end() ? to_string(*it)  : "Not Found") << endl; // outputs 5
 cout << (it2 != v.end() ? to_string(*it2) : "Not Found") << endl; // outputs 5
 cout << (it3 != v.end() ? to_string(*it3) : "Not Found") << endl; // outputs Not Found
 ```
+
+## `first_less_than`
+
+```cpp
+template<typename ForwardIterator, typename T>
+ForwardIterator first_less_than(ForwardIterator first, ForwardIterator last, T value) {
+    auto it = std::lower_bound(first, last, value);
+    return (it == first ? last : --it);
+}
+```
