@@ -1,5 +1,7 @@
 # STL Binary Search
 
+[Youtube: STL Algorithms 2: std::binary_search, std::lower_bound & std::upper_bound](https://youtu.be/rXuqUtifDU8)
+
 ## `binary_search`
 
 ```cpp
@@ -38,4 +40,3 @@ cout << (it  != v.end() ? to_string(*it)  : "Not Found") << endl; // outputs 5
 cout << (it2 != v.end() ? to_string(*it2) : "Not Found") << endl; // outputs 5
 cout << (it3 != v.end() ? to_string(*it3) : "Not Found") << endl; // outputs Not Found
 ```
-
