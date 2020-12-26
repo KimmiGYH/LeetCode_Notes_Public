@@ -22,6 +22,8 @@
 
 209. Minimum Size Subarray Sum_长度最小的子数组
 3. Longest Substring Without Repeating Characters_无重复字符的最长子串
+1695_5630_Maximum Erasure Value_删除子数组的最大得分
+ACW_799_最长连续不重复子序列
 438. Find All Anagrams in a String_找到字符串中所有字母异位词
 76. Minimum Window Substring_最小覆盖子串
 219. Contains Duplicate II_存在重复元素 II
@@ -397,3 +399,5 @@
 0051_N-Queens_N 皇后(Hard)
 0052_N-Queens II_N皇后 II(Hard)
 0037_Sudoku Solver_解数独(Hard)
+
+1695_5630_Maximum Erasure Value_删除子数组的最大得分
