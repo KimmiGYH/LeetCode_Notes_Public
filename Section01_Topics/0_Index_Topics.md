@@ -45,6 +45,7 @@ ACW_799_最长连续不重复子序列
 219. Contains Duplicate II_存在重复元素 II
 220. Contains Duplicate III_存在重复元素 III
 299. Bulls and Cows_猜数字游戏
+1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
 
 ## 【方向数组】
 
@@ -143,6 +144,11 @@ ACW_799_最长连续不重复子序列
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
 1094. Car Pooling_拼车
 253. Meeting Rooms II_会议室
+
+## 【双端队列 deque】
+
+1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
+
 
 ## 【动态规划】
 
@@ -416,3 +422,4 @@ ACW_799_最长连续不重复子序列
 0240_Search a 2D Matrix II_搜索二维矩阵 II
 0299_Bulls and Cows_猜数字游戏
 1094_Car Pooling_拼车
+1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
