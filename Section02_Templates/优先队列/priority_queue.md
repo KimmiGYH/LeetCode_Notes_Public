@@ -39,6 +39,34 @@ priority_queue <int,vector<int>,less<int> >q;
 ```
 
 
+## 自定义优先队列
+
+```cpp
+// LeetCode 1094
+    struct CompareTrip {
+        bool operator()(vector<int>& a, vector<int>& b) {
+            return a[2] > b[2]; // minHeap
+        }
+    };
+    
+    priority_queue<vector<int>, vector<vector<int>>, CompareTrip> heap;
+```
+
+```cpp
+// LeetCode 23
+    struct Cmp {
+        bool operator() (ListNode* a, ListNode* b) {
+            return a->val > b->val; // 翻转符号以得到较小值
+        }
+    };
+
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        // 元素类型为ListNode*，vector<ListNode*> 底层数据结构是个vector
+        priority_queue<ListNode*, vector<ListNode*>, Cmp> heap;
+        //...
+    }
+```
+
 
 ## priority_queue的内嵌函数
 

@@ -1,3 +1,8 @@
+## 【数组】
+
+299. Bulls and Cows_猜数字游戏
+1094. Car Pooling_拼车
+
 ## 【数组、链表双指针】
 
 283. Move Zeroes_移动零
@@ -7,7 +12,8 @@
 11. Container With Most Water_盛最多水的容器
 86. Partition List_分隔链表
 19. Remove Nth Node From End of List 删除链表的倒数第N个节点（快慢指针）
-
+1094. Car Pooling_拼车
+299. Bulls and Cows_猜数字游戏
 
 ## 【字符串 String】
 
@@ -63,8 +69,6 @@ ACW_799_最长连续不重复子序列
 21. Merge Two Sorted Lists_合并两个有序链表（归并排序 + 链表）
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
 148. Sort List_排序链表（归并排序 + 链表）（不会）
-
-
 
 
 
@@ -137,7 +141,7 @@ ACW_799_最长连续不重复子序列
 
 347. Top K Frequent Elements_前 K 个高频元素
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
-
+1094. Car Pooling_拼车
 
 ## 【动态规划】
 
@@ -410,3 +414,4 @@ ACW_799_最长连续不重复子序列
 1695_5630_Maximum Erasure Value_删除子数组的最大得分
 0240_Search a 2D Matrix II_搜索二维矩阵 II
 0299_Bulls and Cows_猜数字游戏
+1094_Car Pooling_拼车
