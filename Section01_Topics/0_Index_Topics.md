@@ -38,6 +38,7 @@ ACW_799_最长连续不重复子序列
 217. Contains Duplicate_存在重复元素
 219. Contains Duplicate II_存在重复元素 II
 220. Contains Duplicate III_存在重复元素 III
+299. Bulls and Cows_猜数字游戏
 
 ## 【方向数组】
 
@@ -239,6 +240,7 @@ ACW_799_最长连续不重复子序列
 ## 【二分搜索】
 
 300. Longest Increasing Subsequence_最长上升子序列
+240. Search a 2D Matrix II_搜索二维矩阵 II
 
 
 ## 【动态规划】
@@ -407,3 +409,4 @@ ACW_799_最长连续不重复子序列
 
 1695_5630_Maximum Erasure Value_删除子数组的最大得分
 0240_Search a 2D Matrix II_搜索二维矩阵 II
+0299_Bulls and Cows_猜数字游戏
