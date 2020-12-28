@@ -145,6 +145,14 @@ ACW_799_最长连续不重复子序列
 1094. Car Pooling_拼车
 253. Meeting Rooms II_会议室
 
+## 【计数排序】
+
+347. Top K Frequent Elements_前 K 个高频元素
+
+## 【桶排序 Bucket Sorting】
+
+347. Top K Frequent Elements_前 K 个高频元素
+
 ## 【双端队列 deque】
 
 1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
