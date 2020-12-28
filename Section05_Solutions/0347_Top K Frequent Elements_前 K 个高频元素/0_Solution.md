@@ -38,3 +38,21 @@
 
 ![solve_3](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0347_Top%20K%20Frequent%20Elements_%E5%89%8D%20K%20%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0/solve_3.png)
 
+
+
+## 解法四：桶排序 Bucket Sorting
+
+(桶排序 Bucket Sorting) `O(n)`
+
+1. 先开哈希表 `freq`，存进 `nums` 数组中元素的频率。这里可以用 `max()` 函数求出最高频率，方便后面降序循环。
+2. 注意：`++freq[num]` 和 `freq[num]++` 在 `max(max_freq), 增加频率` 中是不一样的，应用 `++freq[num]`
+3. 再开哈希表 `buckets`，格式为 `unordered_map<int, vector<int>> buckets`，以便将某个频率的所有元素存入桶内。
+4. 开答案数组，从最高频的开始降序循环，如果某个表示频率的 `i `在哈希表 `buckets` 中存在的话，那么就把该频率的桶内所有元素插入进答案数组。
+5. 如果递减的 `i` 并不是哈希表中的频率数值，那么就 `continue` 回到 `for` 循环继续递减。
+
+
+
+时间复杂度：`O(n)`
+
+空间复杂度：`O(n)`
+
