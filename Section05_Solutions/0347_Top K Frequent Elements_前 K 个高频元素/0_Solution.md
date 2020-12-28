@@ -56,3 +56,4 @@
 
 空间复杂度：`O(n)`
 
+![solve_bucket](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0347_Top%20K%20Frequent%20Elements_%E5%89%8D%20K%20%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0/solve_bucket.png)
