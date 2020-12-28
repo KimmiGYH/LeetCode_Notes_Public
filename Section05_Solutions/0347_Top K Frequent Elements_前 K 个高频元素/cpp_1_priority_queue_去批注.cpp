@@ -13,7 +13,7 @@ public:
         // 比较的应该是元素出现的频率，存入 pair<元素频率，元素>
         priority_queue< pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > heap;
 
-        // iter 访问频率表（元素，元素频率）
+        // iter 访问频率表 [元素，元素频率]
         for(unordered_map<int,int>::iterator iter = freq.begin(); iter != freq.end(); iter++) {
             if (heap.size() == k) {
                 if (iter->second > heap.top().first) {
