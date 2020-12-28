@@ -251,6 +251,7 @@ ACW_799_最长连续不重复子序列
 ## 【二分搜索】
 
 300. Longest Increasing Subsequence_最长上升子序列
+74. Search a 2D Matrix_搜索二维矩阵
 240. Search a 2D Matrix II_搜索二维矩阵 II
 
 
@@ -419,6 +420,7 @@ ACW_799_最长连续不重复子序列
 0037_Sudoku Solver_解数独(Hard)
 
 1695_5630_Maximum Erasure Value_删除子数组的最大得分
+0074_Search a 2D Matrix_搜索二维矩阵
 0240_Search a 2D Matrix II_搜索二维矩阵 II
 0299_Bulls and Cows_猜数字游戏
 1094_Car Pooling_拼车
