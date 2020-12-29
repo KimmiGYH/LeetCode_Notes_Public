@@ -29,7 +29,7 @@
 
 - 将数字标号转为二维坐标位置的子函数也不算难，首先应将数字标号减 `1`，因为这里是从 `1` 开始的，而代码中的二维坐标是从 `0` 开始的，然后除以 `n` 得到横坐标，对 `n` 取余得到纵坐标。但这里得到的横纵坐标都还不是正确的，因为前面说了数字标记是蛇形环绕的，当行号是奇数的时候，列数需要翻转一下，即用 `n-1` 减去当前列数。又因为代码中的二维数组起点位置在左上角，同样需要翻转一样，这样得到的才是正确的横纵坐标，返回即可。
 
-  ![solve]()
+  ![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0909_Snakes%20and%20Ladders_%E8%9B%87%E6%A2%AF%E6%A3%8B/solve.png)
 
   ```c++
   vector<int> getPosition(int &n, int num) {
@@ -41,10 +41,4 @@
           return {row, col};
       }
   ```
-
-  
-
-
-
-
 
