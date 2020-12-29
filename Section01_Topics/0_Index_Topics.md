@@ -141,6 +141,7 @@ ACW_799_最长连续不重复子序列
 ## 【优先队列 priority_queue】
 
 347. Top K Frequent Elements_前 K 个高频元素
+692. Top K Frequent Words_前K个高频单词
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
 1094. Car Pooling_拼车
 253. Meeting Rooms II_会议室
@@ -433,3 +434,5 @@ ACW_799_最长连续不重复子序列
 0299_Bulls and Cows_猜数字游戏
 1094_Car Pooling_拼车
 1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
+0347_Top K Frequent Elements_前 K 个高频元素
+0692_Top K Frequent Words_前K个高频单词
