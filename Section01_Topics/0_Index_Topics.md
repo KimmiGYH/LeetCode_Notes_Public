@@ -278,6 +278,7 @@ ACW_799_最长连续不重复子序列
 
 1653. Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
+1702. Maximum Binary String After Change_修改后的最大二进制字符串
 
 ## 【前缀和 PrefixSum】
 
