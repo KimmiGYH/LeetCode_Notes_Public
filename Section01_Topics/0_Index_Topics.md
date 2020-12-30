@@ -1,7 +1,10 @@
-## 【数组】
+## 【数组 Array】
 
+795. Number of Subarrays with Bounded Maximum_区间子数组个数
 299. Bulls and Cows_猜数字游戏
 1094. Car Pooling_拼车
+560. Subarray Sum Equals K_和为K的子数组
+
 
 ## 【数组、链表双指针】
 
@@ -145,6 +148,7 @@ ACW_799_最长连续不重复子序列
 23. Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
 1094. Car Pooling_拼车
 253. Meeting Rooms II_会议室
+1705. Maximum Number of Eaten Apples_吃苹果的最大数目
 
 ## 【计数排序】
 
@@ -275,6 +279,9 @@ ACW_799_最长连续不重复子序列
 1653. Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 
+## 【前缀和 PrefixSum】
+
+560. Subarray Sum Equals K_和为K的子数组
 
 ## 【数学 Math】
 
@@ -282,12 +289,6 @@ ACW_799_最长连续不重复子序列
 279. Perfect Squares_完全平方数
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 795. Number of Subarrays with Bounded Maximum_区间子数组个数
-
-
-## 【数组 Array】
-
-795. Number of Subarrays with Bounded Maximum_区间子数组个数
-
 
 ## 【位运算】
 78. Subsets_子集
@@ -439,3 +440,5 @@ ACW_799_最长连续不重复子序列
 0347_Top K Frequent Elements_前 K 个高频元素
 0692_Top K Frequent Words_前K个高频单词
 0909_Snakes and Ladders_蛇梯棋
+1705_Maximum Number of Eaten Apples_吃苹果的最大数目
+0560_Subarray Sum Equals K_和为K的子数组
