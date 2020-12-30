@@ -291,6 +291,7 @@ ACW_799_最长连续不重复子序列
 279. Perfect Squares_完全平方数
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 795. Number of Subarrays with Bounded Maximum_区间子数组个数
+1702. Maximum Binary String After Change_修改后的最大二进制字符串
 
 ## 【位运算】
 78. Subsets_子集
@@ -310,6 +311,10 @@ ACW_799_最长连续不重复子序列
 
 398. Random Pick Index_随机数索引
 382. Linked List Random Node_链表随机节点
+
+【思维题】
+
+1702. Maximum Binary String After Change_修改后的最大二进制字符串
 
 ============================================
 待录制的视频：
@@ -444,3 +449,4 @@ ACW_799_最长连续不重复子序列
 0909_Snakes and Ladders_蛇梯棋
 1705_Maximum Number of Eaten Apples_吃苹果的最大数目
 0560_Subarray Sum Equals K_和为K的子数组
+1702_Maximum Binary String After Change_修改后的最大二进制字符串
