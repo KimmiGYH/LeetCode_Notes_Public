@@ -14,7 +14,7 @@ public:
 
         struct CompareString {
             bool operator()(pair<string,int>& a, pair<string,int>& b) {
-                // a,b频数大的，优先级大；频数相等，字典序小的优先级大
+                // 【minHeap】让频率小的词在前面 || 频率相同时，让字母顺序大的排在前面
                 return (a.second > b.second || (a.second == b.second && a.first < b.first));
             }
         };
@@ -22,18 +22,33 @@ public:
         priority_queue< pair<string, int>, vector<pair<string, int>>, CompareString> heap;
 
         // O(n*logk)
-        for (const auto& kv : freq) {
-            heap.push(kv);
-            if (heap.size() > k) heap.pop();
+        for (const auto& f : freq) {
+            heap.push(f);
+            if (heap.size() > k) heap.pop(); // 把小的全都 pop 掉
         }
 
+        /* 写法一：reverse
         vector<string> res;
-
         while (!heap.empty()) {
             res.push_back(heap.top().first);
-            heap.pop();
+            heap.pop();            
         }
         reverse(res.begin(), res.end());
+        */
+        /* 写法二：insert 
+        vector<string> res;
+        while (!heap.empty()) {
+            auto it = res.begin();
+            it = res.insert(it, heap.top().first);
+            heap.pop();
+        }
+        */
+        /* 写法三：递减循环*/
+        vector<string> res(k);
+        for (int i = res.size() - 1; i >= 0; --i) {
+            res[i] = heap.top().first;
+            heap.pop();
+        }
         return res;
     }
 };
