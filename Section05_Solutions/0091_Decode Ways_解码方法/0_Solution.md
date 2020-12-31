@@ -15,7 +15,7 @@
 
 
 
-
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0091_Decode%20Ways_%E8%A7%A3%E7%A0%81%E6%96%B9%E6%B3%95/solve.png)
 
 
 
@@ -28,3 +28,5 @@
 输出：3
 解释：它可以解码为 "BZ" (2 26), "VF" (22 6), 或者 "BBF" (2 2 6) 。
 ```
+
+![example2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0091_Decode%20Ways_%E8%A7%A3%E7%A0%81%E6%96%B9%E6%B3%95/example2.png)
