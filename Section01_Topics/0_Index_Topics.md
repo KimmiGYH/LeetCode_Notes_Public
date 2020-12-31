@@ -167,13 +167,6 @@ ACW_799_最长连续不重复子序列
 1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
 
 
-## 【动态规划】
-
-70. Climbing Stairs_爬楼梯
-120. Triangle_三角形最小路径和
-64. Minimum Path Sum_最小路径和
-279. Perfect Squares_完全平方数
-91. Decode Ways_解码方法
 
 
 ## 【二叉树的遍历 Tree】
@@ -280,7 +273,13 @@ ACW_799_最长连续不重复子序列
 
 ## 【动态规划】
 
+70. Climbing Stairs_爬楼梯
+120. Triangle_三角形最小路径和
+64. Minimum Path Sum_最小路径和
+279. Perfect Squares_完全平方数
 300. Longest Increasing Subsequence_最长上升子序列
+91. Decode Ways_解码方法
+639. Decode Ways II_解码方法 2
 
 ## 【贪心】
 
@@ -461,3 +460,4 @@ ACW_799_最长连续不重复子序列
 1702_Maximum Binary String After Change_修改后的最大二进制字符串
 0091_Decode Ways_解码方法
 0208_Implement Trie (Prefix Tree)_实现 Trie (前缀树)
+0639_Decode Ways II_解码方法 2
