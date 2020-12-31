@@ -165,7 +165,11 @@ ACW_799_最长连续不重复子序列
 
 ## 【动态规划】
 
+70. Climbing Stairs_爬楼梯
+120. Triangle_三角形最小路径和
+64. Minimum Path Sum_最小路径和
 279. Perfect Squares_完全平方数
+91. Decode Ways_解码方法
 
 
 ## 【二叉树的遍历 Tree】
@@ -451,3 +455,4 @@ ACW_799_最长连续不重复子序列
 1705_Maximum Number of Eaten Apples_吃苹果的最大数目
 0560_Subarray Sum Equals K_和为K的子数组
 1702_Maximum Binary String After Change_修改后的最大二进制字符串
+0091_Decode Ways_解码方法
