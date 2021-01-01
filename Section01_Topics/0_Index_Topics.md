@@ -81,10 +81,6 @@ ACW_799_最长连续不重复子序列
 349. Intersection of Two Arrays_两个数组的交集
 350. Intersection of Two Arrays II_两个数组的交集 II
 
-## 【贪心】
-
-11. Container With Most Water_盛最多水的容器
-
 
 ## 【链表】
 
@@ -280,12 +276,16 @@ ACW_799_最长连续不重复子序列
 300. Longest Increasing Subsequence_最长上升子序列
 91. Decode Ways_解码方法
 639. Decode Ways II_解码方法 2
+62. Unique Paths_不同路径
+63. Unique Paths II_不同路径 II
 
 ## 【贪心】
 
+11. Container With Most Water_盛最多水的容器
 1653. Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 1702. Maximum Binary String After Change_修改后的最大二进制字符串
+605. Can Place Flowers_种花问题
 
 ## 【前缀和 PrefixSum】
 
@@ -461,3 +461,6 @@ ACW_799_最长连续不重复子序列
 0091_Decode Ways_解码方法
 0208_Implement Trie (Prefix Tree)_实现 Trie (前缀树)
 0639_Decode Ways II_解码方法 2
+0062_Unique Paths_不同路径
+0063_Unique Paths II_不同路径 II
+0605_ Can Place Flowers_种花问题
