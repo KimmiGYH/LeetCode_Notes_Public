@@ -286,6 +286,7 @@ ACW_799_最长连续不重复子序列
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 1702. Maximum Binary String After Change_修改后的最大二进制字符串
 605. Can Place Flowers_种花问题
+649. Dota2 Senate_Dota2 参议院
 
 ## 【前缀和 PrefixSum】
 
@@ -464,3 +465,4 @@ ACW_799_最长连续不重复子序列
 0062_Unique Paths_不同路径
 0063_Unique Paths II_不同路径 II
 0605_ Can Place Flowers_种花问题
+0649_Dota2 Senate_Dota2 参议院
