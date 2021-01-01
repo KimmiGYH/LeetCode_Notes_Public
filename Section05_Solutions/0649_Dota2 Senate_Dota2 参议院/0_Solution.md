@@ -10,4 +10,4 @@
 
 
 
-![solve]()
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0649_Dota2%20Senate_Dota2%20%E5%8F%82%E8%AE%AE%E9%99%A2/solve.png)
