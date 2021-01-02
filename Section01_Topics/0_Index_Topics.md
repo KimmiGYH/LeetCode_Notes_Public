@@ -288,6 +288,7 @@ ACW_799_最长连续不重复子序列
 605. Can Place Flowers_种花问题
 495. Teemo Attacking_提莫攻击
 649. Dota2 Senate_Dota2 参议院
+1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
 
 ## 【前缀和 PrefixSum】
 
@@ -468,3 +469,4 @@ ACW_799_最长连续不重复子序列
 0605_ Can Place Flowers_种花问题
 0649_Dota2 Senate_Dota2 参议院
 0495_Teemo Attacking_提莫攻击
+1414_Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
