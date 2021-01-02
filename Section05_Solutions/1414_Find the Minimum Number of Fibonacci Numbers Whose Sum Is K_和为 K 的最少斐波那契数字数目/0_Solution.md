@@ -58,3 +58,6 @@ while(left < right)
 }
 ```
 
+### 解法四：递归
+
+递归求解 `findMinFibonacciNumbers(k - a)`，再加上 `1` 即 `k` 的情况。
