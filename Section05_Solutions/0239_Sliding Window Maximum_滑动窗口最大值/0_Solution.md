@@ -4,7 +4,7 @@
 
 ## 解法一：双端队列 deque
 
-![solve1]()
+![solve1](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0239_Sliding%20Window%20Maximum_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/solve1.png)
 
 题目中的 Follow up 要求代码的时间复杂度为 $O(n)$。提示我们要用双向队列 `deque` 来解题，并提示我们窗口中只留下有用的值，没用的全移除掉。
 
@@ -21,7 +21,7 @@
 
 ## 解法二：优先队列 priority queue
 
-![solve2]()
+![solve2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0239_Sliding%20Window%20Maximum_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/solve2.png)
 
 - 使用优先队列来做，即最大堆，里面放一个 `pair`，由**数字**和其所在**下标**组成的。
 
@@ -32,7 +32,7 @@
 
 ## 解法三：`multiset`
 
-![solve3]()
+![solve3](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0239_Sliding%20Window%20Maximum_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/solve3.png)
 
 我们希望窗口内的数字是有序的，但是每次给新窗口排序又太费时了，所以最好能有一种类似二叉搜索树的结构，可以在 `lgn` 的时间复杂度内完成插入和删除操作，那么使用 STL 自带的 `multiset` 就能满足我们的需求，这是一种基于**红黑树**的数据结构，可以**自动对元素进行排序，又允许有重复值**，完美契合。
 
