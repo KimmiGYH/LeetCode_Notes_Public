@@ -259,13 +259,17 @@ ACW_799_最长连续不重复子序列
 52. N-Queens II_N皇后 II(Hard)
 37. Sudoku Solver_解数独(Hard)
 
+## 【递归与 Fibonacci数】
+
+1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
+
 
 ## 【二分搜索】
 
 300. Longest Increasing Subsequence_最长上升子序列
 74. Search a 2D Matrix_搜索二维矩阵
 240. Search a 2D Matrix II_搜索二维矩阵 II
-
+1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
 
 ## 【动态规划】
 

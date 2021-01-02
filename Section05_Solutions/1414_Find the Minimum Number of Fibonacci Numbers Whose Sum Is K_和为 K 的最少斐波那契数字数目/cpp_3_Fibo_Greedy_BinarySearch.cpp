@@ -17,7 +17,8 @@ public:
         int res = 0;
 
         while (k) {
-            int i = idx(fibo, k);
+            int index = fibo.size() - 1;
+            int i = idx(fibo, index, k);
             if (k >= fibo[i]) {
                 ++res;
                 k -= fibo[i];
@@ -26,8 +27,8 @@ public:
         return res;
     }
 
-    int idx(vector<int>& fibo, int& k) {
-        int l = 0, r = fibo.size() - 1;
+    int idx(vector<int>& fibo, int& lastIndex, int& k) {
+        int l = 0, r = lastIndex;
         while (l < r) {
             int m = l + r + 1 >> 1;
             if (fibo[m] <= k) l = m;
