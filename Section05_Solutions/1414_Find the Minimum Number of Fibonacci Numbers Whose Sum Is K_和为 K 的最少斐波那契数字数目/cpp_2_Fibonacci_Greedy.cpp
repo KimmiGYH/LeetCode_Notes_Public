@@ -6,18 +6,18 @@ class Solution {
 public:
     int findMinFibonacciNumbers(int k) {
         int a = 1, b = 1;
-        vector<int> fibo = {a, b};
-        while (a + b <= k) {
-            fibo.push_back(a + b);
+        int res = 0;
+        while (b <= k) {
             swap(a, b);
             b += a;
         }
-        int res = 0;
-        for (int i = fibo.size() - 1; i >= 0; --i) {
-            if (k >= fibo[i]) {
+        while (k) {
+            if (k >= a) {
+                k -= a;
                 ++res;
-                k -= fibo[i];
             }
+            b -= a;
+            swap(a, b);
         }
         return res;
     }
