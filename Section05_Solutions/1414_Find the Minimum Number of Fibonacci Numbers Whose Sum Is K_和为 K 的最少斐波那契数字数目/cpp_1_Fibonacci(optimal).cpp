@@ -11,6 +11,7 @@ public:
             swap(a, b);
             b += a;
         }
+        // eg: k = 19, a = 13, b = 21
         while (k) {
             if (k >= a) {
                 k -= a;
