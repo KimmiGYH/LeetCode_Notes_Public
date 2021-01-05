@@ -37,7 +37,7 @@ ACW_799_最长连续不重复子序列
 76. Minimum Window Substring_最小覆盖子串
 219. Contains Duplicate II_存在重复元素 II
 220. Contains Duplicate III_存在重复元素 III
-
+830. Positions of Large Groups_较大分组的位置
 
 ## 【哈希表 Hash Table】
 
@@ -507,3 +507,4 @@ ACW_799_最长连续不重复子序列
 1457_Pseudo-Palindromic Paths in a Binary Tree_二叉树中的伪回文路径
 0001_Two Sum_两数之和
 1711_Count Good Meals_大餐计数
+0830_Positions of Large Groups_较大分组的位置

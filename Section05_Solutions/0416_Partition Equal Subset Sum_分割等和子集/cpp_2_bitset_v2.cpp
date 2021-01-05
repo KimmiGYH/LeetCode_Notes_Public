@@ -12,6 +12,6 @@ public:
         int sum = accumulate(nums.begin(), nums.end(), 0);
         for (int num : nums)
             bits |= bits << num;
-        return (sum % 2 == 0) && bits[sum >> 1];
+        return (sum % 2 == 0) && bits[sum >> 1]; // 例如：1 2 4 5
     }
 };
