@@ -50,6 +50,7 @@ ACW_799_最长连续不重复子序列
 220. Contains Duplicate III_存在重复元素 III
 299. Bulls and Cows_猜数字游戏
 1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
+1711_Count Good Meals_大餐计数
 
 ## 【MultiSet】
 
@@ -504,3 +505,5 @@ ACW_799_最长连续不重复子序列
 0509_Fibonacci Number_斐波那契数
 0416_Partition Equal Subset Sum_分割等和子集
 1457_Pseudo-Palindromic Paths in a Binary Tree_二叉树中的伪回文路径
+0001_Two Sum_两数之和
+1711_Count Good Meals_大餐计数
