@@ -297,6 +297,13 @@ ACW_799_最长连续不重复子序列
 
 416. Partition Equal Subset Sum_分割等和子集
 
+
+## 【位运算】
+
+### 【位运算 bitset】
+
+416. Partition Equal Subset Sum_分割等和子集
+
 ## 【贪心】
 
 11. Container With Most Water_盛最多水的容器
@@ -492,3 +499,4 @@ ACW_799_最长连续不重复子序列
 0198_House Robber_打家劫舍
 0416_Partition Equal Subset Sum_分割等和子集
 0509_Fibonacci Number_斐波那契数
+0416_Partition Equal Subset Sum_分割等和子集
