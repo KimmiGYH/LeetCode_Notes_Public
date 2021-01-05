@@ -58,7 +58,7 @@ return f[target];
 
 ## 解法二：`bitset`
 
-![solve]()
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0416_Partition%20Equal%20Subset%20Sum_%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86/solve.png)
 
 
 
