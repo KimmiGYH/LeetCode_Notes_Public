@@ -41,6 +41,7 @@ ACW_799_最长连续不重复子序列
 
 ## 【哈希表 Hash Table】
 
+1. Two Sum_两数之和
 3. Longest Substring Without Repeating Characters_无重复字符的最长子串
 242. Valid Anagram_有效的字母异位词
 438. Find All Anagrams in a String_找到字符串中所有字母异位词
@@ -182,7 +183,7 @@ ACW_799_最长连续不重复子序列
 1609. Even Odd Tree_奇偶树 (BFS+层序)
 199. Binary Tree Right Side View_二叉树的右视图
 297. Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
-
+1457. Pseudo-Palindromic Paths in a Binary Tree_二叉树中的伪回文路径
 
 ## 【广度优先搜索 BFS】
 
@@ -199,6 +200,7 @@ ACW_799_最长连续不重复子序列
 93. Restore IP Addresses_复原IP地址（DFS暴搜）
 200. Number of Islands_岛屿数量
 695. Max Area of Island_岛屿的最大面积
+1457. Pseudo-Palindromic Paths in a Binary Tree_二叉树中的伪回文路径
 
 
 ## 【Floodfill 算法】
@@ -303,6 +305,7 @@ ACW_799_最长连续不重复子序列
 ### 【位运算 bitset】
 
 416. Partition Equal Subset Sum_分割等和子集
+1457. Pseudo-Palindromic Paths in a Binary Tree_二叉树中的伪回文路径
 
 ## 【贪心】
 
@@ -500,3 +503,4 @@ ACW_799_最长连续不重复子序列
 0416_Partition Equal Subset Sum_分割等和子集
 0509_Fibonacci Number_斐波那契数
 0416_Partition Equal Subset Sum_分割等和子集
+1457_Pseudo-Palindromic Paths in a Binary Tree_二叉树中的伪回文路径
