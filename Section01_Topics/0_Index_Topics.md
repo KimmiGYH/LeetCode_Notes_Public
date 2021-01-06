@@ -20,6 +20,7 @@
 
 ## 【字符串 String】
 
+67_Add Binary_二进制求和
 167. Two Sum II - Input array is sorted_两数之和 II - 输入有序数组
 125. Valid Palindrome_验证回文串
 344. Reverse String_反转字符串
@@ -303,6 +304,7 @@ ACW_799_最长连续不重复子序列
 
 ## 【位运算】
 
+67_Add Binary_二进制求和
 78. Subsets_子集
 216. Combination Sum III_组合总和 III
 401. Binary Watch_二进制手表
@@ -510,3 +512,4 @@ ACW_799_最长连续不重复子序列
 0001_Two Sum_两数之和
 1711_Count Good Meals_大餐计数
 0830_Positions of Large Groups_较大分组的位置
+0067_Add Binary_二进制求和
