@@ -303,6 +303,11 @@ ACW_799_最长连续不重复子序列
 
 ## 【位运算】
 
+78. Subsets_子集
+216. Combination Sum III_组合总和 III
+401. Binary Watch_二进制手表
+
+
 ### 【位运算 bitset】
 
 416. Partition Equal Subset Sum_分割等和子集
@@ -333,10 +338,7 @@ ACW_799_最长连续不重复子序列
 795. Number of Subarrays with Bounded Maximum_区间子数组个数
 1702. Maximum Binary String After Change_修改后的最大二进制字符串
 
-## 【位运算】
-78. Subsets_子集
-216. Combination Sum III_组合总和 III
-401. Binary Watch_二进制手表
+
 
 
 ## 【设计 Design】

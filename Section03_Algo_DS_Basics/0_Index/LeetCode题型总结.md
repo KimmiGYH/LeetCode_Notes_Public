@@ -409,7 +409,7 @@ LeetCode109.有序链表转换二叉搜索树
 
 #### 16.1.1 01背包
 
-416_ [Partition Equal Subset Sum_](https://leetcode.com/problems/partition-equal-subset-sum/)分割等和子集
+416_Partition Equal Subset Sum_分割等和子集
 LeetCode494.目标和
 
 #### 16.1.2 完全背包
