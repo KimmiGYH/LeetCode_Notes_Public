@@ -122,7 +122,7 @@ ACW_799_最长连续不重复子序列
 ## 【并查集 UnionFind】
 
 990. Satisfiability of Equality Equations_等式方程的可满足性
-399. Evaluate Division_除法求值（Floyd求最短路+并查集）
+399. Evaluate Division_除法求值(DFS + Floyd求最短路 + 并查集)
 
 547. 朋友圈（中等）
 990. 等式方程的可满足性（中等）
@@ -530,3 +530,4 @@ ACW_799_最长连续不重复子序列
 1711_Count Good Meals_大餐计数
 0830_Positions of Large Groups_较大分组的位置
 0067_Add Binary_二进制求和
+0990_Satisfiability of Equality Equations_等式方程的可满足性
