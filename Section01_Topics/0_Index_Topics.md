@@ -5,6 +5,8 @@
 1094. Car Pooling_拼车
 560. Subarray Sum Equals K_和为K的子数组
 495. Teemo Attacking_提莫攻击
+189. Rotate Array_旋转数组
+1539. Kth Missing Positive Number_第 k 个缺失的正整数
 
 ## 【数组、链表双指针】
 
@@ -536,3 +538,5 @@ ACW_799_最长连续不重复子序列
 0067_Add Binary_二进制求和
 0990_Satisfiability of Equality Equations_等式方程的可满足性
 0547_Number of Provinces_省份数量_朋友圈
+0189_Rotate Array_旋转数组
+1539_Kth Missing Positive Number_第 k 个缺失的正整数
