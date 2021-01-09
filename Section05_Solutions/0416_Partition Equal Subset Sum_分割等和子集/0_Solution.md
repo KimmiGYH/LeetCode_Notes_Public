@@ -98,5 +98,5 @@ bitset[4] = 1，存在和为 4 的子数组
 
 bitset[5] = 1，存在和为 5 的子数组
 
-bitset[sum/2] = bitset[6] = bitset[2] | bitset[4]
+`bitset[sum/2] = bitset[6] = bitset[2] | bitset[4]`
 

@@ -409,8 +409,10 @@ LeetCode109.有序链表转换二叉搜索树
 
 #### 16.1.1 01背包
 
+```
 416_Partition Equal Subset Sum_分割等和子集
-LeetCode494.目标和
+494_Target Sum_目标和
+```
 
 #### 16.1.2 完全背包
 

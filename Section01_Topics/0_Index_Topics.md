@@ -296,8 +296,9 @@ ACW_799_最长连续不重复子序列
 1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
 
 
-## 【二分搜索】
+## 【二分搜索 / 二分查找 Binary Search】
 
+1539. Kth Missing Positive Number_第 k 个缺失的正整数
 300. Longest Increasing Subsequence_最长上升子序列
 74. Search a 2D Matrix_搜索二维矩阵
 240. Search a 2D Matrix II_搜索二维矩阵 II
