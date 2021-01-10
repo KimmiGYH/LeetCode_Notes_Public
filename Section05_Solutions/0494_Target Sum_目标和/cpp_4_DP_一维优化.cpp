@@ -14,7 +14,7 @@ public:
             for (auto a : dp) {
                 int sum = a.first, cnt = a.second;
                 hash[sum + num] += cnt;
-                hash[sum - num] +=cnt;
+                hash[sum - num] += cnt;
             }
             dp = hash;
         }
