@@ -51,6 +51,7 @@
         "unordered_set": "cpp",
         "xtree": "cpp",
         "stack": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "numeric": "cpp"
     }
 }
