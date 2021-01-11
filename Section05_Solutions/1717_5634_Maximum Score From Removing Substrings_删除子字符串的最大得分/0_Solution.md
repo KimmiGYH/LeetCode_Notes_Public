@@ -1,6 +1,6 @@
 # 1717_5634_Maximum Score From Removing Substrings_删除子字符串的最大得分 (Medium)
 
-
+[力扣【无需额外空间】贪心算法](https://leetcode-cn.com/problems/maximum-score-from-removing-substrings/solution/o1-kong-jian-tan-xin-zuo-fa-by-arsenal-5-y6or/)
 
 首先，不妨**假设 `"ab"` 的得分总是不低于 `"ba"`**；否则，我们将字符串中的字符 `a` 换成 `b`，`b` 换成 `a`，再交换 `x` 和 `y` 即可。
 
