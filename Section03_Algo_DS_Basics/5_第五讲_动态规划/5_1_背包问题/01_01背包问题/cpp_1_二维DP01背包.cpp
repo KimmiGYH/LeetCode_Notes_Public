@@ -1,3 +1,18 @@
+/*
+f[i][j] 表示只看前 i 个物品，总体积是 j 的情况下，总价值最大是多少。
+
+result = max(f[n][0~V])
+
+f[i][j];
+
+1. 不选第 i 个物品，f[i][j] = f[i - 1][j];
+2. 选第 i 个物品，  f[i][j] = f[i - 1][j - v[i]];
+
+f[i][j] = max{1, 2};
+
+f[0][0] = 0;
+*/
+
 #include <iostream>
 #include <algorithm>
 
