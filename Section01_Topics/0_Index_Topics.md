@@ -323,9 +323,14 @@ ACW_799_最长连续不重复子序列
 
 ## 【动态规划 - 背包问题】
 
+### 01背包
 416. Partition Equal Subset Sum_分割等和子集
 494. Target Sum_目标和
 
+
+### 完全背包
+
+279. Perfect Squares_完全平方数
 
 ## 【位运算】
 
