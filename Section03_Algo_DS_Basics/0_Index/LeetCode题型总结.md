@@ -410,23 +410,28 @@ LeetCode109.有序链表转换二叉搜索树
 #### 16.1.1 01背包
 
 ```
-416_Partition Equal Subset Sum_分割等和子集
-494_Target Sum_目标和
+LeetCode 416_Partition Equal Subset Sum_分割等和子集
+LeetCode 494_Target Sum_目标和
 ```
 
 #### 16.1.2 完全背包
 
 ```
-322.零钱兑换
-518.零钱兑换Ⅱ
-279.完全平方数
+LeetCode 322.零钱兑换
+LeetCode 518.零钱兑换Ⅱ
+AcWing 279. 自然数拆分
+LeetCode 279.完全平方数
 ```
 
 
 
 #### 16.1.3 二维费用背包
 
-LeetCode474.一和零
+```
+LeetCode 474.一和零
+```
+
+
 
 ### 16.2 LIS模型
 
