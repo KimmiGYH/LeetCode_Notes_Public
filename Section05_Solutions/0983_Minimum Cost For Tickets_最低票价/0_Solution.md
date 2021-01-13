@@ -1,7 +1,3 @@
----
-export_on_save:
- html: true
----
 # 983. Minimum Cost For Tickets_最低票价 (Medium)
 
 **(动态规划)  $O(n)$**
