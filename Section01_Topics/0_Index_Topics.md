@@ -41,6 +41,7 @@ ACW_799_最长连续不重复子序列
 219. Contains Duplicate II_存在重复元素 II
 220. Contains Duplicate III_存在重复元素 III
 830. Positions of Large Groups_较大分组的位置
+881. Boats to Save People_救生艇
 
 ## 【哈希表 Hash Table】
 
@@ -360,6 +361,7 @@ ACW_799_最长连续不重复子序列
 649. Dota2 Senate_Dota2 参议院
 1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
 1717_5634_Maximum Score From Removing Substrings_删除子字符串的最大得分
+881. Boats to Save People_救生艇
 
 ## 【前缀和 PrefixSum】
 
@@ -555,3 +557,4 @@ ACW_799_最长连续不重复子序列
 0322_Coin Change_零钱兑换
 0518_Coin Change 2_零钱兑换 II
 0983_Minimum Cost For Tickets_最低票价
+0881_Boats to Save People_救生艇
