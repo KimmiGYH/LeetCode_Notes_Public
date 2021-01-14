@@ -435,14 +435,19 @@ LeetCode 474.一和零
 
 ### 16.2 LIS模型
 
+```
 LeetCode300.最长上升子序列
 LeetCode354.俄罗斯套娃信封问题（二维LIS）
 LeetCode368.最大整除子集（LIS求方案）
 LeetCode1626.无矛盾的最佳球队（二维LIS+LIS最大和）
 LeetCode1691.堆叠长方体的最大高度（贪心+三维LIS）
+```
+
+
 
 ### 16.3 线性DP
 
+```
 LeetCode53.最大子序和
 LeetCode62.不同路径
 LeetCode63.不同路径Ⅱ
@@ -466,16 +471,27 @@ LeetCode514.自由之路
 LeetCode1155.掷骰子的n种方法（骰子问题）
 LeetCode1425.带限制的子序列和（动态规划+单调队列优化）
 LeetCode1696.跳跃游戏VI（动态规划+单调队列优化）
+```
+
+
 
 #### 抢劫问题
 
+```
 LeetCode198.打家劫舍
 LeetCode213.打家劫舍Ⅱ
+```
+
+
 
 #### 方格取数问题(矩阵双路径)
 
+```
 LeetCode741.摘樱桃
 LeetCode1463.摘樱桃Ⅱ
+```
+
+
 
 #### 股票问题
 
