@@ -327,8 +327,10 @@ ACW_799_最长连续不重复子序列
 ## 【动态规划 - 背包问题】
 
 ### 01背包
+
 416. Partition Equal Subset Sum_分割等和子集
 494. Target Sum_目标和
+474. Ones and Zeroes_一和零
 
 
 ### 【完全背包】
@@ -362,12 +364,13 @@ ACW_799_最长连续不重复子序列
 1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
 1717_5634_Maximum Score From Removing Substrings_删除子字符串的最大得分
 881. Boats to Save People_救生艇
+1658_Minimum Operations to Reduce X to Zero_将 x 减到 0 的最小操作数
 
 ## 【前缀和 PrefixSum】
 
 560. Subarray Sum Equals K_和为K的子数组
 437. Path Sum III_路径总和 III
-
+1658_Minimum Operations to Reduce X to Zero_将 x 减到 0 的最小操作数
 
 ## 【数学 Math】
 
@@ -558,3 +561,4 @@ ACW_799_最长连续不重复子序列
 0518_Coin Change 2_零钱兑换 II
 0983_Minimum Cost For Tickets_最低票价
 0881_Boats to Save People_救生艇
+1658_Minimum Operations to Reduce X to Zero_将 x 减到 0 的最小操作数
