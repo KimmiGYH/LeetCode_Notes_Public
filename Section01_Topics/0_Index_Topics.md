@@ -42,6 +42,7 @@ ACW_799_最长连续不重复子序列
 220. Contains Duplicate III_存在重复元素 III
 830. Positions of Large Groups_较大分组的位置
 881. Boats to Save People_救生艇
+1658_Minimum Operations to Reduce X to Zero_将 x 减到 0 的最小操作数
 
 ## 【哈希表 Hash Table】
 
