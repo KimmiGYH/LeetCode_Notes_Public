@@ -373,6 +373,10 @@ ACW_799_最长连续不重复子序列
 437. Path Sum III_路径总和 III
 1658_Minimum Operations to Reduce X to Zero_将 x 减到 0 的最小操作数
 
+### 【前后缀分解】
+
+238. Product of Array Except Self_除自身以外数组的乘积
+
 ## 【数学 Math】
 
 343. Integer Break_整数拆分
