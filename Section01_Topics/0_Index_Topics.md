@@ -323,7 +323,8 @@ ACW_799_最长连续不重复子序列
 63. Unique Paths II_不同路径 II
 198. House Robber_打家劫舍
 
-983. Minimum Cost For Tickets_最低票价（DP+Greedy）
+983. Minimum Cost For Tickets_最低票价 (DP+Greedy)
+45. Jump Game II_跳跃游戏 II (DP+Greedy)
 
 ## 【动态规划 - 背包问题】
 
@@ -339,6 +340,10 @@ ACW_799_最长连续不重复子序列
 322. Coin Change_零钱兑换
 518. Coin Change 2_零钱兑换 II
 279. Perfect Squares_完全平方数
+
+## 【动态规划 - 最长上升子序列】
+
+368. Largest Divisible Subset_最大整除子集
 
 ## 【位运算】
 
