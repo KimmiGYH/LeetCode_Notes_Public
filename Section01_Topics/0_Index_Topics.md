@@ -314,13 +314,16 @@ ACW_799_最长连续不重复子序列
 509. Fibonacci Number_
 70. Climbing Stairs_爬楼梯
 120. Triangle_三角形最小路径和
-64. Minimum Path Sum_最小路径和
 279. Perfect Squares_完全平方数
 300. Longest Increasing Subsequence_最长上升子序列
-91. Decode Ways_解码方法
-639. Decode Ways II_解码方法 2
+
 62. Unique Paths_不同路径
 63. Unique Paths II_不同路径 II
+64. Minimum Path Sum_最小路径和
+
+91. Decode Ways_解码方法
+639. Decode Ways II_解码方法 II
+
 198. House Robber_打家劫舍
 
 983. Minimum Cost For Tickets_最低票价 (DP+Greedy)
@@ -344,6 +347,10 @@ ACW_799_最长连续不重复子序列
 ## 【动态规划 - 最长上升子序列】
 
 368. Largest Divisible Subset_最大整除子集
+
+##【线性DP】
+
+53_Maximum Subarray_最大子序和
 
 ## 【位运算】
 

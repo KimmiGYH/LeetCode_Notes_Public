@@ -1,3 +1,4 @@
+/*升级版1）一次最多跳m格，一共有n格，问方法数*/
 #include <iostream>
 #include <vector>
 
@@ -6,17 +7,17 @@ using namespace std;
 class Solution {
 public:
     int climbStairs(int n, int m) {
-        vector<int> result(n+1, 0);
-        result[0] = 1;
-        for (int i = 1; i <=n; ++i) {
-            int curr = 0;
+        vector<int> f(n+1, 0);
+        f[0] = 1;
+        for (int i = 1; i <= n; ++i) {
+            int cur = 0;
             for (int j = 1; j <= m; ++j) {
                 if (j > i) break;
-                curr += result[i-j];
+                cur += f[i-j];
             }
-            result[i] = curr;
+            f[i] = cur;
         }
-        return result[n];    
+        return f[n];    
     }
 };
 
