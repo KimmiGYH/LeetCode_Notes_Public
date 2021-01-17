@@ -19,8 +19,7 @@ public:
         for (int i = 1; i <= n; i++)
             for (int j = 1; j <= m; j++) {
                 f[i][j] = min(f[i - 1][j], f[i][j - 1]) + 1;
-                // a[i], b[i] 相等，无须修改，加0；否则加1
-                int t = a[i] != b[j];
+                int t = a[i] != b[j]; // a[i], b[i] 相等，无须修改，加0；否则加1
                 f[i][j] = min(f[i][j], f[i - 1][j - 1] + t);
             }
         return f[n][m];
