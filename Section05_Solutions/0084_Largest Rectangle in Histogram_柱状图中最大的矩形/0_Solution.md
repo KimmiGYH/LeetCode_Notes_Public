@@ -18,7 +18,7 @@
 
 - 解决此类问题的经典做法是单调栈，维护一个单调递增的栈，如果当前柱形条 `i` 的高度比栈顶要低，则栈顶元素 `cur` 出栈。出栈后，`cur` 右边第一个比它低的柱形条就是 `i`，左边第一个比它低的柱形条是当前栈中的 `top`。不断出栈直到栈为`空`或者柱形条 `i` 不再比 `top` 低。
 
-**V2版本：**
+**V2版本：** [阿明](https://michael.blog.csdn.net/article/details/106438479)
 
 ![solve2](https://img-blog.csdnimg.cn/20200530112008666.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIxMjAxMjY3,size_16,color_FFFFFF,t_70)
 
