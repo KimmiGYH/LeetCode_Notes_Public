@@ -56,6 +56,7 @@ ACW_799_最长连续不重复子序列
 299. Bulls and Cows_猜数字游戏
 1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
 1711_Count Good Meals_大餐计数
+1726_Tuple with Same Product_同积元组
 
 ## 【MultiSet】
 
@@ -399,7 +400,7 @@ ACW_799_最长连续不重复子序列
 1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
 795. Number of Subarrays with Bounded Maximum_区间子数组个数
 1702. Maximum Binary String After Change_修改后的最大二进制字符串
-
+1726_Tuple with Same Product_同积元组（排列组合）
 
 
 
@@ -420,165 +421,3 @@ ACW_799_最长连续不重复子序列
 
 1702. Maximum Binary String After Change_修改后的最大二进制字符串
 
-============================================
-待录制的视频：
-0026_Remove Duplicates from Sorted Array 删除排序数组中的重复项
-0080_Remove Duplicates from Sorted Array II_删除排序数组中的重复项 II
-0075_Sort Colors_颜色分类
-0088_Merge Sorted Array_合并两个有序数组
-0215_Kth Largest Element in an Array_数组中的第K个最大元素
-0167_Two Sum II - Input array is sorted_两数之和 II - 输入有序数组
-0125_Valid Palindrome_验证回文串
-0344_Reverse String_反转字符串
-0345_Reverse Vowels of a String_反转字符串中的元音字母
-0011_Container With Most Water_盛最多水的容器
-0209_Minimum Size Subarray Sum_长度最小的子数组
-0003_Longest Substring Without Repeating Characters_无重复字符的最长子串
-0242_Valid Anagram_有效的字母异位词
-0438_Find All Anagrams in a String_找到字符串中所有字母异位词
-0076_Minimum Window Substring_最小覆盖子串(Hard)
-0050_Spiral Matrix_螺旋矩阵
-0059_Spiral Matrix II_螺旋矩阵 II
-0079_Word Search_单词搜索
-0349_Intersection of Two Arrays_两个数组的交集
-0350_Intersection of Two Arrays II_两个数组的交集 II
-0217_Contains Duplicate_存在重复元素
-0219_Contains Duplicate II_存在重复元素 II
-0220_Contains Duplicate III_存在重复元素 III
-0206_Reverse Linked List_反转链表
-0092_Reverse Linked List II_反转链表 II
-0083_Remove Duplicates from Sorted List_删除排序链表中的重复元素
-0086_Partition List_分隔链表
-0328_Odd Even Linked List_奇偶链表
-0002_Add Two Numbers_两数相加
-0445_Add Two Numbers II_两数相加 II
-0203_Remove Linked List Elements_移除链表元素
-0082_Remove Duplicates from Sorted List II_删除排序链表中的重复元素 II
-0024_Swap Nodes in Pairs_两两交换链表中的节点
-0025_Reverse Nodes in k-Group_K 个一组翻转链表
-0147_Insertion Sort List_对链表进行插入排序
-0021_Merge Two Sorted Lists_合并两个有序链表（归并排序 + 链表）
-0023_Merge k Sorted Lists_合并K个排序链表 （归并排序 + 链表）(Hard)
-
-0148_Sort List_排序链表
-0237_Delete Node in a Linked List_删除链表中的节点
-0019_Remove Nth Node From End of List_删除链表的倒数第N个节点
-0061_Rotate List_旋转链表
-0143_Reorder List_重排链表
-0234_Palindrome Linked List_回文链表
-0020_Valid Parentheses_有效的括号
-0150_Evaluate Reverse Polish Notation_逆波兰表达式求值
-0071_Simplify Path_简化路径
-0144_Binary Tree Preorder Traversal_二叉树的前序遍历
-0094_Binary Tree Inorder Traversal_二叉树的中序遍历
-0145_Binary Tree Postorder Traversal_二叉树的后序遍历
-0173_Binary Search Tree Iterator_二叉搜索树迭代器(中序)
-0341_Flatten Nested List Iterator_扁平化嵌套列表迭代器
-0102_Binary Tree Level Order Traversal_二叉树的层序遍历(BFS+DFS)
-0107_Binary Tree Level Order Traversal II_二叉树的层次遍历 II
-0103_Binary Tree Zigzag Level Order Traversal_二叉树的锯齿形层次遍历
-1609_Even Odd Tree_奇偶树 (BFS+层序)
-0199_Binary Tree Right Side View_二叉树的右视图
-0279_Perfect Squares_完全平方数
-
-0301_Remove Invalid Parentheses_删除无效的括号 (Hard)
-0297_Serialize and Deserialize Binary Tree_二叉树的序列化与反序列化 (Hard)
-0347_Top K Frequent Elements_前 K 个高频元素
-0104_Maximum Depth of Binary Tree_二叉树的最大深度
-0111_Minimum Depth of Binary Tree_二叉树的最小深度
-0226_Invert Binary Tree_翻转二叉树
-0100_Same Tree_相同的树
-0101_Symmetric Tree_对称二叉树
-0222_Count Complete Tree Nodes_完全二叉树的节点个数
-0110_Balanced Binary Tree_平衡二叉树
-0112_Path Sum_路径总和
-0404_Sum of Left Leaves_左叶子之和
-0257_Binary Tree Paths_二叉树的所有路径
-0113_Path Sum II_路径总和 II
-0129_Sum Root to Leaf Numbers_求根到叶子节点数字之和
-0437_Path Sum III_路径总和 III
-0235_Lowest Common Ancestor of a Binary Search Tree_二叉搜索树的最近公共祖先
-0098_Validate Binary Search Tree_验证二叉搜索树
-0450_Delete Node in a BST_删除二叉搜索树中的节点
-0108_Convert Sorted Array to Binary Search Tree_将有序数组转换为二叉搜索树
-0230_Kth Smallest Element in a BST_二叉搜索树中第K小的元素
-0236_Lowest Common Ancestor of a Binary Tree_二叉树的最近公共祖先
-
-1653_Minimum Deletions to Make String Balanced_使字符串平衡的最少删除次数
-1663_5606_Smallest String With A Given Numeric Value_具有给定数值的最小字符串
-0224_Basic Calculator_基本计算器(Hard)
-0227_Basic Calculator II_基本计算器 II
-
-0017_Letter Combinations of a Phone Number_电话号码的字母组合（树形问题）
-0093_Restore IP Addresses_复原IP地址
-0131_Palindrome Partitioning_分割回文串
-
-0046_Permutations_全排列
-0047_Permutations II_全排列 II
-0077_Combinations_组合
-0039_Combination Sum_组合总和
-0040_Combination Sum II_组合总和 II
-0216_Combination Sum III_组合总和 III
-0078_Subsets_子集
-0090_Subsets II_子集 II
-0401_Binary Watch_二进制手表
-1415_长度为 n 的开心字符串中字典序第 k 小的字符串
-0300_Longest Increasing Subsequence_最长上升子序列
-1669_5558_Merge In Between Linked Lists_合并两个链表
-
-1673_Find the Most Competitive Subsequence_找出最具竞争力的子序列
-0200_Number of Islands_岛屿数量
-0463_Island Perimeter_岛屿的周长
-0695_Max Area of Island_岛屿的最大面积
-1254_Number of Closed Islands_统计封闭岛屿的数目
-0130_Surrounded Regions_被围绕的区域
-0934_Shortest Bridge_最短的桥
-0795_Number of Subarrays with Bounded Maximum_区间子数组个数
-
-0398_Random Pick Index_随机数索引
-0382_Linked List Random Node_链表随机节点
-0417_Pacific Atlantic Water Flow_太平洋大西洋水流问题
-0051_N-Queens_N 皇后(Hard)
-0052_N-Queens II_N皇后 II(Hard)
-0037_Sudoku Solver_解数独(Hard)
-
-1695_5630_Maximum Erasure Value_删除子数组的最大得分
-0074_Search a 2D Matrix_搜索二维矩阵
-0240_Search a 2D Matrix II_搜索二维矩阵 II
-0299_Bulls and Cows_猜数字游戏
-1094_Car Pooling_拼车
-1700_5621_Number of Students Unable to Eat Lunch_无法吃午餐的学生数量
-0347_Top K Frequent Elements_前 K 个高频元素
-0692_Top K Frequent Words_前K个高频单词
-0909_Snakes and Ladders_蛇梯棋
-1705_Maximum Number of Eaten Apples_吃苹果的最大数目
-0560_Subarray Sum Equals K_和为K的子数组
-1702_Maximum Binary String After Change_修改后的最大二进制字符串
-0091_Decode Ways_解码方法
-0208_Implement Trie (Prefix Tree)_实现 Trie (前缀树)
-0639_Decode Ways II_解码方法 2
-0062_Unique Paths_不同路径
-0063_Unique Paths II_不同路径 II
-0605_ Can Place Flowers_种花问题
-0649_Dota2 Senate_Dota2 参议院
-0495_Teemo Attacking_提莫攻击
-1414_Find the Minimum Number of Fibonacci Numbers Whose Sum Is K_和为 K 的最少斐波那契数字数目
-0239_Sliding Window Maximum_滑动窗口最大值
-0198_House Robber_打家劫舍
-0416_Partition Equal Subset Sum_分割等和子集
-0509_Fibonacci Number_斐波那契数
-0416_Partition Equal Subset Sum_分割等和子集
-1457_Pseudo-Palindromic Paths in a Binary Tree_二叉树中的伪回文路径
-0001_Two Sum_两数之和
-1711_Count Good Meals_大餐计数
-0830_Positions of Large Groups_较大分组的位置
-0067_Add Binary_二进制求和
-0990_Satisfiability of Equality Equations_等式方程的可满足性
-0547_Number of Provinces_省份数量_朋友圈
-0189_Rotate Array_旋转数组
-1539_Kth Missing Positive Number_第 k 个缺失的正整数
-0322_Coin Change_零钱兑换
-0518_Coin Change 2_零钱兑换 II
-0983_Minimum Cost For Tickets_最低票价
-0881_Boats to Save People_救生艇
-1658_Minimum Operations to Reduce X to Zero_将 x 减到 0 的最小操作数
