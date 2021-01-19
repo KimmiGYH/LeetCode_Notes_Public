@@ -380,6 +380,7 @@ ACW_799_最长连续不重复子序列
 1717_5634_Maximum Score From Removing Substrings_删除子字符串的最大得分
 881. Boats to Save People_救生艇
 1658_Minimum Operations to Reduce X to Zero_将 x 减到 0 的最小操作数
+1727_Largest Submatrix With Rearrangements_重新排列后的最大子矩阵
 
 45. Jump Game II_跳跃游戏 II (DP+Greedy)
 
