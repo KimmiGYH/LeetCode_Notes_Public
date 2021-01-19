@@ -26,8 +26,8 @@ public:
         while (!q.empty()) {
             auto t = q.front(); q.pop();
             cnt ++;
-            for (auto i : g[t]) // 枚举当前点的所有后继节点
-                if (-- d[i] == 0)
+            for (auto i : g[t]) // 枚举当前点的所有出边
+                if (-- d[i] == 0) // 更新入度，--d[i]等于0表明当前点可以被遍历
                     q.push(i);
         }
         
