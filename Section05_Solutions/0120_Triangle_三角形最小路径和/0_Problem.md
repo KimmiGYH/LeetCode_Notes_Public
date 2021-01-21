@@ -1,62 +1,87 @@
-# [120 Triangle](https://leetcode.com/problems/triangle/) (Medium)
+# [120. Triangle](https://leetcode.com/problems/triangle/) (Medium)
 
+Given a `triangle` array, return *the minimum path sum from top to bottom*.
 
+For each step, you may move to an adjacent number of the row below. More formally, if you are on index `i` on the current row, you may move to either index `i` or index `i + 1` on the next row.
 
-2277261Add to ListShare
+ 
 
-Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
-
-For example, given the following triangle
+**Example 1:**
 
 ```
-[
-     [2],
-    [3,4],
-   [6,5,7],
-  [4,1,8,3]
-]
+Input: triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
+Output: 11
+Explanation: The triangle looks like:
+   2
+  3 4
+ 6 5 7
+4 1 8 3
+The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above).
 ```
 
-The minimum path sum from top to bottom is `11` (i.e., **2** + **3** + **5** + **1** = 11).
+**Example 2:**
 
-**Note:**
+```
+Input: triangle = [[-10]]
+Output: -10
+```
 
-Bonus point if you are able to do this using only *O*(*n*) extra space, where *n* is the total number of rows in the triangle.
+ 
 
+**Constraints:**
 
+- `1 <= triangle.length <= 200`
+- `triangle[0].length == 1`
+- `triangle[i].length == triangle[i - 1].length + 1`
+- `-10^4 <= triangle[i][j] <= 10^4`
+
+ 
+
+**Follow up:** Could you do this using only `O(n)` extra space, where `n` is the total number of rows in the triangle?
 
 
 
 # [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/)
 
-难度中等603
+难度中等
 
-给定一个三角形，找出自顶向下的最小路径和。每一步只能移动到下一行中相邻的结点上。
+给定一个三角形 `triangle` ，找出自顶向下的最小路径和。
 
-**相邻的结点** 在这里指的是 `下标` 与 `上一层结点下标` 相同或者等于 `上一层结点下标 + 1` 的两个结点。
-
- 
-
-例如，给定三角形：
-
-```
-[
-     [2],
-    [3,4],
-   [6,5,7],
-  [4,1,8,3]
-]
-```
-
-自顶向下的最小路径和为 `11`（即，**2** + **3** + **5** + **1** = 11）。
+每一步只能移动到下一行中相邻的结点上。**相邻的结点** 在这里指的是 **下标** 与 **上一层结点下标** 相同或者等于 **上一层结点下标 + 1** 的两个结点。也就是说，如果正位于当前行的下标 `i` ，那么下一步可以移动到下一行的下标 `i` 或 `i + 1` 。
 
  
 
-**说明：**
+**示例 1：**
 
-如果你可以只使用 *O*(*n*) 的额外空间（*n* 为三角形的总行数）来解决这个问题，那么你的算法会很加分。
+```
+输入：triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
+输出：11
+解释：如下面简图所示：
+   2
+  3 4
+ 6 5 7
+4 1 8 3
+自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。
+```
 
+**示例 2：**
 
+```
+输入：triangle = [[-10]]
+输出：-10
+```
 
+ 
 
+**提示：**
 
+- `1 <= triangle.length <= 200`
+- `triangle[0].length == 1`
+- `triangle[i].length == triangle[i - 1].length + 1`
+- `-10^4 <= triangle[i][j] <= 10^4`
+
+ 
+
+**进阶：**
+
+- 你可以只使用 `O(n)` 的额外空间（`n` 为三角形的总行数）来解决这个问题吗？
