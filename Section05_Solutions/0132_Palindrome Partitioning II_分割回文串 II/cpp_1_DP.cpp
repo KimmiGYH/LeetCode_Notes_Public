@@ -12,6 +12,7 @@ public:
         s = ' ' + s;
         // g(i,j) 表示从 i 到 j 是不是回文串
         vector<vector<bool>> g(n + 1, vector<bool>(n + 1));
+        // f[i] 表示把前 i 个字符划分成回文串，最少划分成几部分
         vector<int> f(n + 1, 1e8);
         
         for (int j = 1; j <= n; j++)
