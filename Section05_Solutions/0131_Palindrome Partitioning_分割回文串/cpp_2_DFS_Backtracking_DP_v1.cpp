@@ -17,7 +17,7 @@ public:
             for (int i = 0; i <= j; i++)
                 if (i == j) f[i][j] = true;
                 else if (s[i] == s[j]) {
-                    if (i + 1 > j - 1 || f[i + 1][j - 1]) //只有两个字符 or f[i+1][j-1]是回文串
+                    if (i + 1 > j - 1 || f[i + 1][j - 1]) //只有两个字符j-i<2 or f[i+1][j-1]是回文串
                         f[i][j] = true;
                 }
         dfs(s, 0);

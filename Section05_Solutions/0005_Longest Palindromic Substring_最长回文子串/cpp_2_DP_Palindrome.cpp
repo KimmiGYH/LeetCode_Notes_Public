@@ -13,7 +13,7 @@ public:
         for (int j = 0; j < n; ++j) {
             dp[j][j] = 1;
             for (int i = 0; i < j; ++i) {
-                dp[i][j] = (s[j] == s[i] && (i + 1 > j - 1 || dp[i + 1][j - 1]));
+                dp[i][j] = (s[j] == s[i] && (j - i < 2 || dp[i + 1][j - 1]));
                 if (dp[i][j] && len < j - i + 1) {
                     len = j - i + 1;
                     left = i;

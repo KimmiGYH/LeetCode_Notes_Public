@@ -17,7 +17,7 @@
 - 维护一个二维数组 $dp$，其中 $dp[i][j]$ 表示字符串区间 $[i, j]$ 是否为回文串；
 - 当 $j = i$ 时，只有一个字符，肯定是回文串；
 - 如果是回文字符串，需要判断 $s[i]$ 是否等于 $s[j]$；
-- 除了判断 $[i]$ 和 $s[j]$ 相等之外，还要判断如果只有两个字符，即 $i + 1 > j - 1$ 时，或者 $||$ $dp[i + 1][j - 1]$ 为真，就是回文串；
+- 除了判断 $[i]$ 和 $s[j]$ 相等之外，还要判断如果只有两个字符，即 $j - i < 2$ 时，或者 $||$ $dp[i + 1][j - 1]$ 为真，就是回文串；
 
 通过以上分析，可以写出递推式如下：
 
@@ -25,8 +25,27 @@
 for (int j = 0; j < n; ++j) {
     dp[j][j] = true;
     for (int i = 0; i < j; ++i) {
-        if (s[i] == s[j] && (i + 1 > j - 1 || dp[i + 1][j - 1]))
+        if (s[i] == s[j] && (j - i < 2 || dp[i + 1][j - 1]))
             dp[i][j] = true;
     }
 }
+```
+
+## 解法三：动态规划（参考LC132题）
+
+[花花酱 LeetCode 132. Palindrome Partitioning II](https://youtu.be/kTCymFbU2ok)
+
+**第一次动态规划：**
+
+- 状态表示：用 $valid$ 数组判断 $s[i...j]$ 是否是回文串；
+- 状态转移：$valid[i][j]$ 是回文串当且仅当$s[i]$ 等于 $s[j]$ 并且 $s[i+1...j-1]$ 是回文串；
+- 边界情况：循环长度 $l$ 从 $2$ 到 $n$，$j = i + l - 1$ 进行循环，也即如果 $s[i...j]$ 的长度小于等于 $2$，则 $valid[i][j] = (s[i] == s[j])$ 且 $valid[i + 1][j - 1]$;
+
+```cpp
+// valid[i][j] = 1 if s[i~j] is palindrome, otherwise 0
+vector<vector<int>> valid(n, vector<int>(n, 1));
+
+for (int l = 2; l <= n; ++l)
+    for (int i = 0, j = i + l - 1; j < n; ++i, ++j)
+        valid[i][j] = s[i] == s[j] && valid[i + 1][j - 1];
 ```
