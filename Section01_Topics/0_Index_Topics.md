@@ -426,3 +426,5 @@ ACW_799_最长连续不重复子序列
 
 1702. Maximum Binary String After Change_修改后的最大二进制字符串
 
+## 【综合题】
+1631_Path With Minimum Effort_最小体力消耗路径（二分+BFS+并查集+最短路Dijkstra）
