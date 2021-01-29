@@ -428,3 +428,7 @@ ACW_799_最长连续不重复子序列
 
 ## 【综合题】
 1631_Path With Minimum Effort_最小体力消耗路径（二分+BFS+并查集+最短路Dijkstra）
+
+## 【数学 Math】
+
+914_X of a Kind in a Deck of Cards_卡牌分组
