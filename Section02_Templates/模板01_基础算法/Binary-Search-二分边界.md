@@ -1,8 +1,53 @@
-# 二分边界详细总结
+# 二分搜索边界问题总结
+
+二分搜索边界问题总结
+
+## 整数二分查找(y总模板)
+
+![整数二分查找.png](https://cdn.acwing.com/media/article/image/2021/01/31/41956_8aeeaf4163-整数二分查找.png) 
+
+二分模板一共有两个，分别适用于不同情况。
+算法思路：假设目标值在闭区间`[l, r]`中， 每次将区间长度缩小一半，当`l = r`时，我们就找到了目标值。
 
 
+**版本1**
+当`mid`在二分答案的左边，我们将区间压缩成 `[mid, r]`；
+当我们将区间`[l, r]`划分成`[l, mid - 1]`和`[mid, r]`时，其更新操作是`r = mid - 1`或者`l = mid`;，此时为了防止死循环，计算`mid`时需要加 `1`。
 
-## 二分查找模板
+**C++ 代码模板：**
+```cpp
+int bsearch_2(int l, int r)
+{
+    while (l < r)
+    {
+        int mid = l + r + 1 >> 1;
+        if (A[mid] <= target) l = mid; // mid在左半边，二分答案在mid右边，区间压缩为[mid, r]，从左往后找最后一个小于等于target的数
+        else r = mid - 1;
+    }
+    return l;
+}
+```
+
+
+**版本2**
+当`mid`在二分答案的右边，我们将区间压缩成 `[l, mid]`；
+当我们将区间`[l, r]`划分成`[l, mid]`和`[mid + 1, r]`时，其更新操作是`r = mid`或者`l = mid + 1`;，计算`mid`时不需要加 `1`。
+
+**C++ 代码模板：**
+```cpp
+int bsearch_1(int l, int r)
+{
+    while (l < r)
+    {
+        int mid = l + r >> 1;
+        if (A[mid] >= target) r = mid; // mid在右半边，二分答案在mid左边，区间压缩为[l, mid]，从左往后找第一个大于等于target的数
+        else l = mid + 1;
+    }
+    return l;
+}
+```
+
+## 二分搜索模板
 
 
 
@@ -51,9 +96,41 @@ int binary_search(int[] nums, int target) {
 }
 ```
 
+### 二、查找最后一个 小于等于/小于 `target` 的元素
+
+```c++
+int left = 1, right = n;
+while(left < right)
+{
+    int mid = (left + right + 1) / 2; // 要上取整
+    if(A[mid] <= target)
+        left = mid; // 二分的答案在 mid或mid的右边，把l-r区间变成 mid-r区间
+    else
+        right = mid - 1;
+}
+```
+
+**或者写成这样：**
+
+```c++
+int right_bound(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left <= right) {
+        int mid = left + right >> 1;
+        if (nums[mid] <= target)
+            left = mid + 1;
+        else
+            right = mid - 1;
+    }
+    // 最后要检查 right 越界的情况
+    if (right < 0 || nums[right] != target)
+        return -1;
+    return right;
+}
+```
 
 
-### 二、查找大于等于 / 大于 `target` 的第一个元素
+### 三、查找第一个 大于等于 / 大于 `target` 的元素
 
 这种通常题目描述为满足某种情况的**最小的元素**。
 
@@ -88,43 +165,6 @@ int left_bound(int[] nums, int target) {
 }
 ```
 
-
-
-### 三、查找小于等于/小于 `target` 的最后一个元素
-
-```c++
-int left = 1, right = n;
-while(left < right)
-{
-    int mid = (left + right + 1) / 2;
-    if(A[mid] <= target)
-        left = mid;
-    else
-        right = mid - 1;
-}
-```
-
-**或者写成这样：**
-
-```c++
-int right_bound(int[] nums, int target) {
-    int left = 0, right = nums.length - 1;
-    while (left <= right) {
-        int mid = left + right >> 1;
-        if (nums[mid] <= target)
-            left = mid + 1;
-        else
-            right = mid - 1;
-    }
-    // 最后要检查 right 越界的情况
-    if (right < 0 || nums[right] != target)
-        return -1;
-    return right;
-}
-```
-
-
-
 ### 四、总结
 
 - 查找精确值，循环条件是小于等于；查找满足情况的最大最小值，循环条件是小于。
@@ -137,9 +177,8 @@ int right_bound(int[] nums, int target) {
 
 【参考文章】
 
+[AcWing: yxc：二分查找算法模板](https://www.acwing.com/file_system/file/content/whole/index/content/3073/)
+
 [AcWing: T-SHLoRk：二分边界详细总结](https://www.acwing.com/blog/content/307/)
 
 [GitHub: labuladong：二分查找详解](https://github.com/labuladong/fucking-algorithm/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4%E7%B3%BB%E5%88%97/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3.md)
-
-
-
