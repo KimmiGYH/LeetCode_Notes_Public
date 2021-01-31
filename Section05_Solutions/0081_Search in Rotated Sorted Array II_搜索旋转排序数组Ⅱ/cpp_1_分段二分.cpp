@@ -27,7 +27,7 @@ public:
             if (nums[mid] >= target) r = mid;
             else l = mid + 1;
         }
-        
+        // cout << "l: " << l << " " << "r: " << r; // l: 2 r: 1 其中l越界，故最后一行不能写成 nums[l] == target
         return nums[r] == target;
     }
 };
