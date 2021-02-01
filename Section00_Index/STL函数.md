@@ -5,3 +5,6 @@
 - `accumulate(first, last, init)`
   
   eg: `int sum = std::accumulate(v.begin(), v.end(), 0);`
+
+
+
