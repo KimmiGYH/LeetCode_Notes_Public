@@ -16,13 +16,9 @@
 
 ![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0240_Search%20a%202D%20Matrix%20II_%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%20II/solve.png)
 
-
-
 ## 解法三：四个方向二分压缩
 
-
-
-时间复杂度：(二分) $`O(k(logn+logm))`$
+时间复杂度：(二分) $O(k(logn+logm))$
 
 初始化上下左右边界 `up`, `down`, `left`, `right`，保证 `target` 可能出现在此区域。
 
@@ -35,18 +31,13 @@
 注意，如果一轮迭代更新中，四个元素的值都没有变化，则说明那一片区域有多个 `target`，直接返回 `true`。
 
 
-
-时间复杂度：
+**时间复杂度**：
 
 每次迭代时间复杂度为 `O(log⁡n+log⁡m)`，假设需要 `k` 次迭代，故时间复杂度为 `O(k(logn+logm))`。
 最坏情况可能 `k=min(n,m)`，但平均情况下很难达到最坏情况。
 
-空间复杂度：仅需要常数的额外空间。
-
-
+**空间复杂度**：仅需要常数的额外空间。
 
 ## 解法四：两个方向二分压缩
-
-
 
 求出 `new_right`、`new_up`，从右上方开始不断将行和列进行二分求解，分治思维。
