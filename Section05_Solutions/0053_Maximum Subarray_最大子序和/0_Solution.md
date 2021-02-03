@@ -2,6 +2,8 @@
 
 ## 解法一：动态规划 $O(n)$
 
+![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0053_Maximum%20Subarray_%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C/solve1.png)
+
 - 状态表示：$f(i)$ 表示所有以 $nums[i]$ 结尾的区间中的最大和是多少。
 
 - 递推关系：$f(i) = max(nums[i], f(i-1) + nums[i]) = nums[i] + max(0, f(i-1))$。
