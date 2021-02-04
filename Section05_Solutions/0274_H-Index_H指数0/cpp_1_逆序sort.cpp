@@ -13,6 +13,6 @@ public:
         for (int h = c.size(); h; h--)
             if (c[h - 1] >= h)
                 return h;
-        return 0;            
+        return 0;
     }
 };
