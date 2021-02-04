@@ -14,7 +14,7 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
         if (!head || !head->next) return false;
-        auto slow = head, fast = head->next;
+        auto slow = head, fast = head;
         while (fast) {
             slow = slow->next, fast = fast->next;
             if (!fast) return false; // 判空
