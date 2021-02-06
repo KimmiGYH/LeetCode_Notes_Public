@@ -1,39 +1,26 @@
-# [136. Single Number](https://leetcode.com/problems/single-number/) (Easy)
+# [136 Single Number](https://leetcode.com/problems/single-number/) (easy)
 
-Given a **non-empty** array of integers `nums`, every element appears *twice* except for one. Find that single one.
+Given a **non-empty** array of integers, every element appears *twice* except for one. Find that single one.
 
-**Follow up:** Could you implement a solution with a linear runtime complexity and without using extra memory?
+**Note:**
 
- 
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
 **Example 1:**
 
 ```
-Input: nums = [2,2,1]
+Input: [2,2,1]
 Output: 1
 ```
 
 **Example 2:**
 
 ```
-Input: nums = [4,1,2,1,2]
+Input: [4,1,2,1,2]
 Output: 4
 ```
 
-**Example 3:**
 
-```
-Input: nums = [1]
-Output: 1
-```
-
- 
-
-**Constraints:**
-
-- `1 <= nums.length <= 3 * 10^4`
-- `-3 * 104 <= nums[i] <= 3 * 10^4`
-- Each element in the array appears twice except for one element which appears only once.
 
 
 
@@ -60,3 +47,13 @@ Output: 1
 输入: [4,1,2,1,2]
 输出: 4
 ```
+
+
+
+# 题目大意
+
+
+
+给定⼀个⾮空整数数组，除了某个元素只出现⼀次以外，其余每个元素均出现两次。找出那个只出现了
+⼀次的元素。要求算法时间复杂度是线性的，并且不使⽤额外的辅助空间。  
+
