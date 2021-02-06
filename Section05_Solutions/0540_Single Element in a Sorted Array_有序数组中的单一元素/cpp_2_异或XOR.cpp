@@ -12,3 +12,5 @@ public:
         return res;
     }
 };
+
+// 时间复杂度是 O(n) 不符合 O(logn)的要求

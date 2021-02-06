@@ -52,6 +52,7 @@
         "xtree": "cpp",
         "stack": "cpp",
         "functional": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "bitset": "cpp"
     }
 }
