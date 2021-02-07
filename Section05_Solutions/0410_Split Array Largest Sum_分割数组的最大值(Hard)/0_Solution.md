@@ -1,4 +1,4 @@
-# 410_Split Array Largest Sum_分割数组的最大值
+# 410_Split Array Largest Sum_分割数组的最大值(Hard)
 
 ## 解法一：二分
 
