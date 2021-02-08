@@ -28,3 +28,36 @@
 
 我们可以用 STL 的 `push_back` 和 `erase` 可以很容易地实现这些操作。
 
+```cpp
+#include <vector>
+#include <iostream>
+ 
+ 
+int main( )
+{
+    std::vector<int> c{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    for (auto &i : c) {
+        std::cout << i << " ";
+    }
+    std::cout << '\n';
+    // 0 1 2 3 4 5 6 7 8 9
+
+ 
+    c.erase(c.begin());
+ 
+    for (auto &i : c) {
+        std::cout << i << " ";
+    }
+    std::cout << '\n';
+    // 1 2 3 4 5 6 7 8 9
+ 
+
+    c.erase(c.begin()+2, c.begin()+5);
+ 
+    for (auto &i : c) {
+        std::cout << i << " ";
+    }
+    std::cout << '\n';
+    // 1 2 6 7 8 9
+}
+```
