@@ -1,5 +1,6 @@
 # 295_Find Median from Data Stream_数据流的中位数 (Hard)
 
+![pic](https://pic.leetcode-cn.com/1612362061-eqjoaI-image.png)
 ## 解法一：对顶堆 $O(nlog⁡n)$
 
 1. 建立一个大根堆，一个小根堆。大根堆存储小于当前中位数，小根堆存储大于等于当前中位数。且小根堆的大小永远都**比大根堆大** $1$ **或相等**。
