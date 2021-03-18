@@ -12,7 +12,7 @@ struct ListNode {
 
 class Solution {
 public:
-    ListNode* reverseBetween(ListNode* head, int m, int n) {
+    ListNode* reverseBetween(ListNode* head, int m, int n) { //m是left, n是right
         auto dummy = new ListNode(-1);
         dummy->next = head;
 
@@ -22,9 +22,9 @@ public:
         auto b = a->next, c = b->next;
         // 第一步：翻转 n-m 条边
         for (int i = 0; i < n - m; i++) {
-            auto t = c->next;
+            auto d = c->next;
             c->next = b; 
-            b = c, c = t;
+            b = c, c = d;
         }
         // 第二步：
         // 让 m (m其实就是 a->next) 指向 c

@@ -14,7 +14,7 @@ using namespace std;
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if (!head)  return NULL;
+        if (!head || !head->next)  return head;
         auto a = head, b = a->next;
         while (b) {
             auto c = b->next;
@@ -22,7 +22,7 @@ public:
             a = b;
             b = c;
         }
-        head->next = NULL;
+        head->next = nullptr;
         return a;
     }
 };

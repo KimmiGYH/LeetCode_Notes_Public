@@ -26,9 +26,3 @@ public:
         return pre;
     }
 };
-
-
-int main() {
-
-    return 0;
-}
