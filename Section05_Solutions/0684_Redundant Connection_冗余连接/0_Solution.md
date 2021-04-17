@@ -8,7 +8,12 @@ Union Find 的核心思想并不是很难理解，首先建立一个长度为 `(
 
 开始表示每个结点都是一个单独的组，所谓的 Union Find 就是要让结点之间建立关联，比如若 `root[1] = 2`，就表示结点1和结点2是相连的，`root[2] = 3` 表示结点2和结点3是相连的，如果此时新加一条边 `[1, 3]` 的话，我们通过 `root[1]` 得到 `2`，再通过 `root[2]` 得到 `3`，说明结点1有另一条路径能到结点3，这样就说明环是存在的；如果没有这条路径，那么要将结点1和结点3关联起来，让 `root[1] = 3` 即可。
 
+并查集的基础知识：
 
+[并查集（Disjoint-set union）第1讲](https://youtu.be/YKE4Vd1ysPI)
+[并查集（Disjoint-set union）第2讲](https://youtu.be/gpmOaSBcbYA)
+[并查集（Disjoint-set union）第3讲](https://youtu.be/zos--xohLT0)
+[花花酱 LeetCode 684. Redundant Connection](https://youtu.be/4hJ721ce010)
 
 **思路：**
 
