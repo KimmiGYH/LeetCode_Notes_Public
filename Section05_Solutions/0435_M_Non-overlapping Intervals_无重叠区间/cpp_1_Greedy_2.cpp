@@ -8,7 +8,6 @@ public:
     static bool cmp(vector<int> &a, vector<int> &b) {
         return a[1] < b[1];
     }
-
     int eraseOverlapIntervals(vector<vector<int>>& intervals) {
         int n = intervals.size();
         if(n < 2) return 0;
@@ -16,10 +15,15 @@ public:
         sort(intervals.begin(), intervals.end(), cmp);
 
         int cnt = 0; //表示需要移除区间的最小数量
-        int r = intervals[0][1]; //维护上一个选择区间的右端点
-        for(int i = 1; i < n; ++i){
-            if(intervals[i][0] < r)  ++cnt; //一个区间的start小于上个区间的end，那么一定是重复区间
-            else r = intervals[i][1];
+        int i = 0;
+        while (i < n)
+        {
+            int j = i + 1;
+            while (j < n && intervals[j][0] < intervals[i][1]) {
+                j ++; //如果新区间左端点小于上个区间的右端点，则跳过该区间，并移除
+                cnt ++;
+            }
+            i = j;
         }
         return cnt;
     }
