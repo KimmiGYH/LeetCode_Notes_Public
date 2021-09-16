@@ -56,5 +56,8 @@ sort(people.begin(), people.end(), [](const vector<int>& a, const vector<int>& b
 
 
 
-### 解法三：树状数组
+### 解法三：树状数组 + 二分 $O(n∗logn∗logn)$
 
+1. 起始状态 `tr` 值为 $0$，每次占用了一个位置，则当前位置的值 $+1$，即 `add(r, 1)`。
+2. 二分查找，如果 `tr` 中 $0$ 的个数（即总和减去 $1$ 的个数）$>= k + 1$，则答案在左边，否则在右边。
+3. `query` 求的就是 `1` 的数量。
