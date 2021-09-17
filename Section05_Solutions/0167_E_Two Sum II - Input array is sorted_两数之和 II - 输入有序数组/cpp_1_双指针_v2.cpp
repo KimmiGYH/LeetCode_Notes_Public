@@ -1,18 +1,18 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-        for (int i = 0, j = numbers.size() - 1; i < j; i++) {
-            while (i < j && numbers[i] + numbers[j] > target)
-                j--;
-            if (i < j && numbers[i] + numbers[j] == target)
-                return {i + 1, j + 1};
+        int l = 0, r = numbers.size() - 1;
+        while (l < r) {
+            int sum = numbers[l] + numbers[r];
+            if (sum == target) return {l + 1, r + 1};
+            else if (sum < target) ++ l;
+            else -- r;
         }
         return {};
     }
 };
-// Time: O(n) 其中 n 是数组的长度。两个指针移动的总次数最多为 n 次。
-// Space: O(1)
