@@ -9,23 +9,22 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        if (!head || !head->next) return NULL;
-        auto s = head, f = head;
-        while(f) {
-            s = s->next, f = f->next;
-            if (!f) return NULL;
-            f = f->next;
-            // 如果相遇，让一个指针从相遇点继续走，另一个指针从起点开始走
-            if (s == f) {
-                s = head;
-                while (s != f) s = s->next, f = f->next;
-                return s;
-            }
+        ListNode *slow = head, *fast = head;
+        // 判断是否存在环路
+        do {
+            if (!fast || !fast->next) return nullptr;
+            fast = fast->next->next;
+            slow = slow->next;
+        } while (fast != slow);
+        // 如果存在，查找环路节点
+        slow = head;
+        while (fast != slow) {
+            slow = slow->next;
+            fast = fast->next;
         }
-        return NULL;
+        return slow;
     }
 };
