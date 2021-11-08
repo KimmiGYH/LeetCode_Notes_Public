@@ -10,7 +10,7 @@ public:
         int l = 1, r = *max_element(piles.begin(), piles.end());
         while (l < r) {
             int mid = l + r >> 1;
-            if (eatTime(piles, mid) <= H) r = mid; //耗时少吃速过快，要降速
+            if (eatTime(piles, mid) <= H) r = mid; //耗时少吃速过快，要降速；速度足够快
             else l = mid + 1;
         }
         return l;
