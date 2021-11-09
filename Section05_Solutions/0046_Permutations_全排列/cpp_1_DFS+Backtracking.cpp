@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-
+//需要：表示每个位置数组int[]、下标 u、记录用过的数的布尔数组used[]
 class Solution {
 public:
 
@@ -30,9 +30,7 @@ public:
             if (used[i] == false) {
                 path[u] = nums[i];
                 used[i] = true;
-                dfs(nums, u + 1);
-                // restore for used, no need to restore path
-                // because it will be overwritten in the next iteration
+                dfs(nums, u + 1); //递归下一层
                 used[i] = false;
             }
         }

@@ -34,8 +34,8 @@ public:
                 // 注意:首先 i 要大于 0，因为如果 i = 0 的话，前面肯定没有数了
                 if (i && nums[i - 1] == nums[i] && !used[i - 1])  continue;
                 // 否则就可以用这个数
-                path[u] = nums[i];
                 used[i] = true;
+                path[u] = nums[i];
                 dfs(nums, u + 1);
                 used[i] = false;
             }
