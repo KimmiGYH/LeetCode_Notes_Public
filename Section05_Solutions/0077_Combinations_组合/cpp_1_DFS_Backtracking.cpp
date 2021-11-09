@@ -10,7 +10,7 @@ public:
     vector<int> path;
 
     vector<vector<int>> combine(int n, int k) {
-        // k 当前还需要选几个数
+        // k 当前还可以选几个数
         dfs(n, k, 1);
         return res;
     }

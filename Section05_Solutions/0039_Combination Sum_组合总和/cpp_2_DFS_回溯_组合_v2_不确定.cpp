@@ -10,21 +10,26 @@ public:
     vector<int> path;
 
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        sort(candidates.begin(), candidates.end());
         dfs(candidates, 0, target);
         return res;
     }
 
 private:
-    void dfs(vector<int>& candidates, int u, int target) {
+    void dfs(vector<int>& candidates, int s, int target) {
         if (target == 0) {
             res.push_back(path);
             return;
         }
-        if (target < 0)  return;
 
-        for (int i = u; i < candidates.size(); i++) {
-            path.push_back(candidates[i]);
-            dfs(candidates, i, target - candidates[i]); // 因为数字可以重复使用，所以index不能写成i+1
+        if (s == candidates.size()) return;
+
+        for (int i = 0; candidates[s] * i <= target; i++) {
+            dfs(candidates, s + 1, target - candidates[s] * i);
+            path.push_back(candidates[s]);
+        }
+
+        for (int i = 0; candidates[s] * i <= target; i++) {
             path.pop_back();
         }
     }
@@ -43,6 +48,6 @@ int main() {
     return 0;
 }
 /* Output:
+7
 2 2 3 
-7 
 */
