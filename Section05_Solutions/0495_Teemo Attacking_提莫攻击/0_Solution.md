@@ -2,7 +2,7 @@
 
 
 
-**贪心 Greedy** $O(n)$
+**数组模拟 + 贪心 Greedy** $O(n)$
 
 直接使用贪心算法，比较相邻两个时间点的时间差 `difference = timeSeries[i] - timeSeries[i - 1]`，
 
