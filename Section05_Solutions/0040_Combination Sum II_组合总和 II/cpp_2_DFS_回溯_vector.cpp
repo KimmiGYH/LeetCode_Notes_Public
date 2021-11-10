@@ -16,18 +16,18 @@ public:
     }
 
 private:
-    void dfs(vector<int>& candidates, int u, int target, vector<vector<int>>& res, vector<int>& path) {
+    void dfs(vector<int>& candidates, int s, int target, vector<vector<int>>& res, vector<int>& path) {
         if (target == 0) {
             res.push_back(path);
             return;
         }
 
-        for (int i = u; i < candidates.size(); i++) {
+        for (int i = s; i < candidates.size(); i++) {
             int num = candidates[i];
             if (num > target)  return;
-            // 加上判重的条件: i > u 即 i 从 u+1 开始，表示对于当前这层递归循环只能使用其中一个元素，另一个重复元素可以在下层循环使用。
-            if (i > u && candidates[i] == candidates[i - 1]) continue;
-            // if (i > 0 && candidates[i] == candidates[i - 1]) continue;
+            // 加上判重的条件: i > s 即 i 从 s+1 开始，表示对于当前这层递归循环只能使用其中一个元素，另一个重复元素可以在下层循环使用。
+            if (i > s && candidates[i] == candidates[i - 1]) continue;
+            // 比较 if (i > 0 && candidates[i] == candidates[i - 1]) continue;
             path.push_back(candidates[i]);
             dfs(candidates, i + 1, target - candidates[i], res, path);
             path.pop_back();

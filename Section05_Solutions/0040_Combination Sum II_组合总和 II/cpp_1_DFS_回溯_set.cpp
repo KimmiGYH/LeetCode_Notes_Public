@@ -6,7 +6,6 @@ using namespace std;
 
 class Solution {
 public:
-
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
         set<vector<int>> res;
         vector<int> path;
@@ -16,17 +15,17 @@ public:
     }
 
 private:
-    void dfs(vector<int>& candidates, int u, int target, set<vector<int>>& res, vector<int>& path) {
+    void dfs(const vector<int>& candidates, int s, int target, set<vector<int>>& res, vector<int>& path) {
         if (target == 0) {
             res.insert(path);
             return;
         }
 
-        for (int i = u; i < candidates.size(); i++) {
+        for (int i = s; i < candidates.size(); i++) {
             int num = candidates[i];
             if (num > target)  return;
-            path.push_back(candidates[i]);
-            dfs(candidates, i + 1, target - candidates[i], res, path);
+            path.push_back(num);
+            dfs(candidates, i + 1, target - num, res, path);
             path.pop_back();
         }
     }
