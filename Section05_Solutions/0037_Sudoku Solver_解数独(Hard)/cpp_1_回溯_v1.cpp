@@ -5,18 +5,18 @@ using namespace std;
 
 class Solution {
 public:
-    bool row[9][9], col[9][9], cell[3][3][9];
+    bool row[9][9], col[9][9], box[3][3][9];
 
     void solveSudoku(vector<vector<char>>& board) {
         memset(row, 0, sizeof row);
-        memset(row, 0, sizeof col);
-        memset(row, 0, sizeof cell);
+        memset(col, 0, sizeof col);
+        memset(box, 0, sizeof box);
 
         for (int i = 0; i < 9; i++)
             for (int j = 0; j < 9; j++)
                 if (board[i][j] != '.') {
                     int t = board[i][j] - '1'; // 映射成0-8
-                    row[i][t] = col[j][t] = cell[i / 3][j / 3][t] = true;
+                    row[i][t] = col[j][t] = box[i / 3][j / 3][t] = true;
                 }
         dfs(board, 0, 0);
     }
@@ -27,13 +27,13 @@ public:
 
         if (board[x][y] != '.')  return dfs(board, x, y + 1); // 当前有数，跳到下一格
         // 如果没数字 则：
-        for (int i = 0; i < 9; i++)
-            if (!row[x][i] && !col[y][i] && !cell[x / 3][y / 3][i]) {
-                board[x][y] = '1' + i;
-                row[x][i] = col[y][i] = cell[x / 3][y / 3][i] = true;
+        for (int t = 0; t < 9; t++)
+            if (!row[x][t] && !col[y][t] && !box[x / 3][y / 3][t]) {
+                board[x][y] = '1' + t;
+                row[x][t] = col[y][t] = box[x / 3][y / 3][t] = true;
                 if (dfs(board, x, y + 1))  return true;
                 board[x][y] = '.';
-                row[x][i] = col[y][i] = cell[x / 3][y / 3][i] = false;
+                row[x][t] = col[y][t] = box[x / 3][y / 3][t] = false;
             }
         return false;
     }
