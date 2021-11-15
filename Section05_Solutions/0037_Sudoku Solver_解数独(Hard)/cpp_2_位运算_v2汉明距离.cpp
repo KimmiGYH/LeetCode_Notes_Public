@@ -29,7 +29,7 @@ public:
         box[i / 3][j / 3] ^= (1 << t);
     }
     //查看最低位1 后面有多少个0
-    int zero_no(int& digitMask) {
+    int cnt_zero(int& digitMask) {
         int cnt = 0;
         while (digitMask) {
             if (digitMask ^ 1) cnt ++;
@@ -48,7 +48,7 @@ public:
         int mask = ~(row[i] | col[j] | box[i / 3][j / 3]) & 0x1ff;
         for (; mask && !finished; mask &= (mask - 1)) {//将 mask 和 mask-1 按位与，从而枚举下一个1；也可以写成 x ^= x & -x;
             int digitMask = mask & -mask; //得到 mask 二进制表示中最低位的 1
-            int digit = zero_no(digitMask);
+            int digit = cnt_zero(digitMask);
             flip(i, j, digit);
             board[i][j] = digit + '1';
             dfs(board, pos + 1);
