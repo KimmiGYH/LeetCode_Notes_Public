@@ -28,6 +28,13 @@ public:
         box[i / 3][j / 3] ^= 1 << t;
     }
     
+    int cnt_zero(int digitMask) {
+        for (int cnt = 0; cnt < 9; cnt ++)
+            if (1 << cnt == digitMask)
+                return cnt;
+        return 0;
+    }
+    
     void dfs(vector<vector<char>>& board, int pos) {
         if (pos == spaces.size()) {
             finished = true;
@@ -38,11 +45,7 @@ public:
         int mask = ~(row[i] | col[j] | box[i / 3][j / 3]) & 0x1ff;
         for (; mask && !finished; mask ^= mask & -mask) {
             int digitMask = mask & -mask;
-            int cnt = 0; //最低位1后面有多少个0
-            while (digitMask) {
-                if (digitMask ^ 1)  ++cnt;
-                digitMask >>= 1;
-            }
+            int cnt = cnt_zero(digitMask);
             flip(i, j, cnt);
             board[i][j] = cnt + '1';
             dfs(board, pos + 1);
