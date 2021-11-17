@@ -6,7 +6,8 @@ using namespace std;
 class Solution {
 public:
     int kthSmallest(vector<vector<int>>& matrix, int k) {
-        int l = INT_MIN, r = INT_MAX;
+        int n = matrix.size();
+        int l = matrix[0][0], r = matrix[n-1][n-1];
         while (l < r) {
             int mid = (long long)l + r >> 1;
             int j = matrix[0].size() - 1, cnt = 0;
