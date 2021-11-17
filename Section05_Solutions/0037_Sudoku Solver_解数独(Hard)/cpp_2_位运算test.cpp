@@ -28,7 +28,7 @@ public:
         box[i / 3][j / 3] ^= 1 << t;
     }
     
-    int cnt_zero(int digitMask) {
+    int cnt_zero(int digitMask) { //改过
         for (int cnt = 0; cnt < 9; cnt ++)
             if (1 << cnt == digitMask)
                 return cnt;

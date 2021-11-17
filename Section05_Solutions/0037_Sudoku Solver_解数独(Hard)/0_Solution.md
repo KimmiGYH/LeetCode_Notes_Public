@@ -77,3 +77,9 @@
 - 如果一个空白格只有唯一的数可以填入，也就是其对应的 $b$ 值和 $b-1$ 进行按位与运算后得到 $0$（即 $b$ 中只有一个二进制位为 $1$）。此时，我们就可以确定这个空白格填入的数，而不用等到递归时再去处理它。
 
 这样一来，我们可以不断地对整个数独进行遍历，将可以唯一确定的空白格全部填入对应的数。随后我们再使用与方法二相同的方法对剩余无法唯一确定的空白格进行递归 + 回溯。
+
+
+## 解法四：按位与优化
+
+[[C++/Java/Python] Backtracking with Bitmasking - Efficient & Clean](https://leetcode.com/problems/sudoku-solver/discuss/1417032/C%2B%2BJavaPython-Backtracking-with-Bitmasking-Efficient-and-Clean)
+
