@@ -46,4 +46,28 @@ nums1[i] * nums2[j] <= m
 
 ## 解法二：双指针
 
+[【每日一题】LeetCode 2040. Kth Smallest Product of Two Sorted Arrays](https://youtu.be/Ct-seYTr1dM?t=2030)
 
+我们也可以用双指针的单调性来实现 $O(n)$ 的 $count()$ 函数。
+
+$nums1[i] * nums2[j] \le m$
+
+1. $m \ge 0$
+
+    (i) $nums1[i] > 0$：我们有 $nums2[j] \le \frac{mid}{nums1[i]}$。可以知道 $nums2[j]$ 有个上界，且随着  $nums1[i]$ 的增大，这个上界越来越小。所以我们从大到小单调地移动 $j$，找到与 $i$ 对应的临界位置 $j$，那么 $[0:j]$ 都是合法的解。
+    
+    (ii) $nums1[i] == 0$：所有的 $nums2$ 都是解。
+
+    (iii) $nums1[i] < 0$：我们有 $nums2[j] \ge \frac{mid}{nums1[i]}$。可以知道 $nums2[j]$ 有个下界，且随着 $nums1[i]$ 的增大，这个下界越来越小。所以我们从大到小单调地移动 $j$，找到与i对应的临界位置 $j$，那么$[j:n-1]$ 都是合法的解。
+
+2. $m < 0$
+
+    (i) $nums[i] > 0$： 我们有 $nums2[j] \le \frac{mid}{nums1[i]}$。可以知道 $nums2[j]$ 有个上界，且随着 $nums1[i]$ 的增大，这个上界越来越大。所以我们从小到大单调地移动 $j$，找到与 $i$ 对应的临界位置 $j$，那么 $[0:j]$ 都是合法的解。
+    
+    (ii) $nums[i]==0$： 所有的 $nums2$ 都不会是解 （因为不可能 `0*nums[j] < mid`）。
+    
+    (iii) $nums[i] < 0$： 我们有 $nums2[j] \ge \frac{mid}{nums1[i]}$。可以知道 $nums2[j]$ 有个下界，且随着 $nums1[i]$ 的增大，这个下界越来越大。所以我们从小到大单调地移动 $j$，找到与 $i$ 对应的临界位置 $j$，那么$[j:n-1]$都是合法的解。
+
+图片参考：
+
+![pic](https://pic.leetcode-cn.com/1634479959-JGNSre-image.png)
