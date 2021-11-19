@@ -17,3 +17,4 @@ def solve():
             break
 
 solve()
+# 费马小定理：https://youtu.be/w0ZQvZLx2KA
