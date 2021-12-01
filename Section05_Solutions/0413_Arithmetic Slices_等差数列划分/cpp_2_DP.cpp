@@ -4,7 +4,7 @@ public:
         int res = 0, n = nums.size();
         vector<int> dp(n, 0);
         for (int i = 2; i < n; ++i) {
-            if (nums[i] - nums[i-1] == nums[i-1] - nums[i-2])
+            if (nums[i] - nums[i-1] == nums[i-1] - nums[i-2])            
                 dp[i] = dp[i-1] + 1;
             res += dp[i];
         }
