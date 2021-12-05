@@ -1,4 +1,4 @@
-# 27. Remove Element (Easy)
+# [27. Remove Element](https://leetcode.com/problems/remove-element/) (Easy)
 
 
 Given an array *nums* and a value *val*, remove all instances of that value [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) and return the new length.
