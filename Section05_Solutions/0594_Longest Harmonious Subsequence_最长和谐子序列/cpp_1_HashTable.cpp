@@ -17,3 +17,19 @@ public:
         return res;
     }
 };
+
+***
+
+class Solution {
+public:
+    int findLHS(vector<int>& nums) {
+        int res = 0;
+        unordered_map<int, int> hash;
+        for (int i = 0; i < nums.size(); ++i)
+            hash[nums[i]] ++;
+        for (auto& [k, v] : hash)
+            if (hash.count(k + 1))
+                res = max(res, hash[k + 1] + hash[k]);
+        return res;
+    }
+};
