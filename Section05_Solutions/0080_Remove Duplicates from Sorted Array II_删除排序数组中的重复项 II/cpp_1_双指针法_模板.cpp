@@ -1,26 +1,15 @@
-#include <iostream>
-#include <vector>
-using namespace std;
-
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-
-        int k = 0;
-        for (auto x : nums)
-            if (k < 2 || nums[k-2] != x)
-                nums[k++] = x;
-
-        return k;
+        return solve(nums, 2);
+    }
+    
+    int solve(vector<int>& nums, int k) {
+        int idx = 0;
+        for (auto& x : nums) {
+            if (idx < k || nums[idx-k] != x)
+                nums[idx++] = x;
+        }
+        return idx;
     }
 };
-
-int main()
-{
-    vector<int> vec = {0,0,1,1,1,2,2,3,3,4};
-    int len = Solution().removeDuplicates(vec);
-    for (int i = 0; i < len; i++)
-        cout << vec[i] << " ";
-    cout << endl;        
-    return 0;
-}

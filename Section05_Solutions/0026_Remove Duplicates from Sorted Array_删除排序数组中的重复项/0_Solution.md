@@ -57,3 +57,8 @@ public:
 - 时间复杂度：$O(n)$，其中 $n$ 是数组的长度。快指针和慢指针最多各移动 $n$ 次。
 - 空间复杂度：$O(1)$。只需要使用常数的额外空间。
 
+**这是一种针对「数据有序，相同元素保留 `k` 位」问题更加本质的解法，该解法是从性质出发提炼的，利用了「数组有序 & 保留逻辑」两大主要性质。**
+
+[26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+
+[80. 关于「删除有序数组重复项」的通解](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/solution/gong-shui-san-xie-guan-yu-shan-chu-you-x-glnq/)
