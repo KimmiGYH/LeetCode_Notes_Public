@@ -4,6 +4,8 @@
 
 此题使用双指针法，$O(n)$ 的时间复杂度。
 
+参考动图：[LeetCode 官方题解](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/solution/shan-chu-pai-xu-shu-zu-zhong-de-zhong-fu-tudo/)
+
 注意题目中：不要使用额外的数组空间，必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。
 
 判断 `nums[k]` 是否和 `nums[i]` 不同，如果不同，那么 `nums[++k] = nums[i]`。
@@ -19,3 +21,4 @@
 
 - 时间复杂度：$O(n)$，其中 $n$ 是数组的长度。快指针和慢指针最多各移动 $n$ 次。
 - 空间复杂度：$O(1)$。只需要使用常数的额外空间。
+
