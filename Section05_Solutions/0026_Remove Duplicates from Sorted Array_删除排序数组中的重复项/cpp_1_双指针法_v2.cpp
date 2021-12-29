@@ -4,9 +4,6 @@
 // Space Complexity: O(1)
 // 注意题目中：不要使用额外的数组空间，必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。
 
-#include <vector>
-using namespace std;
-
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -18,5 +15,20 @@ public:
                 nums[++k] = nums[i];
         }
         return k + 1; // 别忘了k 是从0开始的，所以返回 k + 1
+    }
+};
+
+// ---------------------------------------------
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if (nums.empty()) return 0;
+        int k = 1;
+        for (int i = 1; i < nums.size(); i++) {
+            if (nums[i] != nums[i-1])
+                nums[k++] = nums[i];
+        }
+        return k;
     }
 };
