@@ -11,7 +11,7 @@ public:
                 if (abs(sum - target) < abs(res - target))  res = sum;
                 if (res == target) return target;
                 else if (sum > target) k--;
-                else j++;
+                else if (sum < target) j++;
             }
         }
         return res;
