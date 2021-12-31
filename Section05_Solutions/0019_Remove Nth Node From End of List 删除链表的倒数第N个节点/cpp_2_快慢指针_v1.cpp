@@ -37,12 +37,6 @@ public:
         p->next = p->next->next;
 
         return dummy->next;
-    
-        ListNode *p = dummy, *q = dummy;
-
-        for (int i = 0; i < n; i++) // n=2
-            q = q->next;
-
     }
 };
 
