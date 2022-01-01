@@ -1,10 +1,10 @@
 # 45. Jump Game II_跳跃游戏 II (DP+Greedy) (Hard)
 
-## 算法一：动态规划
+### 算法一：动态规划
 
 这道题一看就是**有限集合的最优化问题**，所以想到用动态规划，定义 $f[i]$ 为跳到点 `i` 需要的最小步数。
 
-时间复杂度：$O(n2)$，超时。
+时间复杂度：$O(n^{2})$，超时。
 
 ```C++
 class Solution {
@@ -29,7 +29,7 @@ public:
 
 很遗憾动态规划超时了，所以想办法优化。
 
-## 算法二：动态规划+贪心
+### 算法二：动态规划+贪心
 
 我们会发现 $f[i]$ 是具有单调性的，也就是 $f[i + 1] >= f[i]$。
 
@@ -72,3 +72,7 @@ public:
     }
 };
 ```
+
+### 过程步骤视频
+https://leetcode-cn.com/problems/jump-game-ii/solution/dong-tai-gui-hua-jie-fa-by-alchemist-5r/
+
