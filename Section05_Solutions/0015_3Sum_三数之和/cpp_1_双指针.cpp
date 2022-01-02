@@ -10,7 +10,7 @@ public:
                 if (j >= i+2 && nums[j] == nums[j-1]) continue;
                 while (j <= k-2 && nums[i] + nums[j] + nums[k] > 0) k--;
                 if (nums[i] + nums[j] + nums[k] == 0)
-                    res.push_back({nums[k], nums[i], nums[j]});
+                    res.push_back({nums[i], nums[j], nums[k]});
             }
         }
         return res;
