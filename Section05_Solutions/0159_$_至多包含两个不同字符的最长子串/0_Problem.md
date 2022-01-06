@@ -22,10 +22,10 @@
 
 相似题目：
 
-[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) 中等
+[3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) 中等
 
-[滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) 困难
+[239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) 困难
 
-[至多包含 K 个不同字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters/) 中等
+[340. 至多包含 K 个不同字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters/) 中等
 
-[K 个不同整数的子数组](https://leetcode-cn.com/problems/subarrays-with-k-different-integers/) 困难
+[992. K 个不同整数的子数组](https://leetcode-cn.com/problems/subarrays-with-k-different-integers/) 困难
