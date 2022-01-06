@@ -13,15 +13,15 @@
     class Solution {
     public:
         int lengthOfLongestSubstringKDistinct(string s, int k) {
-            unordered_map<char, int> window;
+            unordered_map<char, int> hash;
             int n = s.length(), res = 0;
             if (n < k) return n;
             for (int i = 0, j = 0; j < n; j++) {
-                window[s[j]]++;
-                while (window.size() > k) {
-                    window[s[i]]--;
-                    if (window[s[i]] == 0)
-                        window.erase(s[i]);
+                hash[s[j]]++;
+                while (hash.size() > k) {
+                    hash[s[i]]--;
+                    if (hash[s[i]] == 0)
+                        hash.erase(s[i]);
                     i++;
                 }
                 res = max(res, j - i + 1);
