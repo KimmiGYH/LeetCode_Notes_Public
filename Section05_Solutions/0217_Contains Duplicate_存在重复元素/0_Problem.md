@@ -1,4 +1,4 @@
-## 217. Contains Duplicate (Easy)
+## [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (Easy)
 
 Given an array of integers, find if the array contains any duplicates.
 
