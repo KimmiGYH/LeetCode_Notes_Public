@@ -11,7 +11,7 @@ public:
         // 为了防止出现找不到的情况，加两个哨兵
         S.insert(1e18), S.insert(-1e18);
         for (int i = 0, j = 0; i < nums.size(); i++) {
-            if (i - j > k)  S.erase(S.find(nums[j++])); // 删完之后j++
+            if (i - j > k)  S.erase(S.find(nums[j++])); // 只是删掉一个迭代器，删完之后j++
             int x = nums[i];
             auto it = S.lower_bound(x);
             if (*it - x <= t)  return true;
@@ -22,3 +22,15 @@ public:
         return false;
     }
 };
+
+// -----------------------------
+
+*lower_bound(nums[i]) - nums[i] <= t
+--it;
+nums[i] - *lower_bound(nums[i]) <= t
+即
+nums[i] - t <= *lower_bound(nums[i]) <= nums[i] + t
+
+等价于
+
+lower_bound(nums[i] - t) <= nums[i] + t
