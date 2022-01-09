@@ -8,7 +8,9 @@ public:
         return false;
     }
     
-    bool findAnagrams(string p, string s) {
+    vector<int>findAnagrams(string s, string p) {
+        vector<int> res;
+        
         for (char& c : p) hashP[c] ++;
         int tot = hashP.size();
         for (int i = 0, j = 0, satisfy = 0; j < s.size(); j++) {
@@ -22,8 +24,8 @@ public:
                 if (check(s[i])) satisfy++;
                 i++;
             }
-            if (tot == satisfy) return true;
+            if (tot == satisfy) res.push_back(i);
         }
-        return false;
+        return res;
     }
 };
