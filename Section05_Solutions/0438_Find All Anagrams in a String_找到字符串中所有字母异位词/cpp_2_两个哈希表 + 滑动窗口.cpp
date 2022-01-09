@@ -9,8 +9,7 @@ public:
     }
     
     vector<int>findAnagrams(string s, string p) {
-        vector<int> res;
-        
+        vector<int> res;        
         for (char& c : p) hashP[c] ++;
         int tot = hashP.size();
         for (int i = 0, j = 0, satisfy = 0; j < s.size(); j++) {
