@@ -9,15 +9,21 @@ public:
     
     int k;
     multiset<int> left, right;
-      
+
+    double get_median() {
+        if (k % 2) return *right.begin();
+        return ((double)*left.rbegin() + *right.begin()) / 2;
+    }
+
     vector<double> medianSlidingWindow(vector<int>& nums, int _k) {
         k = _k;
+        vector<double> res;
+
         for (int i = 0; i < k; i++)  right.insert(nums[i]);
-        for (int i = 0; i < k / 2; i++) { // 人为规定右边多一个元素
+        for (int i = 0; i < k / 2; i++) { // 人为规定right多一个元素
             left.insert(*right.begin());
             right.erase(right.begin());
         }
-        vector<double> res;
         res.push_back(get_median());
         
         // 滑动窗口
@@ -41,11 +47,5 @@ public:
             res.push_back(get_median());
         }
         return res;
-    }
-
-    
-    double get_median() {
-        if (k % 2) return *right.begin();
-        return ((double)*left.rbegin() + *right.begin()) / 2;
     }
 };
