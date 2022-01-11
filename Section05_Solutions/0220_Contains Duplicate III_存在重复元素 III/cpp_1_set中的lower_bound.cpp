@@ -33,4 +33,4 @@ nums[i] - t <= *lower_bound(nums[i]) <= nums[i] + t
 
 等价于
 
-lower_bound(nums[i] - t) <= nums[i] + t
+*lower_bound(nums[i] - t) <= nums[i] + t
