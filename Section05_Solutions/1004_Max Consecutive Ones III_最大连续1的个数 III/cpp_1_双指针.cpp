@@ -13,3 +13,21 @@ public:
         return res;
     }
 };
+
+// ---------------------------------------------
+
+class Solution {
+public:
+    int longestOnes(vector<int>& nums, int k) {
+        int res = 0, cnt = 0;
+        for (int i = 0, j = 0; j < nums.size(); j++) {
+            if (nums[j]) cnt++; //cnt也可统计1的数量
+            while (j - i + 1 - cnt > k) {
+                if (nums[i]) cnt--;
+                i++;
+            }
+            res = max(res, j - i + 1);
+        }
+        return res;
+    }
+};
