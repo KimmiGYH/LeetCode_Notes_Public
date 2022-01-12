@@ -1,13 +1,10 @@
-#include <iostream>
-
-using namespace std;
-
 class Solution {
+    using LL = long long;
 public:
     bool isPerfectSquare(int num) {
         int l = 1, r = num;
         while (l < r) {
-            int mid = l + 1ll + r >> 1;
+            int mid = l + (LL)1 + r >> 1;
             if (mid <= num / mid) l = mid;
             else r = mid - 1;
         }
