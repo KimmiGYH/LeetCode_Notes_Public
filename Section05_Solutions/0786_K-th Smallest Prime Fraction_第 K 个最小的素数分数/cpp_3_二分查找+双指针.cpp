@@ -5,7 +5,7 @@ public:
     
     int get(vector<int>& arr, double x) {
         int cnt = 0; //cnt表示满足要求的数的个数
-        for (int i = 0, j = 1; j < arr.size(); j++) {
+        for (int i = 0, j = 0; j < arr.size(); j++) {
             while ((double)arr[i + 1] / arr[j] <= x) i++;
             if ((double)arr[i] / arr[j] <= x)
                 cnt += i + 1; //满足要求的是从0到i，一共 i+1 个数
