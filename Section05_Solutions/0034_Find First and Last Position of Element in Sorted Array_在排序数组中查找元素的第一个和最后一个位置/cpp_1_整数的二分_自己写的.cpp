@@ -15,7 +15,7 @@ public:
         idx_left = nums[r] == target ? r : -1;
         res.push_back(idx_left);
         
-        l = 0, r = nums.size() - 1;
+        l = r, r = nums.size() - 1; //这里l=r
         while (l < r) {
             int mid = l + r + 1 >> 1;
             if (nums[mid] <= target) l = mid;
