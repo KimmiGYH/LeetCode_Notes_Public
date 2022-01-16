@@ -12,7 +12,7 @@ public:
         int l = 0, r = m * n - 1;
         while (l < r) {
             int mid = l + r >> 1;
-            if (matrix[mid / n][mid % n] >= target) r = mid;
+            if (matrix[mid / n][mid % n] >= target) r = mid; //注意是 matrix[mid / n][mid % n]
             else l = mid + 1;
         }
         return matrix[r / n][r % n] == target;
