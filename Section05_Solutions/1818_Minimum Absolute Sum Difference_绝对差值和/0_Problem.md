@@ -1,4 +1,4 @@
-# 1818. Minimum Absolute Sum Difference (Medium)
+# [1818. Minimum Absolute Sum Difference](https://leetcode.com/problems/minimum-absolute-sum-difference/) (Medium)
 
 You are given two positive integer arrays `nums1` and `nums2`, both of length `n`.
 
