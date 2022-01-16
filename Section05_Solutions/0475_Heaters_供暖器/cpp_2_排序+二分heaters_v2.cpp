@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findRadius(vector<int>& houses, vector<int>& heaters) {
-        int res = 0;
+        int res = 0, m = houses.size();
         sort(heaters.begin(), heaters.end());
         for (int i = 0; i < m; i++) {
             //找到位置 ≥houses[i] 的最小的heaters的迭代器/位置
