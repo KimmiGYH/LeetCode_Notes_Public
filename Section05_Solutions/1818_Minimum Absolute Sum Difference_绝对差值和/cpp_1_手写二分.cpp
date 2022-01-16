@@ -10,13 +10,13 @@ public:
             if (x == y) continue;
             diff = abs(x - y);
             sum = (sum + diff) % MOD;
-            int l = 0, r = n - 1;
+            int l = 0, r = n; //注意边界问题
             while (l < r) {
                 int mid = l + r >> 1;
                 if (rec[mid] >= y) r = mid;
                 else l = mid + 1;
             }
-            mx = max(mx, diff - abs(rec[r] - y));
+            if (r < n) mx = max(mx, diff - (rec[r] - y));
             if (r > 0) mx = max(mx, diff - (y - rec[r - 1]));
         }
         return (sum - mx + MOD) % MOD;
