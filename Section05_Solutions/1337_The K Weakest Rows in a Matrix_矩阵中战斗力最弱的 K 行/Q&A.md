@@ -9,3 +9,9 @@ https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/solution/fang-zh
 但是我没搞懂他前面说的啥啊？
 `priority_queue q(greater<pair<int, int>>(), move(power));`
 这里 `move` 右值引用了动态数组，相比于我自己写的一个个插入进堆的方式，有什么优点吗？这跟建堆 $O(n)$ 复杂度有啥关系吗？
+
+回答：
+
+- `move` 和堆的复杂度没有关系，是为了构造堆的时候节省内存空间
+- 有差别的，如果使用 `push` 方法，依次插入 `m` 个元素的方式建堆，时间复杂度是 $O(m log{m})$;
+- 如果直接进使用构造函数建堆，时间复杂度是 $O(m)$
