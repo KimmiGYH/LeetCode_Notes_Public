@@ -1,31 +1,25 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
-using namespace std;
-
 class Solution {
 public:
-    int shipWithinDays(vector<int>& weights, int D) {
-        int mx = *max_element(weights.begin(), weights.end());
-        int l = mx, r = mx * weights.size() / D;
-        while (l < r) {
-            int mid = l + r >> 1;
-            if (cnt_days(weights, mid) <= D) r = mid; // mid运载能力
-            else l = mid + 1;
+    bool check(int& m, int& D, vector<int>& weights) {
+        int tot = 0, cnt = 1;
+        for (int& w : weights) {
+            if (tot + w > m) {
+                tot = 0;
+                cnt++;
+            }
+            tot += w;
         }
-        return l;
+        return cnt <= D;
     }
     
-    int cnt_days(vector<int>& weights, int K) { // K运载能力
-        int total = 0, cnt = 1;
-        for (int& w : weights) {
-            if (total + w > K) {
-                total = 0;
-                ++cnt;
-            }
-            total += w;
+    int shipWithinDays(vector<int>& weights, int days) {
+        int mx = *max_element(weights.begin(), weights.end());
+        int l = mx, r = mx * weights.size();
+        while (l < r) {
+            int mid = l + r >> 1;
+            if (check(mid, days, weights)) r = mid;
+            else l = mid + 1;
         }
-        return cnt;
+        return r;
     }
 };
