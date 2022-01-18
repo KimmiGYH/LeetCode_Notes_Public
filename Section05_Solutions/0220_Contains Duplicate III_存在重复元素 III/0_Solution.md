@@ -17,7 +17,18 @@ nums[i] - t <= *lower_bound(nums[i]) <= nums[i] + t
 
 lower_bound(nums[i] - t) <= nums[i] + t
 ```
-## 解法二：$set$ 和 `lower_bound` $O(nlog{n})$
+
+## 解法二：$multiset$ + 滑窗
+
+- 维护一个长度为 $K$ 的滑窗
+- 将第 $i$ 个数插入滑窗
+- 求 $abs(nums[i] - neighbor) \le t$
+
+**复杂度分析**
+- 时间复杂度： $O(nlogk)$
+- 空间复杂度： $O(k)$
+
+## 解法三：$set$ 和 `lower_bound` $O(nlog{n})$
 
 bobo老师
 
