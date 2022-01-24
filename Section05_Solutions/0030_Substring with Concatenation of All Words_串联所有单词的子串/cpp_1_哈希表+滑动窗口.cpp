@@ -5,21 +5,21 @@ public:
         if (words.empty()) return res;
         int n = s.size(), m = words.size(), w = words[0].size();
         unordered_map<string, int> tot; //给定的哈希表
-        for (auto& word : words) tot[word]++;
+        for (string& word : words) tot[word]++;
         
         //做每组
         for (int i = 0; i < w; i++) {
-            unordered_map<string, int> hash;//当前的哈希表，维护的是个窗口
+            unordered_map<string, int> window;//当前的哈希表，维护的是个窗口
             int satisfy = 0;
-            for (int j = i; j + w <= n; j +=w) {
+            for (int j = i; j + w <= n; j += w) {
                 if (j >= i + m * w) { //j是窗口右端点，当j超出窗口时删去左端点
                     string word = s.substr(j - m * w, w);
-                    hash[word]--;
-                    if (hash[word] < tot[word]) satisfy--; //hash中减掉的是有效单词
+                    window[word]--;
+                    if (window[word] < tot[word]) satisfy--; //window中减掉的是有效单词
                 }
                 string word = s.substr(j, w);
-                hash[word]++;
-                if (hash[word] <= tot[word]) satisfy++;
+                window[word]++;
+                if (window[word] <= tot[word]) satisfy++;
                 if (satisfy == m) res.push_back(j - (m - 1) * w);
             }
         }
