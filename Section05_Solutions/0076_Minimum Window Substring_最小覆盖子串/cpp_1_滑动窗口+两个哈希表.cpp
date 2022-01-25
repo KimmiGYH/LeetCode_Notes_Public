@@ -1,3 +1,28 @@
+class Solution {
+public:
+    string minWindow(string s, string t) {
+        unordered_map<char, int> window, tot;
+        for (char& c : t) tot[c]++;
+        string res;
+        int cnt = 0;// 统计有效字符的数量
+
+        for (int i = 0, j = 0; j < s.length(); j++) {
+            window[s[j]] ++;
+            if (window[s[j]] <= tot[s[j]]) cnt++;
+            // s[i] 多余
+            while (window[s[i]] > tot[s[i]]) window[s[i ++]]--;
+            if (cnt == t.length()) {
+                if (res.empty() || j - i + 1 < res.size())
+                    res = s.substr(i, j - i + 1);
+            }
+        }
+        return res;
+    }
+};
+
+
+// ----------------------------------------------------
+// 以前的
 #include <iostream>
 #include <string>
 #include <unordered_map>
