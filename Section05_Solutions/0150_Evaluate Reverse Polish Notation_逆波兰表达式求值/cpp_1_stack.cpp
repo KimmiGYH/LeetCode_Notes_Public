@@ -10,13 +10,13 @@ public:
         stack<int> stk;
         for (string& s : tokens) {
             if (s == "+" || s == "-" || s == "*" || s == "/") {
-                int a = stk.top(); stk.pop();
                 int b = stk.top(); stk.pop();
-                if (s == "+")       b += a;
-                else if (s == "-")  b -= a;
-                else if (s == "*")  b *= a;
-                else                b /= a;
-                stk.push(b);
+                int a = stk.top(); stk.pop();
+                if (s == "+")       a += b;
+                else if (s == "-")  a -= b;
+                else if (s == "*")  a *= b;
+                else                a /= b;
+                stk.push(a);
             }
             else stk.push(stoi(s));// stoi: string to int
         }
