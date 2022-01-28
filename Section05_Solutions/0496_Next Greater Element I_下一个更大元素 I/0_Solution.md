@@ -2,7 +2,7 @@
 
 ## 解法一：单调栈 + 哈希表 $O(n + m)$
 
-![单调栈](https://cdn.acwing.com/media/article/image/2022/01/28/41956_9f004d247f-%E5%8D%95%E8%B0%83%E6%A0%88.png)
+![单调栈](https://cdn.acwing.com/media/article/image/2022/01/28/41956_79eb70b37f-solution.png)
 
 - 当题目出现「找到最近一个比其大的元素」的字眼时，自然会想到「单调栈」。
 - 规律：
