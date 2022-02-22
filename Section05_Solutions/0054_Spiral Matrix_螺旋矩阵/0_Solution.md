@@ -1,7 +1,9 @@
 # 0050_Spiral Matrix_螺旋矩阵
 
 **方向数组**那个写法能用的题还挺多的。
-**
+
+![方向数组](https://cdn.acwing.com/media/article/image/2022/02/22/41956_f13a474993-%E6%96%B9%E5%90%91%E6%95%B0%E7%BB%84.png)
+
 ## 改变方向direction的情况：
 
 ```cpp
