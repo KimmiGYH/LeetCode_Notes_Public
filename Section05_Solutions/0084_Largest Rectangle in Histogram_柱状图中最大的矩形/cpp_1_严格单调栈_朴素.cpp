@@ -19,7 +19,7 @@ public:
             else  left[i] = stk.top();
             stk.push(i);
         }
-        
+        // 每个数的右边第一个比它小的数
         stk = stack<int>(); // 记得要清空栈
         for (int i = n - 1; i >= 0; i--) {
             while (!stk.empty() && heights[stk.top()] >= heights[i]) stk.pop();
