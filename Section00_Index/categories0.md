@@ -35,9 +35,9 @@
     - [8. 前缀和](#8-前缀和)
     - [9. 排序算法](#9-排序算法)
     - [10. 优先搜索](#10-优先搜索)
-      - [深度优先搜索](#深度优先搜索)
+      - [深度优先搜索 DFS](#深度优先搜索-dfs)
       - [回溯法](#回溯法)
-      - [广度优先搜索](#广度优先搜索)
+      - [广度优先搜索 BFS](#广度优先搜索-bfs)
       - [连通分量Floodfill](#连通分量floodfill)
     - [11. 图论](#11-图论)
     - [12. 动态规划](#12-动态规划)
@@ -109,15 +109,15 @@
 
 #### 数组
 
+**数组模拟+进位**
 
-
+- [ ] [LeetCode 66_Plus One_加一](https://leetcode.com/problems/plus-one/)（数组+进位）
 - [ ] 
 - [ ] [LeetCode 2022_Convert 1D Array Into 2D Array_将一维数组转变成二维数组](https://leetcode.com/problems/convert-1d-array-into-2d-array/)（数组，一维->二维）
 - [ ] [LeetCode 495_Teemo Attacking_提莫攻击](https://leetcode.com/problems/teemo-attacking/)（数组模拟 + 贪心）
 - [ ] [LeetCode 717_1-bit and 2-bit Characters_1比特与2比特字符](https://leetcode.com/problems/1-bit-and-2-bit-characters/)（数组模拟 + 贪心）
 - [ ] [LeetCode 794_Valid Tic-Tac-Toe State_有效的井字游戏](https://leetcode.com/problems/valid-tic-tac-toe-state/)（二维数组模拟）
 - [ ] LeetCode 519_Random Flip Matrix_随机翻转矩阵（哈希表+二维矩阵->一维 + 随机）
-
 - [ ] [LeetCode 36_Valid Sudoku_有效的数独](https://leetcode.com/problems/valid-sudoku/)（数组+位操作）
 - [ ] [LeetCode 48_Rotate Image_旋转图像](https://leetcode.com/problems/rotate-image/)（二维数组原地旋转）
 - [ ] [LeetCode189_Rotate Array_旋转数组](https://leetcode.com/problems/rotate-array/)
@@ -146,41 +146,59 @@
 
 #### 栈、队列
 
+**栈**
+
 - [总结] 栈模板题
+- [ ] [LeetCode 20. Valid Parentheses_有效的括号](https://leetcode.com/problems/valid-parentheses/)（栈+哈希表+ASCII）
 - [ ] [LeetCode 155_Min Stack_最小栈](https://leetcode.com/problems/min-stack/)（栈+递推）
+- [ ] [LeetCode 682_Baseball Game_棒球比赛](https://leetcode.com/problems/baseball-game/)（栈）
+
 - [总结] 栈思想的字符串操作
 - [ ] [LeetCode 1047_Remove All Adjacent Duplicates In String_删除字符串中的所有相邻重复项](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)（字符串+栈思想）
 - [ ] [LeetCode 844_Backspace String Compare_比较含退格的字符串](https://leetcode.com/problems/backspace-string-compare/)（字符串+栈思想+双指针）
-- [ ] 
+- [ ] [LeetCode 1209_Remove All Adjacent Duplicates in String II_删除字符串中的所有相邻重复项 II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)（字符串+栈）
+
 - [ ] LeetCode 1381.设计一个支持增量操作的栈（设计）
-- [ ] LeetCode 622.设计循环队列
-- [ ] LeetCode 641.设计循环双端队列
-- [ ] [LeetCode 649_Dota2 Senate_Dota2 参议院](https://leetcode.com/problems/dota2-senate/)（队列 + 贪心）
-- [总结] 转换
-- [ ] LeetCode 225.用队列实现栈
-- [ ] [LeetCode 232_Implement Queue using Stacks_用栈实现队列](https://leetcode.com/problems/implement-queue-using-stacks/)（栈）
+
+- [总结] 栈与队列的相互转换
+- [ ] [LeetCode 232_Implement Queue using Stacks_用栈实现队列](https://leetcode.com/problems/implement-queue-using-stacks/)（栈+队列）
+- [ ] [LeetCode 225_Implement Stack using Queues_用栈实现队列](https://leetcode.com/problems/implement-stack-using-queues/)（队列+栈）
+
 - [总结] 设计题，复合数据结构，栈+哈希表
-- [ ] [LeetCode 895_H_Maximum Frequency Stack_最大频率栈](https://leetcode.com/problems/maximum-frequency-stack/)（设计+哈希表+栈）
-- [总结] 逆波兰表达式/计算器
+
+- [ ] [LeetCode 895_H_Maximum Frequency Stack_最大频率栈](https://leetcode.com/problems/maximum-frequency-stack/)（Hard+设计+哈希表+栈）
+
+- [总结] 栈与表达式：逆波兰表达式/计算器
 - [ ] [LeetCode 150_Evaluate Reverse Polish Notation_逆波兰表达式求值](https://leetcode.com/problems/evaluate-reverse-polish-notation/)（栈+后缀表达式+后序遍历）
 - [ ] [AcWing 3302. 表达式求值](https://www.acwing.com/activity/content/code/content/2440506/)（模板题）
 - [ ] [LeetCode 227_Basic Calculator II_基本计算器 II](https://leetcode.com/problems/basic-calculator-ii/)（栈+表达式求值+加减乘除/空格）
 - [ ] [LeetCode 224_H_Basic Calculator_基本计算器](https://leetcode.com/problems/basic-calculator/) （栈+表达式求值+加减乘除/空格/特殊符号）
-- [总结] 括号问题
-- [ ] [LeetCode 20. Valid Parentheses_有效的括号](https://leetcode.com/problems/valid-parentheses/)（栈+哈希表+ASCII）
+- [ ] [LeetCode 1190_Reverse Substrings Between Each Pair of Parentheses_反转每对括号间的子串](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/)（栈+预处理括号-做不来）
+- [ ] [LeetCode 394_Decode String_字符串解码](https://leetcode.com/problems/decode-string/)（栈+表达式求值+递归）
 
+- [总结] 栈与贪心/栈与括号
+- [LeetCode 921_Minimum Add to Make Parentheses Valid_使括号有效的最少添加](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)（字符串+括号+贪心）
+- [LeetCode 1541_Minimum Insertions to Balance a Parentheses String_平衡括号字符串的最少插入次数](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/)（栈+字符串+括号+贪心）
+
+
+**队列**
+- [总结] 循环队列和双端队列
+- [ ] [LeetCode 622_Design Circular Queue_设计循环队列](https://leetcode.com/problems/design-circular-queue/)（循环队列）
+- [ ] [LeetCode 641_Design Circular Deque_设计循环双端队列](https://leetcode.com/problems/design-circular-deque/)（双端队列）
+
+- [总结] 队列与贪心
+- [ ] [LeetCode 649_Dota2 Senate_Dota2 参议院](https://leetcode.com/problems/dota2-senate/)（队列 + 贪心）
 
 #### 单调栈
 
-- [ ] [AcWing 830. 单调栈](https://www.acwing.com/activity/content/problem/content/867/1/)
-
+- [ ] [AcWing 830. 单调栈](https://www.acwing.com/activity/content/problem/content/867/1/)（模板题）
+- [ ] [LeetCode 496_Next Greater Element I_下一个更大元素 I](https://leetcode.com/problems/next-greater-element-i)（单调栈+哈希表）
+- [ ] [LeetCode 503_Next Greater Element II_下一个更大元素 II](https://leetcode.com/problems/next-greater-element-ii)（单调栈+循环数组）
+- [ ] [LeetCode 1996_The Number of Weak Characters in the Game_游戏中弱角色的数量](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/)（单调栈+lambda）
 - [ ] [LeetCode 42_Trapping Rain Water_接雨水(Hard)](https://leetcode.com/problems/trapping-rain-water/) （单调栈+双指针）
-- [ ] [LeetCode 84_Largest Rectangle in Histogram_柱状图中最大的矩形](https://leetcode.com/problems/largest-rectangle-in-histogram/)（单调递增栈）
+- [ ] [LeetCode 84_H_Largest Rectangle in Histogram_柱状图中最大的矩形](https://leetcode.com/problems/largest-rectangle-in-histogram/)（Hard+单调递增栈）
 - [ ] LeetCode 85.最大矩形（84拓展）
-- [ ] LeetCode 496.下一个更大元素Ⅰ
-- [ ] LeetCode 503.下一个更大元素Ⅱ
 - [ ] [LeetCode 739_Daily Temperatures_每日温度](https://leetcode.com/problems/daily-temperatures/)
-
 - [ ] 
 
 
@@ -194,6 +212,8 @@
 
 #### 双端队列
 
+- [ ] 
+- [ ] 
 
 
 #### 优先队列
@@ -317,7 +337,7 @@
 - [ ] LeetCode 647.回文子串（中心扩展法）
 - [ ] LeetCode 1332.删除回文子序列（脑筋急转弯）
 - [ ] LeetCode 1637.统计只差一个字符的子串数目（暴力枚举）
-- [ ] [LeetCode 1209_Remove All Adjacent Duplicates in String II_删除字符串中的所有相邻重复项 II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)（字符串+栈）
+
 
 ### 3. 指针结构：
 
@@ -575,6 +595,9 @@
 - [ ] [AcWing 786. 第k个数](https://www.acwing.com/activity/content/code/content/537801/)
 - [ ] [LeetCode 215_Kth Largest Element in an Array_数组中的第K个最大元素](https://leetcode.com/problems/kth-largest-element-in-an-array/)（快速选择+优先队列）
 
+**选择排序**
+- [ ] [LeetCode 969_Pancake Sorting_煎饼排序](https://leetcode.com/problems/pancake-sorting/description/)（数组+选择排序）
+
 **桶排序**
 
 - [ ] [LeetCode 220_Contains Duplicate III_存在重复元素Ⅲ](https://leetcode.com/problems/contains-duplicate-iii/)（桶排序+multiset+滑动窗口+lower_bound+绝对值+迭代器）
@@ -590,8 +613,11 @@
 
 ### 10. 优先搜索
 
-#### 深度优先搜索
 
+#### 深度优先搜索 DFS
+- [总结] 递归
+- [ ] [LeetCode 394_Decode String_字符串解码](https://leetcode.com/problems/decode-string/)（栈+表达式求值+递归）
+- [总结] DFS模板题
 - [ ] [AcWing 842. 排列数字](https://www.acwing.com/activity/content/code/content/1119537/)
 - [ ] [AcWing 843. n-皇后问题](https://www.acwing.com/activity/content/code/content/1120565/)
 
@@ -599,7 +625,7 @@
 
 
 
-#### 广度优先搜索
+#### 广度优先搜索 BFS
 
 - [总结] 综合 BFS+哈希
 - [ ] [LeetCode 1036_Escape a Large Maze_逃离大迷宫](https://leetcode.com/problems/escape-a-large-maze/)（BFS+哈希表）
@@ -1062,7 +1088,7 @@
 - [ ] LeetCode 690.员工的重要性（BFS/DFS）
 
 ### 13.3 方向数组
-
+- [ ] [LeetCode 54_Spiral Matrix_螺旋矩阵](https://leetcode.com/problems/spiral-matrix/)（方向数组）
 - [ ] [LeetCode 2069. Walking Robot Simulation II_模拟行走机器人 II](https://leetcode.com/problems/walking-robot-simulation-ii/)（方向数组）
 
 
