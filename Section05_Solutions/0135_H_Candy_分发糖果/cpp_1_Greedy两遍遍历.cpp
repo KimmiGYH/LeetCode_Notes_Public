@@ -1,9 +1,23 @@
-#include <vector>
-#include <algorithm>
-#include <numeric>
+// 这个版本更好理解
+class Solution {
+public:
+    int candy(vector<int>& ratings) {
+        int n = ratings.size();
+        vector<int> nums(n, 1);
+        for (int i = 1; i < n; ++i) {
+            if (ratings[i] > ratings[i-1])
+                nums[i] = nums[i-1] + 1;
+        }
+        for (int i = n-2; i >= 0; --i) {
+            if (ratings[i] > ratings[i+1])
+                nums[i] = max(nums[i], nums[i+1] + 1);
+        }
+        return accumulate(nums.begin(), nums.end(), 0);
+    }
+};
 
-using namespace std;
-
+// --------------------------------------------------------
+// 以前写的
 class Solution {
 public:
     int candy(vector<int>& ratings) {
