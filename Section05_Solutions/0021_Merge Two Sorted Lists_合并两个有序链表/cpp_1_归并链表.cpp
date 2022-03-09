@@ -29,3 +29,25 @@ public:
         return dummy->next;
     }
 };
+
+// ---------------------------------
+
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* x, ListNode* y) {//list1 = x, list2 = y
+        ListNode* dummy = new ListNode(-1);
+        ListNode* tail = dummy;
+        while(x && y) {
+            if (x->val < y->val) {
+                tail = tail->next = x;
+                x = x->next;
+            } else {
+                tail = tail->next = y;
+                y = y->next;
+            }
+        }
+        if (x) tail->next = x;
+        if (y) tail->next = y;
+        return dummy->next;
+    }
+};
