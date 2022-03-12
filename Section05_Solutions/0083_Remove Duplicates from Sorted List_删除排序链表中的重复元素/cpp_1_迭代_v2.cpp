@@ -20,7 +20,7 @@ public:
         for (auto p = head->next; p; p = p->next)
             if (p->val != cur->val)
                 cur = cur->next = p;
-        cur->next = NULL;
+        cur->next = nullptr;
         return head;
     }
 };

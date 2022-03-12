@@ -1,12 +1,16 @@
 # 83. Remove Duplicates from Sorted List_删除排序链表中的重复元素
 
+## 解法一：(线性扫描) `O(n)`
 
+![链表](https://cdn.acwing.com/media/article/image/2022/03/12/41956_5d3738d7a1-solve.png)
 
-(线性扫描) `O(n)`
-从前往后扫描整个链表，如果一个节点和其后继节点相同，则直接删除后继节点，否则指针移动到后继节点。
+- 由于给定的链表是排好序的，因此重复的元素在链表中出现的位置是连续的，因此我们只需要对链表进行一次遍历，就可以删除重复的元素。
+- 具体地，我们从指针 `cur` 指向链表的头节点 `head`，随后开始对链表进行遍历，遍历从 `p=head->next` 开始。
+- 如果当前 `cur` 与 它下一个元素的值相同，我们将 `p` 从而将该元素删除；
+- 否则说明链表中已经不存在其他与 `cur` 对应的元素相同的节点，因此将 `p` 赋给 `cur->next`，并且将 `cur->next` 作为链表尾节点 `cur`，即 `cur = cur->next = p;`
+- 当遍历完整个链表之后，我们返回链表的头节点即可。
 
-时间复杂度分析：整个链表只扫描一遍，所以时间复杂度是 `O(n)`。
+**复杂度分析分析**
+- 时间复杂度：整个链表只扫描一遍，所以时间复杂度是 `O(n)`，其中 $n$ 是链表的长度。
+- 空间复杂度：$O(1)$。
 
-
-
-![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0083_Remove%20Duplicates%20from%20Sorted%20List_%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/solve.png)
