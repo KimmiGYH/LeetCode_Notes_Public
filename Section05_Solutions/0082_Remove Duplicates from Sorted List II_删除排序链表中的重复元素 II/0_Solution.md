@@ -2,7 +2,7 @@
 
 ## 解法一：(线性扫描) $O(n)$
 
-![链表双指针](https://cdn.acwing.com/media/article/image/2022/03/12/41956_e71330c8a1-solve.png)
+![链表双指针](https://cdn.acwing.com/media/article/image/2022/03/12/41956_7be4c9fea1-solve.png)
 
 - 为了方便处理边界情况，我们定义一个哑节点 `dummy` 指向链表头节点。
 - 然后从前往后扫描整个链表，
