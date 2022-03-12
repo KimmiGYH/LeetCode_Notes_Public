@@ -21,7 +21,7 @@ public:
             if (l2)  t += l2->val, l2 = l2->next;
             // 如果和大于等于10，则保留个位数字, 是 t 的个位数字
             // 另外别忘记更新 cur = cur->next
-            cur = cur->next = new ListNode(t % 10); // 为 val = t%10 的节点开辟内存
+            cur = cur->next = new ListNode(t % 10); // 为 val = t%10 的节点开辟内存，并更新尾节点
             t /= 10;
         }
         return dummy->next;
