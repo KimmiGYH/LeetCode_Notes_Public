@@ -19,7 +19,7 @@ public:
 };
 // 出现了 nums[r] 所以如果 r=nums.size(); 会导致越界
 
-// ----------------------------------------------
+// -----------------
 
 class Solution {
 public:
@@ -34,7 +34,7 @@ public:
     }
 };
 
-// ----------------------------------------------
+// ----------------------------
 
 class Solution {
 public:
@@ -76,12 +76,11 @@ public:
 因此，正确的初始化方式应该是 r = nums.size();，这样才能保证在搜索时不访问数组越界并且能正确找到目标元素。
 */
 
-// ----------------------------------------------
+// ---------------------------------
 
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        if (nums.empty()) return -1;
         int l = -1, r = nums.size() - 1;
         while (l < r) {
             int mid = l + r + 1 >> 1;
