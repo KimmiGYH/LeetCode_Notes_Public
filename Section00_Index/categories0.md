@@ -499,7 +499,7 @@
 - [总结] 二分模板题
 - [ ] [LeetCode 704_Binary Search_二分查找](https://leetcode.com/problems/binary-search/)（二分模板题）
 - [ ] [LeetCode 278_First Bad Version_第一个错误的版本](https://leetcode.com/problems/first-bad-version/submissions/)（二分模板）
-- [ ] [AcWing 789. 数的范围](https://www.acwing.com/file_system/file/content/whole/index/content/1721187/)
+- [ ] [AcWing 789. 数的范围](https://www.acwing.com/file_system/file/content/whole/index/content/1721187/) (二分模板题，综合考check左半边右半边)
 - [ ] [LeetCode 34_Find First and Last Position of Element in Sorted Array_在排序数组中查找元素的第一个和最后一个位置](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 - [ ] [LeetCode 1365_How Many Numbers Are Smaller Than the Current Number_有多少小于当前数字的数字](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)（哈希表+前缀和+计数排序+二分）
 - [总结 ] 注意**边界**问题，当最后一个位置也可以插入时，`r=n`;
