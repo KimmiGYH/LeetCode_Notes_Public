@@ -77,7 +77,7 @@ Line 1034: Char 34: runtime error: applying non-zero offset 18446744073709551612
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/bits/stl_vector.h:1043:34 */
 
 
-// 根据给到的报错数据修改searchRange函数里的代码后，能通过，但是不能吃透为什么错。
+// 根据给到的报错数据修改searchRange函数里的代码后，能通过，但是不能吃透为什么这种做法要自己改这么多条件。
 class Solution {
 public:
     int lower_bound(vector<int>& nums, int target) {
