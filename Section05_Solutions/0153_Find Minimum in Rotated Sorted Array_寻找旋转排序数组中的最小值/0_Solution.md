@@ -97,6 +97,24 @@ public:
 ❓**我的问题**：如何改写能使程序跑通？要求：1) 用左闭右开区间 `[0, n)`，且和最后一个元素比较。
 
 
+```cpp
+class Solution { //ChatGPT给到的修改后的代码还是错误！❌：
+public:
+    int findMin(vector<int>& nums) {
+        int l = 0, r = nums.size(); // 修改 r 的初始值
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (mid < nums.size() - 1 && nums[mid] > nums[mid + 1])
+                return nums[mid + 1];
+            else if (mid == nums.size() - 1) return nums.back();
+            else if (nums[mid] < nums.back()) r = mid;
+            else l = mid + 1;
+        }
+        return nums[0];
+    }
+};
+```
+
 ## 写法四：和第一个元素比较，左闭右闭区间
 
 ```cpp
