@@ -102,3 +102,26 @@ public:
         return {start, end};
     }
 };
+
+
+class Solution {
+public:
+    int lower_bound(vector<int>& nums, int target) {
+        int l = 0, r = nums.size() - 1;
+        while (l < r) {
+            int mid = l + r >> 1;
+            if (nums[mid] >= target) r = mid;
+            else l = mid + 1;
+        }
+        return r;
+    }
+
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int start = lower_bound(nums, target);
+        if (nums.empty() || start == nums.size() || nums[start] != target)
+            return {-1, -1};
+        int end = lower_bound(nums, target + 1);
+        if (nums[end] != target)  end--;
+        return {start, end};
+    }
+};
