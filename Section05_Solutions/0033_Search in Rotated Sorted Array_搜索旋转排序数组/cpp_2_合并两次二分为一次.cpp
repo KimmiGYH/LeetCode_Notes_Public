@@ -22,7 +22,7 @@ public:
     }
 };
 
-/* 【如果二分的位置在 target 右侧，则染成蓝色，三种情况】：
+/* 【如果二分的位置在 target 右侧，则染成蓝色，三种情况】：主要看二分的位置是否在target右侧（蓝色）
 (1) 数组元素、target 都在左侧，且 nums[i] >= target
 (2) 数组元素在右侧，target 在左侧，肯定满足蓝色
 (3) 数组元素、target都在右侧，且 nums[i] >= target
