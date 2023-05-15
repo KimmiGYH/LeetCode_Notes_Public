@@ -17,3 +17,6 @@ public:
         return l;
     }
 };
+
+/* 这题写成 r = nums.size()-1 就会出错，无法遍历所有元素
+*/
