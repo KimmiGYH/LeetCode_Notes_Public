@@ -11,7 +11,7 @@ public:
         
         for (int i = 0, x = 0, y = 0, d = 0; i < m * n; i++) {
             res.push_back(matrix[x][y]);
-            st[x][y] = true;
+            st[x][y] = true;//标记一下[x][y]这格子已经被走过了
             int a = x + dx[d], b = y + dy[d];
             if (a < 0 || a >= m || b < 0 || b >= n || st[a][b]) {
                 d = (d + 1) % 4;
