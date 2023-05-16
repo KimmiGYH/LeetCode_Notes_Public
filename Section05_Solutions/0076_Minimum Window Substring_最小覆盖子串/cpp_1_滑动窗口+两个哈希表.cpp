@@ -1,25 +1,25 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        unordered_map<char, int> window, tot;
-        for (char& c : t) tot[c]++;
+        unordered_map<char, int> hashS, hashT;
+        for (char& c : t)
+            hashT[c] ++;
         string res;
-        int cnt = 0;// 统计有效字符的数量
-
-        for (int i = 0, j = 0; j < s.length(); j++) {
-            window[s[j]] ++;
-            if (window[s[j]] <= tot[s[j]]) cnt++;
-            // s[i] 多余
-            while (window[s[i]] > tot[s[i]]) window[s[i ++]]--;
-            if (cnt == t.length()) {
-                if (res.empty() || j - i + 1 < res.size())
-                    res = s.substr(i, j - i + 1);
+        int cnt = 0; //有效字符的数量
+        for (int i = 0, j = 0; i < s.length(); i++) {
+            hashS[s[i]] ++; //这步没写
+            if (hashS[s[i]] <= hashT[s[i]])
+                cnt ++;
+            while (hashS[s[j]] > hashT[s[j]])
+                hashS[s[j ++]] --;
+            if (cnt == t.size()) {
+                if (res.empty() || res.size() > i - j + 1)
+                    res = s.substr(j, i - j + 1);
             }
         }
         return res;
     }
 };
-
 
 // ----------------------------------------------------
 // 以前的
