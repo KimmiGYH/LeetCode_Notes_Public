@@ -1,32 +1,15 @@
 class Solution {
 public:
+    //找个最大区间最多包含k个0
     int longestOnes(vector<int>& nums, int k) {
-        int res = 0, n = nums.size();
-        for (int i = 0, j = 0, cnt = 0; j < n; j++) {
-            if (!nums[j]) cnt++; //cnt表示当前区间当中0的个数
-            while (cnt > k) {
-                if (!nums[i]) cnt--;
-                i++;
+        int res = INT_MIN;
+        for (int i = 0, j = 0, cnt = 0; i < nums.size(); i ++) {
+            if (nums[i] == 0) cnt ++;//cnt表示当前区间当中0的个数
+            while (k < cnt) {
+                if (nums[j] == 0) cnt--;
+                j++;
             }
-            res = max(res, j - i + 1);
-        }
-        return res;
-    }
-};
-
-// ---------------------------------------------
-
-class Solution {
-public:
-    int longestOnes(vector<int>& nums, int k) {
-        int res = 0, cnt = 0;
-        for (int i = 0, j = 0; j < nums.size(); j++) {
-            if (nums[j]) cnt++; //cnt也可统计1的数量
-            while (j - i + 1 - cnt > k) {
-                if (nums[i]) cnt--;
-                i++;
-            }
-            res = max(res, j - i + 1);
+            res = max(res, i - j + 1);
         }
         return res;
     }
