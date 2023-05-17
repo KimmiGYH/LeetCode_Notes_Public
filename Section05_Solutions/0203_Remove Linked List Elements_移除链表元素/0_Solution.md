@@ -1,10 +1,59 @@
 # 203. Remove Linked List Elements_移除链表元素 (Easy)
 
-删除节点：
+## 删除节点模板
+
+### (1) 直接使用原来的链表来进行移除节点操作：
 
 ```cpp
-delNode = cur->next;
-cur->next = delNode->next;
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+        // 删除头结点
+        while (head != NULL && head->val == val) { // 注意这里不是if
+            ListNode* tmp = head;
+            head = head->next;
+            delete tmp;
+        }
+
+        // 删除非头结点
+        ListNode* cur = head;
+        while (cur != NULL && cur->next!= NULL) {
+            if (cur->next->val == val) {
+                ListNode* tmp = cur->next;
+                cur->next = cur->next->next;
+                delete tmp;
+            } else {
+                cur = cur->next;
+            }
+        }
+        return head;
+    }
+};
+```
+
+### (2) 设置一个虚拟头结点在进行移除节点操作：
+
+```cpp
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode* cur = dummy;
+        while (cur->next != NULL) {
+            if(cur->next->val == val) {
+                ListNode* tmp = cur->next;
+                cur->next = tmp->next;
+                delete tmp;
+            } else {
+                cur = cur->next;
+            }
+        }
+        head = dummy->next;
+        delete dummy;
+        return head;
+    }
+};
 ```
 
 两种写法：
@@ -22,8 +71,6 @@ cur->next = delNode->next;
             }
         }
 ```
-
-
 
 ## 写法二：for
 
