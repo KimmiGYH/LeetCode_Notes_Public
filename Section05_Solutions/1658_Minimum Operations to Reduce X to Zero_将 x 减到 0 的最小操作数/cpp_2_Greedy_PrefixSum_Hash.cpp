@@ -16,7 +16,7 @@ public:
             hash[prefix] = i + 1;
         }
         int minlen = INT_MAX, suffix = 0;
-        if (hash.find(x) != hash.end())
+        if (hash.find(x) != hash.end()) //为了存尽量靠两边的数而不更新数据
             minlen = hash[x];
         for (int j = n - 1; j >= 0; j--) {
             suffix += nums[j];
