@@ -12,15 +12,15 @@ cur->next = delNode->next;
 ## 写法一：while
 
 ```cpp
-while (cur->next) {
-    if (cur->next->val == val) {
-        // 删除 cur->next
-        ListNode* delNode = cur->next;
-        cur->next = delNode->next;
-    }
-    else
-        cur = cur->next;
-}
+        while (cur->next != NULL) {
+            if (cur->next->val == val) {
+                ListNode* tmp = cur->next; //保存cur->next
+                cur->next = tmp->next;
+                delete tmp; //删掉该节点
+            } else {
+                cur = cur->next;
+            }
+        }
 ```
 
 
@@ -28,12 +28,12 @@ while (cur->next) {
 ## 写法二：for
 
 ```cpp
-for (auto cur = dummy; cur; cur = cur->next ) {
-    auto delNode = cur->next;
-    while (delNode && delNode-val == val)
-        delNode = delNode->next;
-    cur->next = delNode;
-}
+        for (ListNode* cur = dummy; cur; cur = cur->next) {
+            ListNode* delNode = cur->next;
+            while(delNode && delNode->val == val)
+                delNode = delNode->next;
+            cur->next = delNode;
+        }
 ```
 
 
