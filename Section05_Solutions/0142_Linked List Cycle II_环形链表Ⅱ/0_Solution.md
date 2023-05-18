@@ -1,5 +1,7 @@
 # 142_Linked List Cycle II_环形链表Ⅱ (Medium)
 
+[【把环形链表讲清楚！ 如何判断环形链表？如何找到环形链表的入口？ LeetCode：142.环形链表II】]( https://www.bilibili.com/video/BV1if4y1d7ob/?share_source=copy_web&vd_source=672840fcf5c68492bb4e1f49d5c87506)
+
 ## 解法一：快慢指针 Floyd's Cycle $O(n)$
 
 - 从相遇点倒退，慢指针倒退 $y$ 的距离，那么快指针就会退 $2y$ 的距离；
