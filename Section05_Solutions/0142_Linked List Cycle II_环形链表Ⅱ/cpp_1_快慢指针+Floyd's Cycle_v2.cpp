@@ -14,16 +14,16 @@ class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
         if (!head || !head->next) return NULL;
-        auto s = head, f = head;
-        while(f) {
-            s = s->next, f = f->next;
-            if (!f) return NULL;
-            f = f->next;
+        auto slow = head, fast = head;
+        while(fast) {
+            slow = slow->next, fast = fast->next;
+            if (!fast) return NULL;
+            fast = fast->next;
             // 如果相遇，让一个指针从相遇点继续走，另一个指针从起点开始走
-            if (s == f) {
-                s = head;
-                while (s != f) s = s->next, f = f->next;
-                return s;
+            if (slow == fast) {
+                slow = head;
+                while (slow != fast) slow = slow->next, fast = fast->next;
+                return slow ;
             }
         }
         return NULL;
