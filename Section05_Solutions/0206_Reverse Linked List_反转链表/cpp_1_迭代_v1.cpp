@@ -14,15 +14,15 @@ using namespace std;
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode* pre = NULL;
-        ListNode* cur = head;
-        while (cur != NULL) {
-            ListNode* next = cur->next;
-
-            cur->next = pre;
-            pre = cur;
-            cur = next;
+        if (!head) return head;
+        ListNode* a = head; ListNode* b = a->next;
+        while (b) {
+            ListNode*c = b->next;
+            b->next = a;
+            a = b;
+            b = c;
         }
-        return pre;
+        head->next = nullptr;
+        return a;
     }
 };

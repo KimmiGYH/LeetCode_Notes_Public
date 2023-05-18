@@ -14,10 +14,10 @@ using namespace std;
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if (!head || !head->next)  return head;
-        auto tail = reverseList(head->next);
+        if (!head || !head->next) return head;
+        ListNode* tail = reverseList(head->next);
         head->next->next = head;
-        head->next = NULL;
+        head->next = nullptr;
         return tail;
     }
 };

@@ -14,16 +14,16 @@ using namespace std;
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if (!head || !head->next)  return head;
-        auto a = head, b = a->next;
-        while (b) {
-            auto c = b->next;
-            b->next = a;
-            a = b;
-            b = c;
+        if (!head) return head;
+        ListNode* pre = nullptr;
+        ListNode* cur = head;
+        while (cur) {
+            ListNode* nxt = cur->next;
+            cur->next = pre;
+            pre = cur;
+            cur = nxt;
         }
         head->next = nullptr;
-        return a;
+        return pre;        
     }
 };
-
