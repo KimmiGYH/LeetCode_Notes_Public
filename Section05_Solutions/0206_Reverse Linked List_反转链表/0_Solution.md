@@ -2,6 +2,7 @@
 
 自己制作的视频：[LeetCode 206. 反转链表（递推+递归）](https://www.bilibili.com/video/BV1dU4y1p7Db)
 
+代码随想录：[206.反转链表 | 双指针法 | 递归法](【https://www.bilibili.com/video/BV1nB4y1i7eL/?share_source=copy_web&vd_source=672840fcf5c68492bb4e1f49d5c87506&t=610)
 
 ## 解法一：迭代
 

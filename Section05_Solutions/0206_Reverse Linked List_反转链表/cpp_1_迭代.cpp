@@ -26,3 +26,25 @@ public:
         return a;
     }
 };
+
+/* 
+a     b    c
+pre  cur  nxt
+*/
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if (!head) return head;
+        ListNode* pre = nullptr;
+        ListNode* cur = head;
+        while (cur) {
+            ListNode* nxt = cur->next;
+            cur->next = pre;
+            pre = cur;
+            cur = nxt;
+        }
+        head->next = nullptr;
+        return pre;        
+    }
+};
