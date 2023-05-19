@@ -12,15 +12,16 @@ using namespace std;
         ListNode(int x, ListNode *next) : val(x), next(next) {}
  };
 
+// 可以保留 head，所以无需设 dummy node
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
         if (!head)  return head;
-        ListNode* cur = head;
-        while (cur->next) {
-            if (cur->val == cur->next->val)
-                cur->next = cur->next->next;
-            else cur = cur->next;
+        ListNode* p = head;
+        while (p->next) {
+            if (p->val == p->next->val)
+                p->next = p->next->next;
+            else p = p->next;
         }
         return head;
     }
