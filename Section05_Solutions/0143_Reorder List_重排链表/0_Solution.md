@@ -1,10 +1,16 @@
+# 143_Reorder List_重排链表
 
+- 这题需要 876、206、92题的基础
+- 视频讲解：[【环形链表II【基础算法精讲 07】】 【精准空降到 05:35】](https://www.bilibili.com/video/BV1KG4y1G7cu/?share_source=copy_web&vd_source=672840fcf5c68492bb4e1f49d5c87506&t=335)
+- 可以直接寻找链表中点 `len / 2 + 1`
+- 也可以用快慢指针来做
 
+以前的题解：
 ## 解法一：寻找链表中点 + 反转链表 + 合并链表
 
 找到原链表的中点，记得最后还要分奇偶来给尾节点的`next`节点赋为`nullptr`。
 
-![solve1](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0143_Reorder%20List_%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/solve1.png)
+
 
 ## 解法二：使用快慢指针来找链表中点 + 反转链表 + 合并链表
 
