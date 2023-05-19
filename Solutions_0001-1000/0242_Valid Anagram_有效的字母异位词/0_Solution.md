@@ -1,5 +1,6 @@
 # 242. Valid Anagram_有效的字母异位词 (Easy)
 
+int hash[26] = {0}; //初始化数组
 
 **说明：**
 
