@@ -1,37 +1,7 @@
 # 234. Palindrome Linked List_回文链表 (Easy)
 
 
-
-## 解法一：放进vector中 + 双指针判断
-
-通过链表判断序列是否为回文序列比较困难，
-可以先遍历链表，把链表存储到 `vector` 容器中，
-对 `vector` 容器中的数进行回文判断较为容易。
-
-回文判断的思路：
-双指针，一个从前向后，一个从后向前。
-如果对应的数不一样则不是回文序列。
-当两个指针相遇时退出循环。
-
-需要注意链表为空的特殊情况。
-
-
-
-**复杂度分析**
-
-时间复杂度：`O(n)`，其中 `n` 指的是链表的元素个数。
-第一步： 遍历链表并将值复制到数组中，`O(n)`。
-第二步：双指针判断是否为回文，执行了 `O(n/2)` 次的判断，即 `O(n)`。
-总的时间复杂度：`O(2n) = O(n)`。
-空间复杂度：`O(n)`，其中 `n` 指的是链表的元素个数，我们使用了一个数组列表存放链表的元素值。
-
-作者：LeetCode-Solution
-链接：https://leetcode-cn.com/problems/palindrome-linked-list/solution/hui-wen-lian-biao-by-leetcode-solution/
-来源：力扣（LeetCode）
-
-
-
-## 解法二：快慢指针 + 反转链表
+## 解法一：快慢指针 + 反转链表
 
 
 
@@ -68,6 +38,34 @@
 空间复杂度：`O(1)`。我们只会修改原本链表中节点的指向，而在堆栈上的。
 
 
+
+作者：LeetCode-Solution
+链接：https://leetcode-cn.com/problems/palindrome-linked-list/solution/hui-wen-lian-biao-by-leetcode-solution/
+来源：力扣（LeetCode）
+
+
+## 解法三：放进vector中 + 双指针判断
+
+通过链表判断序列是否为回文序列比较困难，
+可以先遍历链表，把链表存储到 `vector` 容器中，
+对 `vector` 容器中的数进行回文判断较为容易。
+
+回文判断的思路：
+双指针，一个从前向后，一个从后向前。
+如果对应的数不一样则不是回文序列。
+当两个指针相遇时退出循环。
+
+需要注意链表为空的特殊情况。
+
+
+
+**复杂度分析**
+
+时间复杂度：`O(n)`，其中 `n` 指的是链表的元素个数。
+第一步： 遍历链表并将值复制到数组中，`O(n)`。
+第二步：双指针判断是否为回文，执行了 `O(n/2)` 次的判断，即 `O(n)`。
+总的时间复杂度：`O(2n) = O(n)`。
+空间复杂度：`O(n)`，其中 `n` 指的是链表的元素个数，我们使用了一个数组列表存放链表的元素值。
 
 作者：LeetCode-Solution
 链接：https://leetcode-cn.com/problems/palindrome-linked-list/solution/hui-wen-lian-biao-by-leetcode-solution/
