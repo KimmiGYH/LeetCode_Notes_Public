@@ -21,3 +21,22 @@ public:
         return resultVector;
     }
 };
+
+// -----------用 unordered_map，思路一样，自己写的-------------
+
+class Solution {
+public:
+    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> res;
+        unordered_map<int, int> s1;
+        for (int& x : nums1)
+            s1[x] ++;
+        for (int& x : nums2) {
+            if (s1[x] > 0) {
+                s1[x]--;
+                res.push_back(x);
+            }
+        }
+        return res;
+    }
+};
