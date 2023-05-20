@@ -22,3 +22,22 @@ public:
         return resultVector;
     }
 };
+
+// -----------------------2023年5月20日自己写的------------------
+
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> res;
+        set<int> s1, s2;
+        for (int& x : nums1) s1.insert(x);
+        for (int& x : nums2) {
+            if (s1.find(x) != s1.end())
+                s2.insert(x);
+        }
+        for (auto it = s2.begin(); it != s2.end(); it++)
+            res.push_back(*it);
+        return res;
+    }
+};
+//auto 为 set<int>::iterator
