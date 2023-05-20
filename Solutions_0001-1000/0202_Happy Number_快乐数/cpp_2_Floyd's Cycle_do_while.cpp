@@ -35,8 +35,7 @@ public:
         };
         
         int slow = n, fast = n;
-        slow = next(slow), fast = next(slow);
-        
+        slow = next(slow), fast = next(slow);        
         while (slow != fast) {
             slow = next(slow);
             fast = next(next(fast));
