@@ -4,9 +4,9 @@ public:
         unordered_map<string, vector<string>> hash;
         vector<vector<string>> res;
         for (string& str : strs) {
-            string s = str;
-            sort(s.begin(), s.end());
-            hash[s].push_back(str);
+            string nstr = str;
+            sort(nstr.begin(), nstr.end());
+            hash[nstr].push_back(str);
         }
         for (auto& [k, v] : hash)   //for (auto& item : hash)
             res.push_back(v);       //  res.push_back(item.second);
