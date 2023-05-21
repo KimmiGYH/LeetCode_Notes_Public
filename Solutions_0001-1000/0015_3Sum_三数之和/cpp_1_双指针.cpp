@@ -1,14 +1,17 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        int n = nums.size();
         vector<vector<int>> res;
+        //   nums = [3,0,-2,-1,1,2]
+        //排序nums = [-2,-1,0,1,2,3]
+        //Expected: [[-2,-1,3],[-2,0,2],[-1,0,1]]
+        int n = nums.size();
         sort(nums.begin(), nums.end());
-        for (int i = 0; i <= n-1; i++) {
-            if (i >= 1 && nums[i] == nums[i-1]) continue;
-            for (int j = i+1, k = n-1; j < k; j++) {
-                if (j >= i+2 && nums[j] == nums[j-1]) continue;
-                while (j <= k-2 && nums[i] + nums[j] + nums[k] > 0) k--;
+        for (int i = 0; i < n; i++) {
+            if (i > 0 && nums[i] == nums[i-1]) continue;
+            for (int j = i + 1, k = n - 1; j < k ; j ++) {
+                if (j > i + 1 && nums[j] == nums[j-1]) continue;
+                while (j < k - 1 && nums[i] + nums[j] + nums[k] > 0) k--;
                 if (nums[i] + nums[j] + nums[k] == 0)
                     res.push_back({nums[i], nums[j], nums[k]});
             }
