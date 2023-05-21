@@ -19,3 +19,5 @@ public:
         return res;
     }
 };
+
+// 如果是 j<k 的话，跳出循环时 j 可能是等于 k 的，这样就 nums[j] 和 nums[k] 就是一个数了，就错了。
