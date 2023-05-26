@@ -1,19 +1,23 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        int n = s.length();
-        int k = 0; //有效字符
+        int k = 0, n = s.length();
         for (int i = 0; i < n; i++) {
             if (s[i] == ' ') continue;
             int j = i, t = k;
+            //s = "  hello world  "
+            //s = "hellolo world  "
+            //s = "hello o world  "
+            //s = "olleh o world  "
+            //s = "olleh worldld  "
+            //s = "olleh world"
             while (j < n && s[j] != ' ')
                 s[t ++] = s[j ++];
             reverse(s.begin() + k, s.begin() + t);
             s[t ++] = ' ';
-            k = t, i = j;
+            i = j, k = t;
         }
-        if (k > 0) k--;
-        s.erase(s.begin() + k, s.end());
+        if (k) s.erase(s.begin() + k - 1, s.end());
         reverse(s.begin(), s.end());
         return s;
     }
