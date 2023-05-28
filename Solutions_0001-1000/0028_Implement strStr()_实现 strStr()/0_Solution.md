@@ -4,6 +4,8 @@
 
 [KMP模板](https://www.acwing.com/file_system/file/content/whole/index/content/2174696/)
 
+
+
 ## 方法二：Rabin-Karp 算法
 
 [视频：B站：轻松掌握 Rabin-Karp](https://www.bilibili.com/video/av81581026)
