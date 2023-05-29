@@ -49,3 +49,19 @@ public:
         return pre;        
     }
 };
+
+// -----------2023年5月29日---------------
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode *pre = nullptr, *cur = head;
+        while (cur) {
+            ListNode* nxt = cur->next;
+            cur->next = pre;
+            pre = cur;
+            cur = nxt;
+        }
+        return pre;
+    }
+};
