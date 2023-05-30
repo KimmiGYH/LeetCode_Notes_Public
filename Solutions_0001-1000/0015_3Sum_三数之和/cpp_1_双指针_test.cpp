@@ -22,6 +22,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
     }
     return res;
 }
+// {-2,-1,1,2} 针对 j < k-1 而非 j < k 的反例
 
 int main() {
     vector<int> nums = { 3,0,-2,-1,1,2 };
