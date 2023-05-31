@@ -25,3 +25,19 @@ public:
         return res;
     }
 };
+
+// -----------------2023年6月1日--------------------
+
+class Solution {
+public:
+    string removeDuplicates(string s) {
+        string res;
+        for (char& x : s) {
+            if (res.size() && res.back() == x)
+                res.pop_back();
+            else
+                res += x;
+        }
+        return res;
+    }
+};
