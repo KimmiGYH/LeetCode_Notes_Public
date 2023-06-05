@@ -21,12 +21,12 @@ public:
         
         while(root || stk.size()) {
             while (root) {
-                res.push_back(root->val); // 先根遍历，将根加到栈里
+                res.push_back(root->val);
                 stk.push(root);
                 root = root->left;
             }
 
-            root = stk.top()->right; // 左子树遍历完后直接遍历右子树 不需要遍历根节点
+            root = stk.top()->right;
             stk.pop();
         }
         return res;
