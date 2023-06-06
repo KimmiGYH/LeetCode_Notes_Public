@@ -19,7 +19,7 @@ public:
             else if (fast != slow) {
                 fast = get(get(fast));
                 slow = get(slow);
-            } else if (fast == slow)
+            } else     //else if (fast == slow)
                 break;
         }
         return false;
