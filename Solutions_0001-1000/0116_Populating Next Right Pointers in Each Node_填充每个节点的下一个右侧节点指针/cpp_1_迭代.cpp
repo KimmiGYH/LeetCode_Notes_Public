@@ -32,3 +32,23 @@ public:
         return source;
     }
 };
+
+// -------------2023年6月7日--------------
+
+class Solution {
+public:
+    Node* connect(Node* root) {
+        if (!root)
+            return root;
+        Node* cur = root;
+        while (cur->left) {
+            for (auto p = cur; p; p = p->next) {
+                p->left->next = p->right;
+                if (p->next)
+                    p->right->next = p->next->left;
+            }
+            cur = cur->left;
+        }
+        return root;
+    }
+};
