@@ -11,6 +11,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+// 后序遍历
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
@@ -18,7 +19,19 @@ public:
         invertTree(root->left);
         invertTree(root->right);
         swap(root->left, root->right);
+        return root;
+    }
+};
 
+// ---------------2023年6月9日-------------------
+// 前序遍历
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        if (!root) return NULL;
+        swap(root->left, root->right);
+        invertTree(root->left);
+        invertTree(root->right);
         return root;
     }
 };
