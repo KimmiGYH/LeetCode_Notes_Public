@@ -18,13 +18,11 @@ public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
         stack<TreeNode*> stk;
-
         while (root || stk.size()) {
             while (root) {
                 stk.push(root);
                 root = root->left;
             }
-            
             root = stk.top();
             stk.pop();
             res.push_back(root->val);
