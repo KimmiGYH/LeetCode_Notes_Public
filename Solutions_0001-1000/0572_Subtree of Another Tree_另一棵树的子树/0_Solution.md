@@ -29,3 +29,4 @@
 
 - 于是这道题就变成了在序列 $S$ 里找一段和T一样的 $window$。这就可以用到 $KMP$ 算法。尽管这里的“目标串”和“模式串”都是数组而不是字符串，但并不妨碍 $KMP$ 算法的实现：依旧是先计算模式串的自相关后缀数组，再计算 $S$ 和 $T$ 之间的互相关后缀数组。
 
+参考：https://github.com/wisdompeak/LeetCode/tree/master/Tree/572.Subtree-of-Another-Tree
