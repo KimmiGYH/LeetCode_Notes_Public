@@ -4,6 +4,36 @@
 
 [KMP模板](https://www.acwing.com/file_system/file/content/whole/index/content/2174696/)
 
+```cpp
+// KMP 模板
+class Solution {
+public:
+    int strStr(string s, string p) {
+        int n = s.length(), m = p.length();
+        s = ' ' + s, p = ' ' + p;
+
+        vector<int> nxt(m + 1);
+        for (int i = 2, j = 0; i <= m; i++) {
+            while (j && p[i] != p[j + 1])
+                j = nxt[j];
+            if (p[i] == p[j + 1])
+                j ++;
+            nxt[i] = j;
+        }
+
+        for (int i = 1, j = 0; i <= n; i++) {
+            while (j && s[i] != p[j + 1])
+                j = nxt[j];
+            if (s[i] == p[j + 1])
+                j ++;
+            if (j == m)
+                return i - m;
+        }
+        return -1;
+    }
+};
+```
+
 [【代码随想录】28. 实现 strStr()](https://programmercarl.com/0028.%E5%AE%9E%E7%8E%B0strStr.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC)
 
 本篇将以如下顺序来讲解KMP，
@@ -27,4 +57,3 @@
 
 《算法》P580，第32章 字符串匹配，32.1 Rabin-Karp算法
 
-![Rabin-Karp](link)
