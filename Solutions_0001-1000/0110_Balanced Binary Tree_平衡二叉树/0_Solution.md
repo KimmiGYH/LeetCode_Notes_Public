@@ -1,7 +1,5 @@
 # 110. Balanced Binary Tree_平衡二叉树
 
-
-
 **(递归) `O(n)`**
 
 递归判断：
@@ -17,4 +15,10 @@
 [basketwangCoding: [Leetcode 110] Balanced Binary Tree](https://youtu.be/Be5CUodZliM)
 
 
-![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0110_Balanced%20Binary%20Tree_%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/solve.png)
+## 解法一：DFS
+
+Leetcode中强调的深度和高度很明显是按照节点来计算的，如图：
+![平衡二叉树](https://code-thinking-1253855093.file.myqcloud.com/pics/20210203155515650.png)
+
+**因为求深度可以从上到下去查 所以需要前序遍历（中左右），而高度只能从下到上去查，所以只能后序遍历（左右中）**
+
