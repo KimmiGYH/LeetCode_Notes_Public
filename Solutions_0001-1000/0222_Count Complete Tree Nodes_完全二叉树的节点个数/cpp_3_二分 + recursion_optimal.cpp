@@ -20,3 +20,27 @@ public:
         return countNodes(root->left) + 1 + countNodes(root->right);
     }
 };
+
+// -----------2023年6月13日--------------
+
+class Solution {
+public:
+    int countNodes(TreeNode* root) {
+        if (!root) return 0;
+        TreeNode* p = root->left;
+        TreeNode* q = root->right;
+        int x = 1, y = 1;
+        while (p) {
+            p = p->left;
+            x ++;
+        }
+        while (q) {
+            q = q->right;
+            y ++;
+        }
+        if (x == y)
+            return (1 << x) - 1;
+        else
+            return countNodes(root->left) + 1 + countNodes(root->right);
+    }
+};
