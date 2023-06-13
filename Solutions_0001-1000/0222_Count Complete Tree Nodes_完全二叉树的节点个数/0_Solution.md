@@ -35,24 +35,31 @@
 
 **示例一：**
 
-![solve_eg1](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0222_Count%20Complete%20Tree%20Nodes_%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0/solve_eg1.png)
+[solve_eg1]
 
 ------
 
 **示例二：**
 
-![solve_eg2](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0222_Count%20Complete%20Tree%20Nodes_%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0/solve_eg2.png)
+[solve_eg2]
 
 
 
 ## 解法二：二分查找
 
-[Huifeng Guan: 【每日一题】222. Count Complete Tree Nodes](https://youtu.be/JSq15O0Bs-E)
+[参考：Huifeng Guan: 【每日一题】222. Count Complete Tree Nodes](https://youtu.be/JSq15O0Bs-E)
 
-问 `K` 是否是二叉树中的某一个数？ `K/2` 是该节点的父节点
+问 `K` 是否是二叉树中的某一个数？ `K/2` 是该节点的父节点，比如：
 
-每层数的范围为 `2^(h-1)` ~ `2^h - 1`
+```cpp
+[K, K/2, K/2/2, ..., 1]
+[5, 2, 1]
+[7, 3, 1]
+[6, 3, 1]
+```
+
+每层数的范围为 `2^(h-1)` ~ `2^h - 1`，比如 ![example](https://assets.leetcode.com/uploads/2021/01/14/complete.jpg) 中，最后一行 `4 5 6` 是介于 `2^2 ~ 2^3 - 1` 之间的。
 
 然后进行二分查找
 
-![solve_二分查找](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0222_Count%20Complete%20Tree%20Nodes_%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0/solve_%E4%BA%8C%E5%88%86.png)
+[solve_二分查找]
