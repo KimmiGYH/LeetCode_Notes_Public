@@ -29,3 +29,26 @@ public:
             return isSame(p->left, q->left) && isSame(p->right, q->right);
     }
 };
+
+// ----------2023年6月14日 自己写的---------------
+
+class Solution {
+public:
+    bool isSame(TreeNode* p, TreeNode* q) {
+        if (!p && !q) return true;
+        if (!p || !q || p->val != q->val)
+            return false;
+        return isSame(p->left, q->left) && isSame(p->right, q->right);
+    }
+
+    bool isSubtree(TreeNode* root, TreeNode* subRoot) {
+        if (!root && !subRoot)
+            return true;
+        if (!root || !subRoot)
+            return false;
+        if (isSame(root, subRoot))
+            return true;
+        else
+            return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
+    }
+};
