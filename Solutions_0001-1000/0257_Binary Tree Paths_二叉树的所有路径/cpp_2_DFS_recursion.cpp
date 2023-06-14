@@ -14,14 +14,8 @@ struct TreeNode {
 
 class Solution {
 public:
-
     vector<string> ans;
     vector<int> path;
-
-    vector<string> binaryTreePaths(TreeNode* root) {
-        if (root) dfs(root);
-        return ans;
-    }
 
     void dfs(TreeNode* root) {
         path.push_back(root->val);
@@ -35,5 +29,10 @@ public:
             if (root->right)  dfs(root->right);
         }
         path.pop_back();
+    }
+
+    vector<string> binaryTreePaths(TreeNode* root) {
+        if (root) dfs(root);
+        return ans;
     }
 };

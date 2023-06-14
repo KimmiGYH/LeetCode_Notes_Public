@@ -29,3 +29,26 @@
      8   9
     ...
 叶子节点的路径长度分别是 2，3，4，5，……，共有 $n / 2$ 个叶子节点，所以时间复杂度达到了 $O(n^2)$。
+
+
+## 解法一：递归
+
+1. 找到叶子节点，就开始结束的处理逻辑。
+什么时候算是找到了叶子节点？ 是当 cur不为空，其左右孩子都为空的时候，就找到叶子节点。
+```cpp
+if (cur->left == NULL && cur->right == NULL) {
+    终止处理逻辑
+}
+```
+
+2. 回溯和递归是一一对应的，有一个递归，就要有一个回溯
+```cpp
+if (cur->left) {
+    traversal(cur->left, path, result);
+    path.pop_back(); // 回溯
+}
+if (cur->right) {
+    traversal(cur->right, path, result);
+    path.pop_back(); // 回溯
+}
+```
