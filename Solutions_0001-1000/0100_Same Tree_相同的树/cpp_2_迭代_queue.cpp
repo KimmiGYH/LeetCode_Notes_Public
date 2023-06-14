@@ -18,6 +18,7 @@ public:
         while (Q.size()) {
             p = Q.front(); Q.pop();
             q = Q.front(); Q.pop();
+            //这里要写成 continue，不然当 p=[1], q=[1,null,2] 时会报错
             if (!p && !q)  continue;
             if (!p || !q || p->val != q->val) return false;
 
