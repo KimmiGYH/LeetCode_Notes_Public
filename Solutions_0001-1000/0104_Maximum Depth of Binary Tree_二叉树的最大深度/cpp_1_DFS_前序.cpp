@@ -37,3 +37,34 @@ public:
         return result;
     }
 };
+
+//------------2023年6月15日--------------
+
+class Solution {
+public:
+    int res;
+
+    int getDepth(TreeNode* root, int depth) {
+        res = depth > res ? depth : res;
+        if (!root->left && !root->right)
+            return res;
+        if (root->left) {
+            depth ++;
+            getDepth(root->left, depth);
+            depth --;
+        }
+        if (root->right) {
+            depth ++;
+            getDepth(root->right, depth);
+            depth --;
+        }
+        return res;
+    }
+
+    int maxDepth(TreeNode* root) {
+        res = 0;
+        if (!root) return 0;
+        res = getDepth(root, 1);
+        return res; 
+    }
+};
