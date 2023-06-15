@@ -39,3 +39,20 @@ public:
         return minDepth(root->right) + 1;
     }
 };
+
+// ----------------2023年6月15日----------------
+
+class Solution {
+public:
+    int minDepth(TreeNode* root) {
+        if (!root) return 0;
+        if (!root->left && !root->right) return 1;
+        if (root->left && root->right)
+            return min(minDepth(root->left), minDepth(root->right)) + 1;
+        if (root->left)
+            return minDepth(root->left) + 1;
+        if (root->right)
+            return minDepth(root->right) + 1;
+        return 0;
+    }
+};
