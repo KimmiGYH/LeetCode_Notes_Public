@@ -41,3 +41,35 @@ public:
         return res;
     }
 };
+
+// ----------2023年6月15日-----------
+
+class Solution {
+public:
+    vector<int> path;
+    vector<string> res;
+
+    void dfs(TreeNode* root) {
+        path.push_back(root->val);
+        string str = to_string(path[0]);
+        if (!root->left && !root->right) {
+            for (int i = 1; i < path.size(); i++)
+                str += "->" + to_string(path[i]);
+            res.push_back(str);
+        }
+        if (root->left) {
+            dfs(root->left);
+            path.pop_back();
+        }
+        if (root->right) {
+            dfs(root->right);
+            path.pop_back();
+        }
+    }
+
+    vector<string> binaryTreePaths(TreeNode* root) {
+        if (!root) return res;
+        dfs(root);
+        return res;
+    }
+};
