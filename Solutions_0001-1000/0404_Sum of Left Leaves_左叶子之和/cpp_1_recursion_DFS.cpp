@@ -13,11 +13,6 @@ class Solution {
 public:
     int res = 0;
 
-    int sumOfLeftLeaves(TreeNode* root) {
-        dfs(root);
-        return res;
-    }
-
     void dfs(TreeNode* root) {
         if (!root)  return;
         if (root->left) {
@@ -27,5 +22,10 @@ public:
         }
         dfs(root->left);
         dfs(root->right);
+    }
+    
+    int sumOfLeftLeaves(TreeNode* root) {
+        dfs(root);
+        return res;
     }
 };
