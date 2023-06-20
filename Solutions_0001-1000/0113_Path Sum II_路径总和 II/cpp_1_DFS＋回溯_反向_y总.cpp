@@ -19,7 +19,8 @@ public:
     vector<int> path;
 
     vector<vector<int>> pathSum(TreeNode* root, int sum) {
-        if (root)  dfs(root, sum);
+        if (root)
+            dfs(root, sum);
         return ans;
     }
 
@@ -29,8 +30,10 @@ public:
         if (!root->left && !root->right) {
             if (!sum)  ans.push_back(path);
         } else {
-            if (root->left)  dfs(root->left, sum);
-            if (root->right)  dfs(root->right, sum);
+            if (root->left)
+                dfs(root->left, sum);
+            if (root->right)
+                dfs(root->right, sum);
         }
         path.pop_back();
     }
