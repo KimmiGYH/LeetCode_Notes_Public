@@ -12,7 +12,6 @@
 class Solution {
 public:
     unordered_map<int, int> hash;
-    int k;
 
     TreeNode* dfs(vector<int>& preorder, vector<int>& inorder, int preL, int preR, int inL, int inR) {
         if (preL > preR) return NULL;
