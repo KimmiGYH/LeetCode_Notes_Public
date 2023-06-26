@@ -1,28 +1,62 @@
 # 98. Validate Binary Search Tree_验证二叉搜索树 (Medium)
 
+## 解法一：递归
 
+递归三步曲：
 
-## 解法一：按定义
+- 确定递归函数，返回值以及参数
+要定义一个 `long long` 的全局变量，用来比较遍历的节点是否有序，因为后台测试数据中有 `int` 最小值，所以定义为 `long long` 的类型，初始化为 `long long` 最小值 `LONG_MIN`。
+```cpp
+long long maxVal = LONG_MIN; // 因为后台测试数据中有int最小值
+bool isValidBST(TreeNode* root)
+```
 
-**(深度优先遍历) $O(n)$**
+- 确定终止条件
+如果是空节点 是不是二叉搜索树呢？ 是的，二叉搜索树也可以为空！
+```cpp
+if (root == NULL) return true;
+```
 
-深度优先遍历整棵子树。
+- 确定单层递归的逻辑
+中序遍历，一直更新 `maxVal`，一旦发现 `maxVal >= root->val`，就返回 `false`，注意元素相同时候也要返回 `false`。
+```cpp
+bool left = isValidBST(root->left);         // 左
 
-遍历时，需要向上传递当前子树中的**最小值**和**最大值**，这里可以用 C++ 中的引用来传递。
+// 中序遍历，验证遍历的元素是不是从小到大
+if (maxVal < root->val)
+    maxVal = root->val; // 中
+else return false;
 
-对于当前节点，我们先遍历它的左子树，判断左子树是否合法，同时判断左子树的最大值是否小于当前节点的值；
+bool right = isValidBST(root->right);       // 右
+return left && right;
+```
 
-然后遍历右子树，判断右子树是否合法，同时判断右子树的最小值是否大于当前节点的值。
+<!-- --------------------- -->
 
-如果条件均满足，说明以当前节点为根的子树是一棵合法的二叉搜索树，返回 `true`。
+## 解法二：双指针优化
 
-##### 时间复杂度分析
+如果测试数据中有 longlong的最小值，怎么办？
 
-树中每个节点仅被遍历一遍，所以时间复杂度是 $O(n)$。
+不可能在初始化一个更小的值了吧。 建议避免 初始化最小值，如下方法取到最左面节点的数值来比较。
 
+```cpp
+class Solution {
+public:
+    TreeNode* pre = NULL; // 用来记录前一个节点
+    bool isValidBST(TreeNode* root) {
+        if (root == NULL) return true;
+        bool left = isValidBST(root->left);
 
+        if (pre != NULL && pre->val >= root->val) return false;
+        pre = root; // 记录前一个节点
 
-## 解法二：判断中序遍历是否是有序的
+        bool right = isValidBST(root->right);
+        return left && right;
+    }
+};
+```
+
+## 解法三：判断中序遍历是否是有序的
 
 从上到下判断，在往下遍历子树的过程中，根据父节点的信息记录并更新子树的值的大小范围
 

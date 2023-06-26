@@ -21,8 +21,10 @@ public:
 
     bool dfs(TreeNode* root, long left_val, long right_val)
     {
-        if (!root)  return true;
-        if (root->val <= left_val || root->val >= right_val)  return false;
+        if (!root)
+            return true;
+        if (root->val <= left_val || root->val >= right_val)
+            return false;
         return dfs(root->left, left_val, root->val) && dfs(root->right, root->val, right_val);
     }
 };
