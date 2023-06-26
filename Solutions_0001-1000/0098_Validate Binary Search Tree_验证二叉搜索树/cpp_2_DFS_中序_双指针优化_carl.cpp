@@ -16,9 +16,6 @@ public:
     bool isValidBST(TreeNode* root) {
         if (!root) return true;
         bool left = isValidBST(root->left);
-        // if (pre && pre->val >= root->val)
-        //     return false;
-        // else pre = root;
         if (!pre || pre->val < root->val)
             pre = root;
         else return false;
