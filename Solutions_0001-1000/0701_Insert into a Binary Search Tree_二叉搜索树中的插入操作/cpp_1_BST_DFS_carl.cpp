@@ -36,3 +36,33 @@ public:
         return root;
     }
 };
+
+// ----------- cur 直接用 root 来写 -----------
+
+class Solution {
+public:
+    TreeNode* parent;
+
+    void dfs(TreeNode* root, int& val) {
+        if (!root) {
+            TreeNode* node = new TreeNode(val);
+            if (val < parent->val)
+                parent->left = node;
+            else
+                parent->right = node;
+            return;
+        }
+        parent = root;
+        if (val < root->val)  dfs(root->left, val);
+        if (val > root->val)  dfs(root->right, val);
+        return;
+    }
+
+    TreeNode* insertIntoBST(TreeNode* root, int val) {
+        parent = new TreeNode(0);
+        if (!root)
+            return new TreeNode(val);
+        dfs(root, val);
+        return root;
+    }
+};
