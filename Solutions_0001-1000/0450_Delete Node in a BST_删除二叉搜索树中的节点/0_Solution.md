@@ -2,6 +2,38 @@
 
 [花花酱 LeetCode 450. Delete Node in a BST](https://youtu.be/00r9qf7lgAk)
 
+## 解法一：递归DFS，覆盖节点
 
+- 1. 叶节点，没有左子树也没有右子树，只需将当前节点删除即可
+    ```cpp
+    if (!root->left && !root->right)
+        root = nullptr;
+    ```
+- 2. 只有一个子节点
+    ```cpp
+    if (!root->left)
+        root = root->right;
+    if (!root->right)
+        root = root->left;
+    ```
+- 3. 有2个子节点
+    找 `u` 的后继，将后继的值覆盖到 `u` 上，然后删除其后继，这样就等价删除了 `u`
+    **如何找后继？**
+    `u` 的右子树一直往左走，走到不能走为止：
+    ```cpp
+    auto p = root->right;
+    while (p->left)
+        p = p->left;
+    ```
+例子中，要删除值为 `3` 的节点，找到 `3` 的后继 `4`，把 `4` 覆盖到 `3` 上，再把 `4` 删掉，这样就相当于把 `3` 节点删掉了。
 
-![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0450_Delete%20Node%20in%20a%20BST_%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/solve.png)
+递归这个过程，删除 `4`，找到其后继，由于 `4` 只有一个子节点右子树 `5`，所以回到情况$2$
+
+## 解法二：递归DFS，删除节点
+
+前面同上
+
+- 3. 有2个子节点
+    找 `u` 的后继，把 `u` 的左子树接到后继节点上，然后删除 `u`，把 `u` 的右子树更新为 `u`
+例子中，要删除值为 `3` 的节点，找到 `3` 的后继 `4`，把 `3` 的左子树接到后继节点 `4` 上；
+然后删掉节点 `3`，并提前记下节点 `3` 的右子树 `6`，将其作为 `root` 节点。 
