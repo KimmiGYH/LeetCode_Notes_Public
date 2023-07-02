@@ -5,15 +5,8 @@ using namespace std;
 
 class Solution {
 public:
-
     vector<vector<int>> res;
     vector<int> path;
-
-    vector<vector<int>> combine(int n, int k) {
-        // k 当前还可以选几个数
-        dfs(n, k, 1);
-        return res;
-    }
 
     void dfs(int n, int k, int start) {
         if (!k) {
@@ -25,6 +18,12 @@ public:
             dfs(n, k - 1, i + 1);
             path.pop_back();
         }
+    }
+
+        vector<vector<int>> combine(int n, int k) {
+        // k 当前还可以选几个数
+        dfs(n, k, 1);
+        return res;
     }
 };
 
