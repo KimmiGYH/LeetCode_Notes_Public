@@ -1,28 +1,61 @@
 # 17. Letter Combinations of a Phone Number_电话号码的字母组合 (Medium)
 
+## 解法一：递归回溯 $O(4^n)$
 
-
-## 解法一：递归回溯
-
-
+1. 数字和字母如何映射
 
 ```cpp
-digits 是数字字符串
-strs(digits) 是 digits 所能代码的字母字符串
-strs(digits[0...n-1])
-    = letter(digits[0]) + strs(digits[1...n-1])
-    = letter(digits[0]) + letter(digits[1]) + strs(digits[2...n-1])
-    = ……
+//v1
+    string letterMap[10] = {
+        // ...
+    };
+//v2
+    const string letterMap[10] = {
+        // ...
+    };
+
+//v3: 我自己选的vector
+    vector<string> letterMap = {
+        "",     //0
+        "",     //1
+        "abc",  //2
+        "def",  //3
+        "ghi",  //4
+        "jkl",  //5
+        "mno",  //6
+        "pqrs", //7
+        "tuv",  //8
+        "wxyz"  //9
+    };
 ```
 
+2. 回溯法来解决n个for循环的问题
 
+![图解](https://code-thinking-1253855093.file.myqcloud.com/pics/20201123200304469.png)
 
-**(递归) $O(4^n)$**
+图中可以看出遍历的深度，就是输入"23"的长度，而叶子节点就是我们要收集的结果，输出["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]。
 
-1. 可以通过手工或者循环的方式预处理每个数字可以代表哪些字母。
-2. 通过递归尝试拼接一个新字母。
-3. 递归到目标长度，将当前字母串加入到答案中。
-4. 注意，有可能数字串是空串，需要特判。
+3. 确定终止条件
+
+例如输入用例"23"，两个数字，那么根节点往下递归两层就可以了，叶子节点就是要收集的结果集。
+
+那么终止条件就是如果 `u` 等于 输入的数字个数（digits.size）了（本来 `u` 就是用来遍历digits的）。
+
+```cpp
+if (u == digits.size()) { // u 从0开始，但 u==digits.size()时终止递归
+    res.push_back(path);
+    return;
+}
+// 也可以写成
+if (path.size() == digits.size()) {
+    res.push_back(path);
+    return;
+}
+```
+
+4. 一些写法，是把回溯的过程放在递归函数里了
+
+5. 注意，有可能数字串是空串，需要特判。
 
 ##### 时间复杂度
 
@@ -31,7 +64,3 @@ strs(digits[0...n-1])
 设数字串长度为 `n`，则最坏时间复杂度为 $O(4^n)$。
 
 外加 `push_back` 答案 需要 `O(n)`的时间复杂度，所以总的时间复杂度为  $O(4^n * n)$
-
-
-![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0017_Letter%20Combinations%20of%20a%20Phone%20Number_%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88/solve.png)
-
