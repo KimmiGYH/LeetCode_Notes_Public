@@ -8,16 +8,21 @@
 
 暴力搜索出所有从 `9` 个数中选 `k` 个的方案，记录所有和等于 `n` 的方案。
 
-为了避免重复计数，比如 `{1, 2, 3}` 和 `{1, 3, 2}` 是同一个集合，我们对集合中的数定序，每次枚举时，要保证同一方案中的数严格递增，即如果上一个选的数是 `x`，那我们从 `x+1` 开始枚举当前数。
+这道题是在题 #77 的基础上，增加了一个条件 “总和等于`n`”，以及多了一个剪枝优化。
+
+1. 已选元素总和如果已经大于 `n`（图中数值为4）了，那么往后遍历就没有意义了，直接剪掉。
+那么剪枝的地方可以放在递归函数开始的地方，剪枝代码如下：
+
+    ```cpp
+    if (sum > targetSum) { // 剪枝操作
+        return;
+    }
+    ```
+2. 和回溯算法：组合问题再剪剪枝 (opens new window) 一样，for循环的范围也可以剪枝，`i <= 9 - (k - path.size()) + 1` 就可以了。
 
 ##### 时间复杂度分析
 
-从 `9` 个数中选 `k` 个总共有 $O(C_{9}^{k})$ 个方案，将每个方案记录下来需要 $O(k)$ 的时间，所以时间复杂度是
-
-$O(C_{9}^{k} * k)$。
-
-
-![solve](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0216_Combination%20Sum%20III_%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20III/solve.png)
+- 从 `9` 个数中选 `k` 个总共有 $O(C_{9}^{k})$ 个方案，将每个方案记录下来需要 $O(k)$ 的时间，所以时间复杂度是 $O(C_{9}^{k} * k)$。
 
 
 
@@ -59,6 +64,4 @@ $O(C_{9}^{k} * k)$。
 
 Time complexity: $O(2^m) = O(2^9)$
 
-Space complexity: $O(k + k * # of ans)$
-
-![Bit](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0216_Combination%20Sum%20III_%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20III/Bit.png)
+Space complexity: $O(k + k * number\ of\ ans)$
