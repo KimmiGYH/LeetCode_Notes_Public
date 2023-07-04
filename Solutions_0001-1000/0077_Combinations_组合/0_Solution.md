@@ -57,7 +57,7 @@ for (int i = start; i <= n + 1 - (k - path.size()); i++)
 
 - `path.size()` ： 已经找的个数
 - `k-path.size()` ：还需找的个数
-- `【x, n】`的数组长度起码应该是 `k - path.size()` 才有继续搜索的可能， 那么就有 `n-x+1 = k-path.size()`， 解方程得 `x = n+1 - (k-path.size())`, 而且这个 `x` 是可以作为起点往下搜的 也就是 `for(i = s; i <= x; i++)` 这里的 `x` 是可以取到的
+- `【x, n】`的数组长度起码应该是 `k - path.size()` 才有继续搜索的可能， 那么就有 `n-x+1 = k-path.size()`， 解方程得 `x = n+1 - (k-path.size())`, 而且这个 `x` 是可以从起点 `s` 往下搜的 也就是 `for(i = s; i <= x; i++)` 这里的 `x` 是可以取到的
 
 【举例】：
 ![图解](https://code-thinking-1253855093.file.myqcloud.com/pics/20210130194335207.png)
