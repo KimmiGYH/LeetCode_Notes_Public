@@ -1,30 +1,64 @@
 # 131. Palindrome Partitioning_分割回文串 (Medium)
 
-两种写法：
+## 解法一：递归＋回溯
 
-- 写法一：回溯
+我们来分析一下切割，其实切割问题类似组合问题。
 
-- 写法二：回溯加了 DP
+例如对于字符串abcdef：
+
+组合问题：选取一个a之后，在bcdef中再去选取第二个，选取b之后在cdef中再选取第三个.....。
+切割问题：切割一个a之后，在bcdef中再去切割第二段，切割b之后在cdef中再切割第三段.....。
+感受出来了不？
+
+所以切割问题，也可以抽象为一棵树形结构，如图：
+![图解](https://code-thinking.cdn.bcebos.com/pics/131.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.jpg)
+
+- 递归函数终止条件
+
+从树形结构的图中可以看出：切割线切到了字符串最后面，说明找到了一种切割方法，此时就是本层递归的终止条件。
+
+**那么在代码里什么是切割线呢？**
+
+在处理组合问题的时候，递归参数需要传入`startIndex`，表示下一轮递归遍历的起始位置，这个`startIndex`就是切割线。
+
+```cpp
+void backtracking (const string& s, int startIndex) {
+    // 如果起始位置已经大于s的大小，说明已经找到了一组分割方案了
+    if (startIndex >= s.size()) {
+        result.push_back(path);
+        return;
+    }
+}
+```
+
+- 单层搜索的逻辑
+
+**来看看在递归循环中如何截取子串呢？**
+
+在 `for (int i = startIndex; i < s.size(); i++)` 循环中，我们 定义了起始位置 `startIndex`，那么 `[startIndex, i]` 就是要截取的子串。
+
+首先判断这个子串是不是回文，如果是回文，就加入在 `vector<string> path` 中，`path` 用来记录切割过的回文子串。
+
+```cpp
+for (int i = startIndex; i < s.size(); i++) {
+    if (isPalindrome(s, startIndex, i)) { // 是回文子串
+        // 获取[startIndex,i]在s中的子串
+        string str = s.substr(startIndex, i - startIndex + 1);
+        path.push_back(str);
+    } else {                // 如果不是则直接跳过
+        continue;
+    }
+    backtracking(s, i + 1); // 寻找i+1为起始位置的子串
+    path.pop_back();        // 回溯过程，弹出本次已经填在的子串
+}
+```
+
+注意切割过的位置，不能重复切割，所以，`backtracking(s, i + 1);` 传入下一层的起始位置为 `i + 1`。
 
 
+**时间复杂度分析**
 
-首先我们预处理好哪些子串是回文串，这个可以用动态规划在 $O(n^2)$ 的时间内处理好，`dp[i][j]`代表 `s[i:j]` 是回文串。
-
-
-
-![img_isPalindrome_DP](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0131_Palindrome%20Partitioning_%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2/img_isPalindrome_DP.png)
-
-
-
-然后进行递归搜索，`u` 代表当前处理到哪个位置，我们从当前位置开始，枚举所有可能的回文子串，进行递归搜索直至处理完整个字符串。
-
-![img_Backtracking](https://raw.githubusercontent.com/KimmiGYH/LeetCode_Notes_Public/master/Section05_Solutions/0131_Palindrome%20Partitioning_%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2/img_Backtracking.png)
-
-
-
-##### 时间复杂度分析
-
-首先考虑最多有多少个合法方案，我们可以考虑在相邻字符之间放板子，每种放板子的方法都对应一种划分方案，而每个字符间隔有放和不放两种选择，所以总共有 $2^(n−1)$ 个方案。另外对于每个方案，需要 $O(n)$ 的时间记录方案。所以总时间复杂度是 $O((2^n)*n)$。
+首先考虑最多有多少个合法方案，我们可以考虑在相邻字符之间放板子，每种放板子的方法都对应一种划分方案，而每个字符间隔有放和不放两种选择，所以总共有 $2^{(n−1)}$ 个方案。另外对于每个方案，需要 $O(n)$ 的时间记录方案。所以总时间复杂度是 $O(2^n*n)$。
 
 
 
@@ -76,4 +110,6 @@
 
 
 ```
+
+## 解法二：动态规划
 
