@@ -6,7 +6,7 @@ public:
     void backtracking(string& s, int startIndex, int pointNum) {
         if (pointNum == 3) { // 逗点数量为3时，分隔结束
             // 判断第四段子字符串是否合法，如果合法就放进res中
-            if (is_valid(s, startIndex, s.size() - 1)) {
+            if (is_valid(s, startIndex, s.size() - 1)) { //?
                 res.push_back(s);
             }
             return;
