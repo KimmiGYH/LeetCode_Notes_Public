@@ -30,12 +30,10 @@ public:
             path.push_back(nums[u]);
         }
 
-        /*
         for (int i = 0; i <= k - u; i++) {
             path.pop_back();
         }
-        */
         
-        path.erase(path.end() - (k - u + 1), path.end());
+        // path.erase(path.end() - (k - u + 1), path.end());
     }
 };
