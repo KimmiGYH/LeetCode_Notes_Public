@@ -3,7 +3,7 @@ public:
     vector<int> path;
     vector<vector<int>> res;
 
-    void backtracking(vector<int>& nums, vector<int> used, int startIndex) {
+    void backtracking(vector<int>& nums, vector<bool> used, int startIndex) {
         if (path.size() == nums.size()) {
             res.push_back(path);
             return;
@@ -20,7 +20,7 @@ public:
     }
 
     vector<vector<int>> permute(vector<int>& nums) {
-        vector<int> used(nums.size(), false);
+        vector<bool> used(nums.size(), false);
         backtracking(nums, used, 0);
         return res;
     }
